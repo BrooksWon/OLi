@@ -11,6 +11,7 @@
 #import "Reachability.h"
 #import "NSObject+OLiNetEngine.h"
 #import "OLiHTTPRequestOperationManager.h"
+#import "OLiHTTPRequestOperationManager+Download.h"
 #import "OLiNetError.h"
 #import "OLiRequestObject.h"
 #define kRequestClassPrefix     @"Request"
@@ -122,25 +123,45 @@ NSString *const OLiCallBackRequest       = @"OLiCallBackRequest";
     }
     self.operationOptions[requestKey] = options;
     
-//    NSSet *httpMethods = [NSSet setWithObjects:@"GET",@"HEAD",@"DELETE", nil];
+    AFHTTPRequestOperation *requestOperation = nil;
     
-    AFHTTPRequestOperation *requestOperation = [self.operationManager OLi_Request_Method:request.requestMethodName
-                                                                               URLString:request.interfaceURL
-//                                                                              parameters:([httpMethods containsObject:request.requestMethodName.uppercaseString] ? requestJSONString:propertyValueDictionary)// 如果是httpMethods 中的一种请求的话，传字符串；否则传字典
-                                                 parameters:propertyValueDictionary
-//#warning 待优化
-                                                                                 success:^(AFHTTPRequestOperation *operation, id responseObject)
-                                                {
-                                                    [weakSelf requestFinishedWithOperation:operation requestKey:requestKey];
-                                               }
-                                                                                 failure:^(AFHTTPRequestOperation *operation, NSError *error)
-                                                {
-                                                    [weakSelf requestFinishedWithOperation:operation requestKey:requestKey];
-                                                }
-                                                                           cacheResponse:[request needCache]
-                                                                                cacheKey:requestKey];
-    
-    [self.requestQueue setValue:requestOperation forKey:requestKey];
+    if([request isDownloadRequest]){
+        requestOperation = [self.operationManager OLi_Request_Method:request.requestMethodName
+                                                           URLString:request.interfaceURL
+                                                          parameters:propertyValueDictionary
+                                                             success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                                                                 [weakSelf requestFinishedWithOperation:operation requestKey:requestKey];
+                                                             }
+                                                             failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                                                                 [weakSelf requestFinishedWithOperation:operation requestKey:requestKey];
+                                                             } downloadProgressBlock:^(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead) {
+#warning 未完待续
+                                                                 //
+                                                             }];
+    }if ([request isUploadRequest]) {
+#warning 未完待续
+        //
+    }else{
+        //    NSSet *httpMethods = [NSSet setWithObjects:@"GET",@"HEAD",@"DELETE", nil];
+        
+        requestOperation = [self.operationManager OLi_Request_Method:request.requestMethodName
+                                                           URLString:request.interfaceURL
+                            //                                                                              parameters:([httpMethods containsObject:request.requestMethodName.uppercaseString] ? requestJSONString:propertyValueDictionary)// 如果是httpMethods 中的一种请求的话，传字符串；否则传字典
+                                                          parameters:propertyValueDictionary
+                            //#warning 待优化
+                                                             success:^(AFHTTPRequestOperation *operation, id responseObject)
+                            {
+                                [weakSelf requestFinishedWithOperation:operation requestKey:requestKey];
+                            }
+                                                             failure:^(AFHTTPRequestOperation *operation, NSError *error)
+                            {
+                                [weakSelf requestFinishedWithOperation:operation requestKey:requestKey];
+                            }
+                                                       cacheResponse:[request needCache]
+                                                            cacheKey:requestKey];
+        
+        [self.requestQueue setValue:requestOperation forKey:requestKey];
+    }
     
     return requestKey;
 }

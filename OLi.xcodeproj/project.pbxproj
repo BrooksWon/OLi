@@ -40,6 +40,10 @@
 		983D071E1C8A960700D7034B /* DemoBLL.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D07191C8A960700D7034B /* DemoBLL.m */; };
 		983D071F1C8A960700D7034B /* RequestDemoEnity.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D071B1C8A960700D7034B /* RequestDemoEnity.m */; };
 		983D07201C8A960700D7034B /* ResponseDemoEnity.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D071D1C8A960700D7034B /* ResponseDemoEnity.m */; };
+		983D07231C8AAD5900D7034B /* OLiHTTPRequestOperationManager+Download.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D07221C8AAD5900D7034B /* OLiHTTPRequestOperationManager+Download.m */; };
+		983D07261C8ABEFD00D7034B /* ResponseDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D07251C8ABEFD00D7034B /* ResponseDownload.m */; };
+		983D07291C8ABF4100D7034B /* RequestDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D07281C8ABF4100D7034B /* RequestDownload.m */; };
+		983D072C1C8ABF8D00D7034B /* DownloadBLL.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D072B1C8ABF8D00D7034B /* DownloadBLL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +114,14 @@
 		983D071B1C8A960700D7034B /* RequestDemoEnity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestDemoEnity.m; sourceTree = "<group>"; };
 		983D071C1C8A960700D7034B /* ResponseDemoEnity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseDemoEnity.h; sourceTree = "<group>"; };
 		983D071D1C8A960700D7034B /* ResponseDemoEnity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseDemoEnity.m; sourceTree = "<group>"; };
+		983D07211C8AAD5900D7034B /* OLiHTTPRequestOperationManager+Download.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OLiHTTPRequestOperationManager+Download.h"; sourceTree = "<group>"; };
+		983D07221C8AAD5900D7034B /* OLiHTTPRequestOperationManager+Download.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OLiHTTPRequestOperationManager+Download.m"; sourceTree = "<group>"; };
+		983D07241C8ABEFD00D7034B /* ResponseDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseDownload.h; sourceTree = "<group>"; };
+		983D07251C8ABEFD00D7034B /* ResponseDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseDownload.m; sourceTree = "<group>"; };
+		983D07271C8ABF4100D7034B /* RequestDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestDownload.h; sourceTree = "<group>"; };
+		983D07281C8ABF4100D7034B /* RequestDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestDownload.m; sourceTree = "<group>"; };
+		983D072A1C8ABF8D00D7034B /* DownloadBLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadBLL.h; sourceTree = "<group>"; };
+		983D072B1C8ABF8D00D7034B /* DownloadBLL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadBLL.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +179,12 @@
 				983D071B1C8A960700D7034B /* RequestDemoEnity.m */,
 				983D071C1C8A960700D7034B /* ResponseDemoEnity.h */,
 				983D071D1C8A960700D7034B /* ResponseDemoEnity.m */,
+				983D07241C8ABEFD00D7034B /* ResponseDownload.h */,
+				983D07251C8ABEFD00D7034B /* ResponseDownload.m */,
+				983D07271C8ABF4100D7034B /* RequestDownload.h */,
+				983D07281C8ABF4100D7034B /* RequestDownload.m */,
+				983D072A1C8ABF8D00D7034B /* DownloadBLL.h */,
+				983D072B1C8ABF8D00D7034B /* DownloadBLL.m */,
 			);
 			path = Boards;
 			sourceTree = "<group>";
@@ -210,6 +228,8 @@
 				983D06AE1C8A915C00D7034B /* Category */,
 				983D06B31C8A915C00D7034B /* OLiHTTPRequestOperationManager.h */,
 				983D06B41C8A915C00D7034B /* OLiHTTPRequestOperationManager.m */,
+				983D07211C8AAD5900D7034B /* OLiHTTPRequestOperationManager+Download.h */,
+				983D07221C8AAD5900D7034B /* OLiHTTPRequestOperationManager+Download.m */,
 				983D06B51C8A915C00D7034B /* OLiNetEngine.h */,
 				983D06B61C8A915C00D7034B /* OLiNetEngine.m */,
 				983D06B71C8A915C00D7034B /* OLiNetError.h */,
@@ -400,7 +420,9 @@
 				983D06FD1C8A915C00D7034B /* OLiNetError.m in Sources */,
 				983D07031C8A915C00D7034B /* AFHTTPRequestOperationManager.m in Sources */,
 				983D069B1C8A81A500D7034B /* OLiBaseBoard.m in Sources */,
+				983D07291C8ABF4100D7034B /* RequestDownload.m in Sources */,
 				983D07071C8A915C00D7034B /* AFURLConnectionOperation.m in Sources */,
+				983D07231C8AAD5900D7034B /* OLiHTTPRequestOperationManager+Download.m in Sources */,
 				983D07141C8A915C00D7034B /* NSData-AES.m in Sources */,
 				983D07011C8A915C00D7034B /* OLiRequestObject+InterfaceURLType.m in Sources */,
 				983D06FE1C8A915C00D7034B /* OLiRequestObject.m in Sources */,
@@ -412,7 +434,9 @@
 				983D06F91C8A915C00D7034B /* NSObject+OLiNetEngine.m in Sources */,
 				983D071E1C8A960700D7034B /* DemoBLL.m in Sources */,
 				983D071F1C8A960700D7034B /* RequestDemoEnity.m in Sources */,
+				983D072C1C8ABF8D00D7034B /* DownloadBLL.m in Sources */,
 				983D07061C8A915C00D7034B /* AFSecurityPolicy.m in Sources */,
+				983D07261C8ABEFD00D7034B /* ResponseDownload.m in Sources */,
 				983D07131C8A915C00D7034B /* GTMBase64.m in Sources */,
 				983D06971C8A7F8800D7034B /* main.m in Sources */,
 				983D07171C8A915C00D7034B /* Reachability.m in Sources */,

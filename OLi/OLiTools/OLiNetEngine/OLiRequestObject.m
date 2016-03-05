@@ -36,6 +36,8 @@ NSString *const OLiRequestMethodName_DELETE_Key = @"DELETE";
         _successBlock = nil;
         _failBlock = nil;
         _needCache = NO;
+        _isDownloadRequest = NO;
+        _isUploadRequest = NO;
     }
     return self;
 }

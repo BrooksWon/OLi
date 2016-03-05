@@ -62,9 +62,19 @@ NSString *const OLiRequestMethodName_DELETE_Key = @"DELETE";
     [self start];
 }
 
+- (void)startWithSuccessBlock:(OLiRequestSuccessBlock)success
+                    failBlock:(OLiRequestFailBlock)fail
+        downloadProgressBlock:(OLiDownloadProgressBlock)progressBlock {
+    self.successBlock = success;
+    self.failBlock = fail;
+    self.downloadProgressBlock = progressBlock;
+    [self start];
+}
+
 - (void)clearCompletionBlock {
     self.successBlock = nil;
     self.failBlock = nil;
+    self.downloadProgressBlock = nil;
 }
 
 @end

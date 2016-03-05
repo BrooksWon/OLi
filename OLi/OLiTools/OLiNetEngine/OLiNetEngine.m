@@ -137,6 +137,10 @@ NSString *const OLiCallBackRequest       = @"OLiCallBackRequest";
                                                              } downloadProgressBlock:^(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead) {
 #warning 未完待续
                                                                  //
+                                                                 if ([request respondsToSelector:@selector(downloadProgressBlock)]) {
+                                                                     OLiDownloadProgressBlock downloadProgressBlock = [request performSelector:@selector(downloadProgressBlock)];
+                                                                     if (downloadProgressBlock) dispatch_async(dispatch_get_main_queue(), ^{ downloadProgressBlock(bytesRead, totalBytesRead, totalBytesExpectedToRead); });
+                                                                 }
                                                              }];
     }if ([request isUploadRequest]) {
 #warning 未完待续

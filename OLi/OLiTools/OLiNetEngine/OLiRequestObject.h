@@ -45,8 +45,8 @@ FOUNDATION_EXPORT NSString * const OLiRequestMethodName_DELETE_Key;
 /** 请求失败回调，可不设置，默认nil */
 @property (nonatomic, copy) OLiRequestFailBlock failBlock;
 
-/** 请求进度回调，可不设置，默认nil */
-@property (nonatomic, copy) OLiRequestProgressBlock progressBlock;
+/** 断电下载进度回调，可不设置，默认nil */
+@property (nonatomic, copy) OLiDownloadProgressBlock downloadProgressBlock;
 
 /** 是否进行中 */
 @property (nonatomic, assign, readonly, getter = isExecuting) BOOL executing;
@@ -71,6 +71,11 @@ FOUNDATION_EXPORT NSString * const OLiRequestMethodName_DELETE_Key;
 
 /** 对successBlock和failBlock进行nil赋值，设置executing为nil */
 - (void)clearCompletionBlock;
+
+- (void)startWithSuccessBlock:(OLiRequestSuccessBlock)success
+                    failBlock:(OLiRequestFailBlock)fail
+        downloadProgressBlock:(OLiDownloadProgressBlock)progressBlock;
+
 
 @end
 

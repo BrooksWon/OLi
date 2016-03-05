@@ -38,6 +38,8 @@ typedef void(^OLiRequestProgressBlock)(NSUInteger receivedSize, long long expect
 typedef void(^OLiRequestSuccessBlock)(id responseObject, NSDictionary *options);
 typedef void(^OLiRequestFailBlock)(OLiNetError *error, NSDictionary *options);
 
+typedef void(^OLiDownloadProgressBlock)(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead);
+
 @interface OLiNetEngine : NSObject
 
 /** 当前网络是否可用 */

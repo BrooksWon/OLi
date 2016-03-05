@@ -21,7 +21,7 @@ typedef void(^DownloadProgressBlock)(NSUInteger bytesRead, long long totalBytesR
  *  @param parameters            参数
  *  @param success               下载完成
  *  @param failure               下载失败
- *  @param downloadProgressBlock 下载进度等
+ *  @param progressBlock         下载进度等
  *
  *  @return 下载操作
  */
@@ -30,6 +30,6 @@ typedef void(^DownloadProgressBlock)(NSUInteger bytesRead, long long totalBytesR
                                   parameters:(id)parameters
                                      success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
                                      failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
-                       downloadProgressBlock:(void (^)(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead))downloadProgressBlock;
+                       downloadProgressBlock:(void (^)(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead))progressBlock;
 
 @end

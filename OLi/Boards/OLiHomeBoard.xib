@@ -16,10 +16,24 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ks3-Cg-Vq4">
-                    <rect key="frame" x="131" y="262" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
+                    <rect key="frame" x="130" y="262" width="48" height="30"/>
+                    <state key="normal" title="normal"/>
                     <connections>
                         <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="UFs-MK-ZzD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mZ-r5-Ye5">
+                    <rect key="frame" x="122" y="300" width="67" height="30"/>
+                    <state key="normal" title="download"/>
+                    <connections>
+                        <action selector="downloadAction:" destination="-1" eventType="touchUpInside" id="9v0-hj-HZC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISJ-6W-bRx">
+                    <rect key="frame" x="132" y="344" width="47" height="30"/>
+                    <state key="normal" title="upload"/>
+                    <connections>
+                        <action selector="uploadAction:" destination="-1" eventType="touchUpInside" id="Y0i-dC-qTj"/>
                     </connections>
                 </button>
             </subviews>

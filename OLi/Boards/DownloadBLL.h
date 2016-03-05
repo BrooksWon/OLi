@@ -11,7 +11,7 @@
 #import "ResponseDownload.h"
 @protocol DownloadBLLDelegate <NSObject>
 
--(void)after_loadDataFromServer;
+-(void)after_downloadLoadDataFromServer;
 
 @end
 
@@ -20,6 +20,6 @@
 @property (nonatomic, strong) ResponseDownload *responseDemoEnity;
 @property (nonatomic, weak) id<DownloadBLLDelegate> delegate;
 
--(void)loadDataFromServer;
+-(void)downloadloadDataFromServer;
 
 @end

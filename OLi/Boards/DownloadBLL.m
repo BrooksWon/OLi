@@ -10,12 +10,12 @@
 #import "ResponseDownload.h"
 #import "RequestDownload.h"
 @implementation DownloadBLL
--(void)loadDataFromServer
+-(void)downloadloadDataFromServer
 {
     RequestDownload *req = [[RequestDownload alloc] init];
-    req.username = @"FBL10086";
-    req.password = @"111111FB";
-    req.taskId = @"101";
+//    req.username = @"FBL10086";
+//    req.password = @"111111FB";
+//    req.taskId = @"101";
     
     
     __weak typeof(self) weakSelf = self;
@@ -36,13 +36,15 @@
          if (responseObject) {
              self.responseDemoEnity = (ResponseDownload*)responseObject;
          }
-         [weakSelf.delegate after_loadDataFromServer];
+         [weakSelf.delegate after_downloadLoadDataFromServer];
          
      }failBlock:^(OLiNetError *error, NSDictionary *options)
      {
          NSLog(@"error = %@, options = %@", error, options);
          
-         [weakSelf.delegate after_loadDataFromServer];
+         [weakSelf.delegate after_downloadLoadDataFromServer];
+     } downloadProgressBlock:^(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead) {
+         NSLog(@"bytesRead===%@\n, totalBytesRead===%@\n, totalBytesExpectedToRead===%@\n", @(bytesRead), @(totalBytesRead), @(totalBytesExpectedToRead));
      }];
 }
 @end

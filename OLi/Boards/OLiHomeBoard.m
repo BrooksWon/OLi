@@ -20,9 +20,18 @@
     self.bll.delegate = self;
     [self.bll loadDataFromServer];
 }
+- (IBAction)downloadAction:(id)sender {
+    if (!self.dbll) {
+        self.dbll = [[DownloadBLL alloc] init];
+    }
+    self.dbll.delegate = self;
+    [self.dbll downloadloadDataFromServer];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+- (IBAction)uploadAction:(id)sender {
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,6 +43,11 @@
 {
     ///TODO
 }
+
+- (void)after_downloadLoadDataFromServer {
+    //TODO
+}
+
 /*
 #pragma mark - Navigation
 

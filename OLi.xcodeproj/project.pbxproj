@@ -14,6 +14,32 @@
 		983D069C1C8A81A500D7034B /* OLiBaseBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 983D069A1C8A81A500D7034B /* OLiBaseBoard.xib */; };
 		983D06AA1C8A81FD00D7034B /* OLiHomeBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D06A81C8A81FD00D7034B /* OLiHomeBoard.m */; };
 		983D06AB1C8A81FD00D7034B /* OLiHomeBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 983D06A91C8A81FD00D7034B /* OLiHomeBoard.xib */; };
+		983D06F91C8A915C00D7034B /* NSObject+OLiNetEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D06B01C8A915C00D7034B /* NSObject+OLiNetEngine.m */; };
+		983D06FA1C8A915C00D7034B /* NSString+PublicEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D06B21C8A915C00D7034B /* NSString+PublicEncrypt.m */; };
+		983D06FB1C8A915C00D7034B /* OLiHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D06B41C8A915C00D7034B /* OLiHTTPRequestOperationManager.m */; };
+		983D06FC1C8A915C00D7034B /* OLiNetEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D06B61C8A915C00D7034B /* OLiNetEngine.m */; };
+		983D06FD1C8A915C00D7034B /* OLiNetError.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D06B81C8A915C00D7034B /* OLiNetError.m */; };
+		983D06FE1C8A915C00D7034B /* OLiRequestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D06BA1C8A915C00D7034B /* OLiRequestObject.m */; };
+		983D06FF1C8A915C00D7034B /* OLiNetEngineSetting+OLiNetEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D06BE1C8A915C00D7034B /* OLiNetEngineSetting+OLiNetEngine.m */; };
+		983D07001C8A915C00D7034B /* OLiNetEngineSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D06C01C8A915C00D7034B /* OLiNetEngineSetting.m */; };
+		983D07011C8A915C00D7034B /* OLiRequestObject+InterfaceURLType.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D06C21C8A915C00D7034B /* OLiRequestObject+InterfaceURLType.m */; };
+		983D07021C8A915C00D7034B /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D06C71C8A915C00D7034B /* AFHTTPRequestOperation.m */; };
+		983D07031C8A915C00D7034B /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D06C91C8A915C00D7034B /* AFHTTPRequestOperationManager.m */; };
+		983D07041C8A915C00D7034B /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D06CB1C8A915C00D7034B /* AFHTTPSessionManager.m */; };
+		983D07051C8A915C00D7034B /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D06CE1C8A915C00D7034B /* AFNetworkReachabilityManager.m */; };
+		983D07061C8A915C00D7034B /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D06D01C8A915C00D7034B /* AFSecurityPolicy.m */; };
+		983D07071C8A915C00D7034B /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D06D21C8A915C00D7034B /* AFURLConnectionOperation.m */; };
+		983D07081C8A915C00D7034B /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D06D41C8A915C00D7034B /* AFURLRequestSerialization.m */; };
+		983D07091C8A915C00D7034B /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D06D61C8A915C00D7034B /* AFURLResponseSerialization.m */; };
+		983D070A1C8A915C00D7034B /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D06D81C8A915C00D7034B /* AFURLSessionManager.m */; };
+		983D07131C8A915C00D7034B /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D06ED1C8A915C00D7034B /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		983D07141C8A915C00D7034B /* NSData-AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D06F11C8A915C00D7034B /* NSData-AES.m */; };
+		983D07151C8A915C00D7034B /* RC4.c in Sources */ = {isa = PBXBuildFile; fileRef = 983D06F21C8A915C00D7034B /* RC4.c */; };
+		983D07161C8A915C00D7034B /* rijndael.c in Sources */ = {isa = PBXBuildFile; fileRef = 983D06F41C8A915C00D7034B /* rijndael.c */; };
+		983D07171C8A915C00D7034B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D06F81C8A915C00D7034B /* Reachability.m */; };
+		983D071E1C8A960700D7034B /* DemoBLL.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D07191C8A960700D7034B /* DemoBLL.m */; };
+		983D071F1C8A960700D7034B /* RequestDemoEnity.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D071B1C8A960700D7034B /* RequestDemoEnity.m */; };
+		983D07201C8A960700D7034B /* ResponseDemoEnity.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D071D1C8A960700D7034B /* ResponseDemoEnity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +55,61 @@
 		983D06A71C8A81FD00D7034B /* OLiHomeBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiHomeBoard.h; sourceTree = "<group>"; };
 		983D06A81C8A81FD00D7034B /* OLiHomeBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiHomeBoard.m; sourceTree = "<group>"; };
 		983D06A91C8A81FD00D7034B /* OLiHomeBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OLiHomeBoard.xib; sourceTree = "<group>"; };
+		983D06AF1C8A915C00D7034B /* NSObject+OLiNetEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+OLiNetEngine.h"; sourceTree = "<group>"; };
+		983D06B01C8A915C00D7034B /* NSObject+OLiNetEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+OLiNetEngine.m"; sourceTree = "<group>"; };
+		983D06B11C8A915C00D7034B /* NSString+PublicEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PublicEncrypt.h"; sourceTree = "<group>"; };
+		983D06B21C8A915C00D7034B /* NSString+PublicEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PublicEncrypt.m"; sourceTree = "<group>"; };
+		983D06B31C8A915C00D7034B /* OLiHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		983D06B41C8A915C00D7034B /* OLiHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		983D06B51C8A915C00D7034B /* OLiNetEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiNetEngine.h; sourceTree = "<group>"; };
+		983D06B61C8A915C00D7034B /* OLiNetEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiNetEngine.m; sourceTree = "<group>"; };
+		983D06B71C8A915C00D7034B /* OLiNetError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiNetError.h; sourceTree = "<group>"; };
+		983D06B81C8A915C00D7034B /* OLiNetError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiNetError.m; sourceTree = "<group>"; };
+		983D06B91C8A915C00D7034B /* OLiRequestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiRequestObject.h; sourceTree = "<group>"; };
+		983D06BA1C8A915C00D7034B /* OLiRequestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiRequestObject.m; sourceTree = "<group>"; };
+		983D06BB1C8A915C00D7034B /* OLiRequestObjectDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiRequestObjectDelegate.h; sourceTree = "<group>"; };
+		983D06BD1C8A915C00D7034B /* OLiNetEngineSetting+OLiNetEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OLiNetEngineSetting+OLiNetEngine.h"; sourceTree = "<group>"; };
+		983D06BE1C8A915C00D7034B /* OLiNetEngineSetting+OLiNetEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OLiNetEngineSetting+OLiNetEngine.m"; sourceTree = "<group>"; };
+		983D06BF1C8A915C00D7034B /* OLiNetEngineSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiNetEngineSetting.h; sourceTree = "<group>"; };
+		983D06C01C8A915C00D7034B /* OLiNetEngineSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiNetEngineSetting.m; sourceTree = "<group>"; };
+		983D06C11C8A915C00D7034B /* OLiRequestObject+InterfaceURLType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OLiRequestObject+InterfaceURLType.h"; sourceTree = "<group>"; };
+		983D06C21C8A915C00D7034B /* OLiRequestObject+InterfaceURLType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OLiRequestObject+InterfaceURLType.m"; sourceTree = "<group>"; };
+		983D06C61C8A915C00D7034B /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		983D06C71C8A915C00D7034B /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		983D06C81C8A915C00D7034B /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		983D06C91C8A915C00D7034B /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		983D06CA1C8A915C00D7034B /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		983D06CB1C8A915C00D7034B /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		983D06CC1C8A915C00D7034B /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		983D06CD1C8A915C00D7034B /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		983D06CE1C8A915C00D7034B /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		983D06CF1C8A915C00D7034B /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		983D06D01C8A915C00D7034B /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		983D06D11C8A915C00D7034B /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		983D06D21C8A915C00D7034B /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		983D06D31C8A915C00D7034B /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		983D06D41C8A915C00D7034B /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		983D06D51C8A915C00D7034B /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		983D06D61C8A915C00D7034B /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		983D06D71C8A915C00D7034B /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		983D06D81C8A915C00D7034B /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		983D06EC1C8A915C00D7034B /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		983D06ED1C8A915C00D7034B /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		983D06EE1C8A915C00D7034B /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		983D06F01C8A915C00D7034B /* NSData-AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData-AES.h"; sourceTree = "<group>"; };
+		983D06F11C8A915C00D7034B /* NSData-AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData-AES.m"; sourceTree = "<group>"; };
+		983D06F21C8A915C00D7034B /* RC4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RC4.c; sourceTree = "<group>"; };
+		983D06F31C8A915C00D7034B /* RC4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RC4.h; sourceTree = "<group>"; };
+		983D06F41C8A915C00D7034B /* rijndael.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rijndael.c; sourceTree = "<group>"; };
+		983D06F51C8A915C00D7034B /* rijndael.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rijndael.h; sourceTree = "<group>"; };
+		983D06F71C8A915C00D7034B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		983D06F81C8A915C00D7034B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		983D07181C8A960700D7034B /* DemoBLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoBLL.h; sourceTree = "<group>"; };
+		983D07191C8A960700D7034B /* DemoBLL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoBLL.m; sourceTree = "<group>"; };
+		983D071A1C8A960700D7034B /* RequestDemoEnity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestDemoEnity.h; sourceTree = "<group>"; };
+		983D071B1C8A960700D7034B /* RequestDemoEnity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestDemoEnity.m; sourceTree = "<group>"; };
+		983D071C1C8A960700D7034B /* ResponseDemoEnity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseDemoEnity.h; sourceTree = "<group>"; };
+		983D071D1C8A960700D7034B /* ResponseDemoEnity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseDemoEnity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +161,12 @@
 				983D06A71C8A81FD00D7034B /* OLiHomeBoard.h */,
 				983D06A81C8A81FD00D7034B /* OLiHomeBoard.m */,
 				983D06A91C8A81FD00D7034B /* OLiHomeBoard.xib */,
+				983D07181C8A960700D7034B /* DemoBLL.h */,
+				983D07191C8A960700D7034B /* DemoBLL.m */,
+				983D071A1C8A960700D7034B /* RequestDemoEnity.h */,
+				983D071B1C8A960700D7034B /* RequestDemoEnity.m */,
+				983D071C1C8A960700D7034B /* ResponseDemoEnity.h */,
+				983D071D1C8A960700D7034B /* ResponseDemoEnity.m */,
 			);
 			path = Boards;
 			sourceTree = "<group>";
@@ -87,6 +174,7 @@
 		983D068D1C8A7F8800D7034B /* OLiTools */ = {
 			isa = PBXGroup;
 			children = (
+				983D06AD1C8A915C00D7034B /* OLiNetEngine */,
 			);
 			path = OLiTools;
 			sourceTree = "<group>";
@@ -114,6 +202,126 @@
 			children = (
 			);
 			path = Third;
+			sourceTree = "<group>";
+		};
+		983D06AD1C8A915C00D7034B /* OLiNetEngine */ = {
+			isa = PBXGroup;
+			children = (
+				983D06AE1C8A915C00D7034B /* Category */,
+				983D06B31C8A915C00D7034B /* OLiHTTPRequestOperationManager.h */,
+				983D06B41C8A915C00D7034B /* OLiHTTPRequestOperationManager.m */,
+				983D06B51C8A915C00D7034B /* OLiNetEngine.h */,
+				983D06B61C8A915C00D7034B /* OLiNetEngine.m */,
+				983D06B71C8A915C00D7034B /* OLiNetError.h */,
+				983D06B81C8A915C00D7034B /* OLiNetError.m */,
+				983D06B91C8A915C00D7034B /* OLiRequestObject.h */,
+				983D06BA1C8A915C00D7034B /* OLiRequestObject.m */,
+				983D06BB1C8A915C00D7034B /* OLiRequestObjectDelegate.h */,
+				983D06BC1C8A915C00D7034B /* Public */,
+				983D06C31C8A915C00D7034B /* Third */,
+			);
+			path = OLiNetEngine;
+			sourceTree = "<group>";
+		};
+		983D06AE1C8A915C00D7034B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				983D06AF1C8A915C00D7034B /* NSObject+OLiNetEngine.h */,
+				983D06B01C8A915C00D7034B /* NSObject+OLiNetEngine.m */,
+				983D06B11C8A915C00D7034B /* NSString+PublicEncrypt.h */,
+				983D06B21C8A915C00D7034B /* NSString+PublicEncrypt.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		983D06BC1C8A915C00D7034B /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				983D06BD1C8A915C00D7034B /* OLiNetEngineSetting+OLiNetEngine.h */,
+				983D06BE1C8A915C00D7034B /* OLiNetEngineSetting+OLiNetEngine.m */,
+				983D06BF1C8A915C00D7034B /* OLiNetEngineSetting.h */,
+				983D06C01C8A915C00D7034B /* OLiNetEngineSetting.m */,
+				983D06C11C8A915C00D7034B /* OLiRequestObject+InterfaceURLType.h */,
+				983D06C21C8A915C00D7034B /* OLiRequestObject+InterfaceURLType.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		983D06C31C8A915C00D7034B /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				983D06C41C8A915C00D7034B /* AFN */,
+				983D06EB1C8A915C00D7034B /* Base64 */,
+				983D06EF1C8A915C00D7034B /* Cryptograph */,
+				983D06F61C8A915C00D7034B /* Reachability */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		983D06C41C8A915C00D7034B /* AFN */ = {
+			isa = PBXGroup;
+			children = (
+				983D06C51C8A915C00D7034B /* AFNetworking */,
+			);
+			path = AFN;
+			sourceTree = "<group>";
+		};
+		983D06C51C8A915C00D7034B /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				983D06C61C8A915C00D7034B /* AFHTTPRequestOperation.h */,
+				983D06C71C8A915C00D7034B /* AFHTTPRequestOperation.m */,
+				983D06C81C8A915C00D7034B /* AFHTTPRequestOperationManager.h */,
+				983D06C91C8A915C00D7034B /* AFHTTPRequestOperationManager.m */,
+				983D06CA1C8A915C00D7034B /* AFHTTPSessionManager.h */,
+				983D06CB1C8A915C00D7034B /* AFHTTPSessionManager.m */,
+				983D06CC1C8A915C00D7034B /* AFNetworking.h */,
+				983D06CD1C8A915C00D7034B /* AFNetworkReachabilityManager.h */,
+				983D06CE1C8A915C00D7034B /* AFNetworkReachabilityManager.m */,
+				983D06CF1C8A915C00D7034B /* AFSecurityPolicy.h */,
+				983D06D01C8A915C00D7034B /* AFSecurityPolicy.m */,
+				983D06D11C8A915C00D7034B /* AFURLConnectionOperation.h */,
+				983D06D21C8A915C00D7034B /* AFURLConnectionOperation.m */,
+				983D06D31C8A915C00D7034B /* AFURLRequestSerialization.h */,
+				983D06D41C8A915C00D7034B /* AFURLRequestSerialization.m */,
+				983D06D51C8A915C00D7034B /* AFURLResponseSerialization.h */,
+				983D06D61C8A915C00D7034B /* AFURLResponseSerialization.m */,
+				983D06D71C8A915C00D7034B /* AFURLSessionManager.h */,
+				983D06D81C8A915C00D7034B /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		983D06EB1C8A915C00D7034B /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				983D06EC1C8A915C00D7034B /* GTMBase64.h */,
+				983D06ED1C8A915C00D7034B /* GTMBase64.m */,
+				983D06EE1C8A915C00D7034B /* GTMDefines.h */,
+			);
+			path = Base64;
+			sourceTree = "<group>";
+		};
+		983D06EF1C8A915C00D7034B /* Cryptograph */ = {
+			isa = PBXGroup;
+			children = (
+				983D06F01C8A915C00D7034B /* NSData-AES.h */,
+				983D06F11C8A915C00D7034B /* NSData-AES.m */,
+				983D06F21C8A915C00D7034B /* RC4.c */,
+				983D06F31C8A915C00D7034B /* RC4.h */,
+				983D06F41C8A915C00D7034B /* rijndael.c */,
+				983D06F51C8A915C00D7034B /* rijndael.h */,
+			);
+			path = Cryptograph;
+			sourceTree = "<group>";
+		};
+		983D06F61C8A915C00D7034B /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				983D06F71C8A915C00D7034B /* Reachability.h */,
+				983D06F81C8A915C00D7034B /* Reachability.m */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,10 +394,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				983D07151C8A915C00D7034B /* RC4.c in Sources */,
+				983D07161C8A915C00D7034B /* rijndael.c in Sources */,
+				983D06FA1C8A915C00D7034B /* NSString+PublicEncrypt.m in Sources */,
+				983D06FD1C8A915C00D7034B /* OLiNetError.m in Sources */,
+				983D07031C8A915C00D7034B /* AFHTTPRequestOperationManager.m in Sources */,
 				983D069B1C8A81A500D7034B /* OLiBaseBoard.m in Sources */,
+				983D07071C8A915C00D7034B /* AFURLConnectionOperation.m in Sources */,
+				983D07141C8A915C00D7034B /* NSData-AES.m in Sources */,
+				983D07011C8A915C00D7034B /* OLiRequestObject+InterfaceURLType.m in Sources */,
+				983D06FE1C8A915C00D7034B /* OLiRequestObject.m in Sources */,
+				983D07081C8A915C00D7034B /* AFURLRequestSerialization.m in Sources */,
+				983D07201C8A960700D7034B /* ResponseDemoEnity.m in Sources */,
+				983D06FC1C8A915C00D7034B /* OLiNetEngine.m in Sources */,
+				983D07041C8A915C00D7034B /* AFHTTPSessionManager.m in Sources */,
+				983D07021C8A915C00D7034B /* AFHTTPRequestOperation.m in Sources */,
+				983D06F91C8A915C00D7034B /* NSObject+OLiNetEngine.m in Sources */,
+				983D071E1C8A960700D7034B /* DemoBLL.m in Sources */,
+				983D071F1C8A960700D7034B /* RequestDemoEnity.m in Sources */,
+				983D07061C8A915C00D7034B /* AFSecurityPolicy.m in Sources */,
+				983D07131C8A915C00D7034B /* GTMBase64.m in Sources */,
 				983D06971C8A7F8800D7034B /* main.m in Sources */,
+				983D07171C8A915C00D7034B /* Reachability.m in Sources */,
+				983D07051C8A915C00D7034B /* AFNetworkReachabilityManager.m in Sources */,
+				983D070A1C8A915C00D7034B /* AFURLSessionManager.m in Sources */,
+				983D07001C8A915C00D7034B /* OLiNetEngineSetting.m in Sources */,
 				983D06AA1C8A81FD00D7034B /* OLiHomeBoard.m in Sources */,
+				983D06FF1C8A915C00D7034B /* OLiNetEngineSetting+OLiNetEngine.m in Sources */,
 				983D06951C8A7F8800D7034B /* OLiAppDelegate.m in Sources */,
+				983D07091C8A915C00D7034B /* AFURLResponseSerialization.m in Sources */,
+				983D06FB1C8A915C00D7034B /* OLiHTTPRequestOperationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +517,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OLi/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Brooks.OLi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -294,6 +529,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OLi/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Brooks.OLi;
 				PRODUCT_NAME = "$(TARGET_NAME)";

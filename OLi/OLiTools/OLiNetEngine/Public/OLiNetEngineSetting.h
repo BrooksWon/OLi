@@ -8,9 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#import "LecarxAppDelegate.h"
-#define AppDelegateEntity ((LecarxAppDelegate *)[UIApplication sharedApplication].delegate)
-
 #import "OLiNetEngine.h"
 
 //#warning 发布必须移除Debug目录  及以下框内的全部宏定义 by Brooks
@@ -30,7 +27,7 @@
 
 
 //  协议版本号
-#define Lecarx_ProtocolVer                  @"20151012001"
+#define OLi_ProtocolVer                  @"20151012001"
 
 //打印调试记录 OLi_UMENG调试，禁止修改！！！！！！
 #ifdef OLi_Server_Debug
@@ -57,8 +54,7 @@ static const APIDomainDic DomainDic[] = {
     //type 数值为0:
     {@"http://bkcar.cn"}, //正式地址
     //type 数值为1:
-    {@"http://lecarshare.com"} //测试地址
-//    {@"http://apis.baidu.com/apistore/weatherservice/citylist"}
+    {@"http://bbs.fblife.com/"} //测试地址
 };
 
 typedef enum {

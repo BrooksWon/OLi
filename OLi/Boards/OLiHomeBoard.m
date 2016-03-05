@@ -13,10 +13,16 @@
 @end
 
 @implementation OLiHomeBoard
+- (IBAction)buttonAction:(id)sender {
+    if (!self.bll) {
+        self.bll = [[DemoBLL alloc] init];
+    }
+    self.bll.delegate = self;
+    [self.bll loadDataFromServer];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,6 +30,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)after_loadDataFromServer
+{
+    ///TODO
+}
 /*
 #pragma mark - Navigation
 

@@ -9,6 +9,9 @@
 #import "OLiHTTPRequestOperationManager.h"
 #import "NSString+PublicEncrypt.h"
 
+//此处不应该这样用
+#import "OLiNetEngineSetting.h"
+
 @interface OLiHTTPRequestOperationManager ()
 
 @property (nonatomic, strong) dispatch_queue_t fileOperationQueue;
@@ -24,38 +27,6 @@
     }
     return _fileOperationQueue;
 }
-
-//// 此处 除了 post，还需要有 get、 head、put、delete，batch 请求
-//
-//- (AFHTTPRequestOperation *)POST:(NSString *)URLString
-//                      parameters:(id)parameters
-//                         success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
-//                         failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
-//                   cacheResponse:(BOOL)cacheResponse
-//                        cacheKey:(NSString *)cacheKey
-//{
-//    NSMutableURLRequest *request = [self.requestSerializer requestWithMethod:@"POST" URLString:[[NSURL URLWithString:URLString relativeToURL:self.baseURL] absoluteString] parameters:parameters error:nil];
-//    [request setValue:@"OLiRequest" forHTTPHeaderField:@"User-Agent"];
-//    [request setValue:@"zh-CN" forHTTPHeaderField:@"Accept-Language"];
-//    [request setCachePolicy:NSURLRequestUseProtocolCachePolicy];
-//    [request setTimeoutInterval:OLiRequestTimeoutInterval];
-//    
-//    if (cacheResponse) {
-//        AFHTTPRequestOperation *operation = [self requestOperationWithKey:cacheKey];
-//        if (operation) {
-//            if (success) {
-//                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_USEC)), dispatch_get_main_queue(), ^(void) {
-//                    success(operation, nil);
-//                });
-//            }
-//            return operation;
-//        }
-//    }
-//    
-//    AFHTTPRequestOperation *operation = [self HTTPRequestOperationWithRequest:request success:success failure:failure];
-//    [self.operationQueue addOperation:operation];
-//    return operation;
-//}
 
 /**
  *  http  请求
@@ -85,7 +56,7 @@
     
     [request setValue:@"OLiRequest" forHTTPHeaderField:@"User-Agent"];
     [request setValue:@"zh-CN" forHTTPHeaderField:@"Accept-Language"];
-    [request setValue:Lecarx_ProtocolVer forHTTPHeaderField:@"ProtocolVer"];//数据交换协议版本号
+    [request setValue:OLi_ProtocolVer forHTTPHeaderField:@"ProtocolVer"];//数据交换协议版本号
     [request setCachePolicy:NSURLRequestUseProtocolCachePolicy];
     [request setTimeoutInterval:OLiRequestTimeoutInterval];
     [request setValue:@"de2a2f134a4702a5fd272a9ec8152c93" forHTTPHeaderField:@"apikey"];

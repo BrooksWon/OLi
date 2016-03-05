@@ -7,7 +7,8 @@
 //
 
 #import "OLiBaseBoard.h"
+#import "DemoBLL.h"
 
-@interface OLiHomeBoard : OLiBaseBoard
-
+@interface OLiHomeBoard : OLiBaseBoard <DemoBLLDelegate>
+@property (nonatomic, strong) DemoBLL *bll;
 @end

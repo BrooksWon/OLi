@@ -34,6 +34,12 @@ FOUNDATION_EXPORT NSString * const OLiRequestMethodName_DELETE_Key;
  */
 @property (nonatomic, strong) NSString *requestMethodName;
 
+/*!
+ *  @brief 大文件上传／下载，默认为NO
+ */
+@property (nonatomic, assign) BOOL isDownloadRequest;
+@property (nonatomic, assign) BOOL isUploadRequest;
+
 /** 请求成功回调，可不设置，默认nil */
 @property (nonatomic, copy) OLiRequestSuccessBlock successBlock;
 /** 请求失败回调，可不设置，默认nil */

@@ -25,4 +25,18 @@
  */
 - (NSString *)requestMethodName;
 
+/*!
+ *  @brief 是否为下载请求
+ *
+ *  @return 默认为NO
+ */
+- (BOOL)isDownloadRequest;
+
+/*!
+ *  @brief 是否为下上传请求
+ *
+ *  @return 默认为NO
+ */
+- (BOOL)isUploadRequest;
+
 @end

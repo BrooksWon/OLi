@@ -44,6 +44,8 @@
 		983D07261C8ABEFD00D7034B /* ResponseDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D07251C8ABEFD00D7034B /* ResponseDownload.m */; };
 		983D07291C8ABF4100D7034B /* RequestDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D07281C8ABF4100D7034B /* RequestDownload.m */; };
 		983D072C1C8ABF8D00D7034B /* DownloadBLL.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D072B1C8ABF8D00D7034B /* DownloadBLL.m */; };
+		98957A5C1C9AB7A8005F0F16 /* OLiLoginBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 98957A5B1C9AB7A8005F0F16 /* OLiLoginBoard.m */; };
+		98957A5E1C9AB7CB005F0F16 /* OLiLoginBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98957A5D1C9AB7CB005F0F16 /* OLiLoginBoard.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,6 +124,9 @@
 		983D07281C8ABF4100D7034B /* RequestDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestDownload.m; sourceTree = "<group>"; };
 		983D072A1C8ABF8D00D7034B /* DownloadBLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadBLL.h; sourceTree = "<group>"; };
 		983D072B1C8ABF8D00D7034B /* DownloadBLL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadBLL.m; sourceTree = "<group>"; };
+		98957A5A1C9AB7A8005F0F16 /* OLiLoginBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiLoginBoard.h; sourceTree = "<group>"; };
+		98957A5B1C9AB7A8005F0F16 /* OLiLoginBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiLoginBoard.m; sourceTree = "<group>"; };
+		98957A5D1C9AB7CB005F0F16 /* OLiLoginBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OLiLoginBoard.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +172,7 @@
 		983D068C1C8A7F8800D7034B /* Boards */ = {
 			isa = PBXGroup;
 			children = (
+				98957A531C9AB74B005F0F16 /* Login&Register */,
 				983D06981C8A81A500D7034B /* OLiBaseBoard.h */,
 				983D06991C8A81A500D7034B /* OLiBaseBoard.m */,
 				983D069A1C8A81A500D7034B /* OLiBaseBoard.xib */,
@@ -344,6 +350,16 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
+		98957A531C9AB74B005F0F16 /* Login&Register */ = {
+			isa = PBXGroup;
+			children = (
+				98957A5A1C9AB7A8005F0F16 /* OLiLoginBoard.h */,
+				98957A5B1C9AB7A8005F0F16 /* OLiLoginBoard.m */,
+				98957A5D1C9AB7CB005F0F16 /* OLiLoginBoard.xib */,
+			);
+			path = "Login&Register";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -404,6 +420,7 @@
 				983D069C1C8A81A500D7034B /* OLiBaseBoard.xib in Resources */,
 				983D06AB1C8A81FD00D7034B /* OLiHomeBoard.xib in Resources */,
 				983D06631C8A7B0400D7034B /* Assets.xcassets in Resources */,
+				98957A5E1C9AB7CB005F0F16 /* OLiLoginBoard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +458,7 @@
 				983D06971C8A7F8800D7034B /* main.m in Sources */,
 				983D07171C8A915C00D7034B /* Reachability.m in Sources */,
 				983D07051C8A915C00D7034B /* AFNetworkReachabilityManager.m in Sources */,
+				98957A5C1C9AB7A8005F0F16 /* OLiLoginBoard.m in Sources */,
 				983D070A1C8A915C00D7034B /* AFURLSessionManager.m in Sources */,
 				983D07001C8A915C00D7034B /* OLiNetEngineSetting.m in Sources */,
 				983D06AA1C8A81FD00D7034B /* OLiHomeBoard.m in Sources */,

@@ -36,9 +36,16 @@
                         <action selector="uploadAction:" destination="-1" eventType="touchUpInside" id="Y0i-dC-qTj"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upE-l2-iV5">
+                    <rect key="frame" x="135" y="143" width="42" height="30"/>
+                    <state key="normal" title="GOTO"/>
+                    <connections>
+                        <action selector="gotoAction:" destination="-1" eventType="touchUpInside" id="KUu-Xr-98x"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <point key="canvasLocation" x="309" y="335"/>
+            <point key="canvasLocation" x="223" y="290"/>
         </view>
     </objects>
 </document>

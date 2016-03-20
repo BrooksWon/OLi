@@ -7,6 +7,7 @@
 //
 
 #import "OLiHomeBoard.h"
+#import "NextViewController.h"
 
 @interface OLiHomeBoard ()
 
@@ -27,6 +28,11 @@
     self.dbll.delegate = self;
     [self.dbll downloadloadDataFromServer];
 }
+- (IBAction)gotoAction:(id)sender {
+    [self.navigationController pushViewController:NextViewController.new animated:YES];
+}
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];

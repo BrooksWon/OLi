@@ -44,8 +44,15 @@
 		983D07261C8ABEFD00D7034B /* ResponseDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D07251C8ABEFD00D7034B /* ResponseDownload.m */; };
 		983D07291C8ABF4100D7034B /* RequestDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D07281C8ABF4100D7034B /* RequestDownload.m */; };
 		983D072C1C8ABF8D00D7034B /* DownloadBLL.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D072B1C8ABF8D00D7034B /* DownloadBLL.m */; };
+		98871AFC1C9E7F0F003F652D /* OLiMeBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 98871AFA1C9E7F0F003F652D /* OLiMeBoard.m */; };
+		98871AFD1C9E7F0F003F652D /* OLiMeBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98871AFB1C9E7F0F003F652D /* OLiMeBoard.xib */; };
+		98871B051C9EB6DA003F652D /* HyLoglnButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 98871B001C9EB6DA003F652D /* HyLoglnButton.m */; };
+		98871B061C9EB6DA003F652D /* HyTransitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 98871B021C9EB6DA003F652D /* HyTransitions.m */; };
+		98871B071C9EB6DA003F652D /* SpinerLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 98871B041C9EB6DA003F652D /* SpinerLayer.m */; };
 		98957A5C1C9AB7A8005F0F16 /* OLiLoginBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 98957A5B1C9AB7A8005F0F16 /* OLiLoginBoard.m */; };
 		98957A5E1C9AB7CB005F0F16 /* OLiLoginBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98957A5D1C9AB7CB005F0F16 /* OLiLoginBoard.xib */; };
+		98E6A6421C9EDA47005A7D58 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E6A6401C9EDA47005A7D58 /* NextViewController.m */; };
+		98E6A6431C9EDA47005A7D58 /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98E6A6411C9EDA47005A7D58 /* NextViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,9 +131,21 @@
 		983D07281C8ABF4100D7034B /* RequestDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestDownload.m; sourceTree = "<group>"; };
 		983D072A1C8ABF8D00D7034B /* DownloadBLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadBLL.h; sourceTree = "<group>"; };
 		983D072B1C8ABF8D00D7034B /* DownloadBLL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadBLL.m; sourceTree = "<group>"; };
+		98871AF91C9E7F0F003F652D /* OLiMeBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiMeBoard.h; sourceTree = "<group>"; };
+		98871AFA1C9E7F0F003F652D /* OLiMeBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiMeBoard.m; sourceTree = "<group>"; };
+		98871AFB1C9E7F0F003F652D /* OLiMeBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OLiMeBoard.xib; sourceTree = "<group>"; };
+		98871AFF1C9EB6DA003F652D /* HyLoglnButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyLoglnButton.h; sourceTree = "<group>"; };
+		98871B001C9EB6DA003F652D /* HyLoglnButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyLoglnButton.m; sourceTree = "<group>"; };
+		98871B011C9EB6DA003F652D /* HyTransitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyTransitions.h; sourceTree = "<group>"; };
+		98871B021C9EB6DA003F652D /* HyTransitions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyTransitions.m; sourceTree = "<group>"; };
+		98871B031C9EB6DA003F652D /* SpinerLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinerLayer.h; sourceTree = "<group>"; };
+		98871B041C9EB6DA003F652D /* SpinerLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinerLayer.m; sourceTree = "<group>"; };
 		98957A5A1C9AB7A8005F0F16 /* OLiLoginBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiLoginBoard.h; sourceTree = "<group>"; };
 		98957A5B1C9AB7A8005F0F16 /* OLiLoginBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiLoginBoard.m; sourceTree = "<group>"; };
 		98957A5D1C9AB7CB005F0F16 /* OLiLoginBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OLiLoginBoard.xib; sourceTree = "<group>"; };
+		98E6A63F1C9EDA47005A7D58 /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		98E6A6401C9EDA47005A7D58 /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		98E6A6411C9EDA47005A7D58 /* NextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NextViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +191,7 @@
 		983D068C1C8A7F8800D7034B /* Boards */ = {
 			isa = PBXGroup;
 			children = (
+				98871AF81C9E7E87003F652D /* Mine */,
 				98957A531C9AB74B005F0F16 /* Login&Register */,
 				983D06981C8A81A500D7034B /* OLiBaseBoard.h */,
 				983D06991C8A81A500D7034B /* OLiBaseBoard.m */,
@@ -179,6 +199,9 @@
 				983D06A71C8A81FD00D7034B /* OLiHomeBoard.h */,
 				983D06A81C8A81FD00D7034B /* OLiHomeBoard.m */,
 				983D06A91C8A81FD00D7034B /* OLiHomeBoard.xib */,
+				98E6A63F1C9EDA47005A7D58 /* NextViewController.h */,
+				98E6A6401C9EDA47005A7D58 /* NextViewController.m */,
+				98E6A6411C9EDA47005A7D58 /* NextViewController.xib */,
 				983D07181C8A960700D7034B /* DemoBLL.h */,
 				983D07191C8A960700D7034B /* DemoBLL.m */,
 				983D071A1C8A960700D7034B /* RequestDemoEnity.h */,
@@ -224,6 +247,7 @@
 		983D06941C8A7F8800D7034B /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				98871AFE1C9EB6DA003F652D /* HySubmitTransition */,
 			);
 			path = Third;
 			sourceTree = "<group>";
@@ -350,6 +374,29 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
+		98871AF81C9E7E87003F652D /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				98871AF91C9E7F0F003F652D /* OLiMeBoard.h */,
+				98871AFA1C9E7F0F003F652D /* OLiMeBoard.m */,
+				98871AFB1C9E7F0F003F652D /* OLiMeBoard.xib */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		98871AFE1C9EB6DA003F652D /* HySubmitTransition */ = {
+			isa = PBXGroup;
+			children = (
+				98871AFF1C9EB6DA003F652D /* HyLoglnButton.h */,
+				98871B001C9EB6DA003F652D /* HyLoglnButton.m */,
+				98871B011C9EB6DA003F652D /* HyTransitions.h */,
+				98871B021C9EB6DA003F652D /* HyTransitions.m */,
+				98871B031C9EB6DA003F652D /* SpinerLayer.h */,
+				98871B041C9EB6DA003F652D /* SpinerLayer.m */,
+			);
+			path = HySubmitTransition;
+			sourceTree = "<group>";
+		};
 		98957A531C9AB74B005F0F16 /* Login&Register */ = {
 			isa = PBXGroup;
 			children = (
@@ -417,8 +464,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98871AFD1C9E7F0F003F652D /* OLiMeBoard.xib in Resources */,
 				983D069C1C8A81A500D7034B /* OLiBaseBoard.xib in Resources */,
 				983D06AB1C8A81FD00D7034B /* OLiHomeBoard.xib in Resources */,
+				98E6A6431C9EDA47005A7D58 /* NextViewController.xib in Resources */,
 				983D06631C8A7B0400D7034B /* Assets.xcassets in Resources */,
 				98957A5E1C9AB7CB005F0F16 /* OLiLoginBoard.xib in Resources */,
 			);
@@ -436,6 +485,7 @@
 				983D06FA1C8A915C00D7034B /* NSString+PublicEncrypt.m in Sources */,
 				983D06FD1C8A915C00D7034B /* OLiNetError.m in Sources */,
 				983D07031C8A915C00D7034B /* AFHTTPRequestOperationManager.m in Sources */,
+				98E6A6421C9EDA47005A7D58 /* NextViewController.m in Sources */,
 				983D069B1C8A81A500D7034B /* OLiBaseBoard.m in Sources */,
 				983D07291C8ABF4100D7034B /* RequestDownload.m in Sources */,
 				983D07071C8A915C00D7034B /* AFURLConnectionOperation.m in Sources */,
@@ -456,13 +506,17 @@
 				983D07261C8ABEFD00D7034B /* ResponseDownload.m in Sources */,
 				983D07131C8A915C00D7034B /* GTMBase64.m in Sources */,
 				983D06971C8A7F8800D7034B /* main.m in Sources */,
+				98871AFC1C9E7F0F003F652D /* OLiMeBoard.m in Sources */,
 				983D07171C8A915C00D7034B /* Reachability.m in Sources */,
 				983D07051C8A915C00D7034B /* AFNetworkReachabilityManager.m in Sources */,
 				98957A5C1C9AB7A8005F0F16 /* OLiLoginBoard.m in Sources */,
 				983D070A1C8A915C00D7034B /* AFURLSessionManager.m in Sources */,
 				983D07001C8A915C00D7034B /* OLiNetEngineSetting.m in Sources */,
+				98871B061C9EB6DA003F652D /* HyTransitions.m in Sources */,
+				98871B071C9EB6DA003F652D /* SpinerLayer.m in Sources */,
 				983D06AA1C8A81FD00D7034B /* OLiHomeBoard.m in Sources */,
 				983D06FF1C8A915C00D7034B /* OLiNetEngineSetting+OLiNetEngine.m in Sources */,
+				98871B051C9EB6DA003F652D /* HyLoglnButton.m in Sources */,
 				983D06951C8A7F8800D7034B /* OLiAppDelegate.m in Sources */,
 				983D07091C8A915C00D7034B /* AFURLResponseSerialization.m in Sources */,
 				983D06FB1C8A915C00D7034B /* OLiHTTPRequestOperationManager.m in Sources */,

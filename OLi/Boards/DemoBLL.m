@@ -17,20 +17,15 @@
 -(void)loadDataFromServer
 {
     RequestDemoEnity *req = [[RequestDemoEnity alloc] init];
-    req.username = @"FBL10086";
-    req.password = @"111111FB";
-    req.formattype = @"json";
-    req.token = nil;
+    req.courseId=@"2";
     
     __weak typeof(self) weakSelf = self;
-//    
-//    [[AFHTTPRequestOperationManager manager] GET:@"http://v.juhe.cn/weather/index" parameters:@{@"phone":@"18301596978",@"password":@"jianyu996"} success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    
+//    [[AFHTTPRequestOperationManager manager] GET:@"http://123.56.193.250:8088//Question/GetPaperInfo?" parameters:@{@"courseId":@"2"} success:^(AFHTTPRequestOperation *operation, id responseObject) {
 //        //
 //    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
 //        //
 //    }];
-    
-    //http://api.fblife.com/bbsapinew/login.php?username=FBL10086&password=111111FB&formattype=json&token=
     
     [req startWithSuccessBlock:^(id responseObject, NSDictionary *options)
      {

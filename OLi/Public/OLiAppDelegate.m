@@ -9,6 +9,7 @@
 #import "OLiAppDelegate.h"
 #import "OLiHomeBoard.h"
 #import "OLiLoginBoard.h"
+#import "OLiIndexBoard.h"
 
 @interface OLiAppDelegate ()
 
@@ -22,7 +23,8 @@
     [self.window makeKeyAndVisible];
     
 //    self.window.rootViewController = OLiHomeBoard.new;
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:OLiLoginBoard.new];
+//    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:OLiLoginBoard.new];
+    self.window.rootViewController = [OLiIndexBoard new];
     
     return YES;
 }

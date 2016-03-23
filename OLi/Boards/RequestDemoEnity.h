@@ -12,10 +12,7 @@
 
 @interface RequestDemoEnity : OLiRequestObject
 
-//    //http://api.fblife.com/bbsapinew/login.php?username=FBL10086&password=111111FB&formattype=json&token=
-@property (nonatomic, copy) NSString *username;
-@property (nonatomic, copy) NSString *password;
-@property (nonatomic, copy) NSString *formattype;
-@property (nonatomic, copy) NSString *token;
+@property (nonatomic, copy) NSString *courseId;
+
 
 @end

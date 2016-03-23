@@ -54,8 +54,8 @@ static const APIDomainDic DomainDic[] = {
     //type 数值为0:
     {@"http://bkcar.cn"}, //正式地址
     //type 数值为1:
-//    {@"http://bbs.fblife.com/"} //测试地址
-    {@"https://github.com/"}
+//    {@"http://123.56.193.250:8088//"} //测试地址
+//    {@"https://github.com/"}
     //https://github.com/thoughtbot/Markoff/archive/master.zip
 };
 

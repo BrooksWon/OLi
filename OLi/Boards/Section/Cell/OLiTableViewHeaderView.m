@@ -34,9 +34,9 @@
     self = [super initWithReuseIdentifier:reuseIdentifier];
     if (self) {
         
-//        UIView * _line = [[UIView alloc] initWithFrame:CGRectMake(0, 44-0.5, [UIScreen mainScreen].bounds.size.width, 0.5)];
-//        _line.backgroundColor = [UIColor colorWithRed:220/255.0 green:220/255.0 blue:220/255.0 alpha:1];
-//        [self.contentView addSubview:_line];
+        UIView * _line = [[UIView alloc] initWithFrame:CGRectMake(0, 44-0.5, [UIScreen mainScreen].bounds.size.width, 0.5)];
+        _line.backgroundColor = [UIColor colorWithRed:1/255.0 green:220/255.0 blue:220/255.0 alpha:1];
+        [self.contentView addSubview:_line];
         
     }
     return self;
@@ -55,7 +55,7 @@
 - (void)layoutSubviews{
     [super layoutSubviews];
     self.imageArrow.frame = CGRectMake(10, (self.frame.size.height-9)/2.0, 14, 9);
-    self.label.frame = CGRectMake(CGRectGetMaxX(self.imageArrow.frame)+10, 0, 100, self.frame.size.height);
+    self.label.frame = CGRectMake(CGRectGetMaxX(self.imageArrow.frame)+10, 0, 200, self.frame.size.height);
     self.button.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
     self.labelNum.frame = CGRectMake(self.frame.size.width-50, 0, 40, self.frame.size.height);
     

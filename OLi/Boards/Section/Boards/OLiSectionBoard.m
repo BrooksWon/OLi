@@ -37,6 +37,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.tableFooterView = [[UIView alloc]init];
+    self.tableView.sectionHeaderHeight = 44;
 }
 
 - (void)viewWillAppear:(BOOL)animated {

@@ -42,7 +42,10 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
 }
 
 
@@ -79,6 +82,22 @@
 - (void)OLiTableViewHeaderView:(OLiTableViewHeaderView *)view didButton:(UIButton *)sender
 {
     [self.tableView reloadData];
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.navigationController pushViewController:CreateViewController(@"OLiQuestionBoard") animated:YES];
+}
+
+
+static inline  UIViewController * CreateViewController(NSString *className) {
+    UIViewController *VC = nil;
+    if (className) {
+        if (NSClassFromString(className)) {
+            VC = (UIViewController*)[[NSClassFromString(className) alloc] init];
+        }
+    }
+    return VC;
 }
 
 @end

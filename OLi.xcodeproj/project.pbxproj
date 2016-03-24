@@ -59,8 +59,18 @@
 		98871B071C9EB6DA003F652D /* SpinerLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 98871B041C9EB6DA003F652D /* SpinerLayer.m */; };
 		98957A5C1C9AB7A8005F0F16 /* OLiLoginBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 98957A5B1C9AB7A8005F0F16 /* OLiLoginBoard.m */; };
 		98957A5E1C9AB7CB005F0F16 /* OLiLoginBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98957A5D1C9AB7CB005F0F16 /* OLiLoginBoard.xib */; };
+		98B84EB31CA3C44300FECA68 /* OLiToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B84EB21CA3C44300FECA68 /* OLiToast.m */; };
+		98CC6EC61CA3A82D0003CFB5 /* page2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98CC6EC11CA3A82D0003CFB5 /* page2@2x.png */; };
+		98CC6EC71CA3A82D0003CFB5 /* page1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98CC6EC21CA3A82D0003CFB5 /* page1@2x.png */; };
+		98CC6EC81CA3A82D0003CFB5 /* page4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98CC6EC31CA3A82D0003CFB5 /* page4@2x.png */; };
+		98CC6EC91CA3A82D0003CFB5 /* page0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98CC6EC41CA3A82D0003CFB5 /* page0@2x.png */; };
+		98CC6ECA1CA3A82D0003CFB5 /* page3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98CC6EC51CA3A82D0003CFB5 /* page3@2x.png */; };
 		98E6A6421C9EDA47005A7D58 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E6A6401C9EDA47005A7D58 /* NextViewController.m */; };
 		98E6A6431C9EDA47005A7D58 /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98E6A6411C9EDA47005A7D58 /* NextViewController.xib */; };
+		98FD427B1CA3909200282443 /* OLiQuestionBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FD42791CA3909200282443 /* OLiQuestionBoard.m */; };
+		98FD427C1CA3909200282443 /* OLiQuestionBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98FD427A1CA3909200282443 /* OLiQuestionBoard.xib */; };
+		98FD42801CA390AB00282443 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FD427F1CA390AB00282443 /* iCarousel.m */; };
+		98FD42841CA39C6F00282443 /* OLiQuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FD42831CA39C6F00282443 /* OLiQuestionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -164,9 +174,23 @@
 		98957A5A1C9AB7A8005F0F16 /* OLiLoginBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiLoginBoard.h; sourceTree = "<group>"; };
 		98957A5B1C9AB7A8005F0F16 /* OLiLoginBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiLoginBoard.m; sourceTree = "<group>"; };
 		98957A5D1C9AB7CB005F0F16 /* OLiLoginBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OLiLoginBoard.xib; sourceTree = "<group>"; };
+		98B84EB11CA3C44300FECA68 /* OLiToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiToast.h; sourceTree = "<group>"; };
+		98B84EB21CA3C44300FECA68 /* OLiToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiToast.m; sourceTree = "<group>"; };
+		98CC6EC11CA3A82D0003CFB5 /* page2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page2@2x.png"; sourceTree = "<group>"; };
+		98CC6EC21CA3A82D0003CFB5 /* page1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page1@2x.png"; sourceTree = "<group>"; };
+		98CC6EC31CA3A82D0003CFB5 /* page4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page4@2x.png"; sourceTree = "<group>"; };
+		98CC6EC41CA3A82D0003CFB5 /* page0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page0@2x.png"; sourceTree = "<group>"; };
+		98CC6EC51CA3A82D0003CFB5 /* page3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page3@2x.png"; sourceTree = "<group>"; };
 		98E6A63F1C9EDA47005A7D58 /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		98E6A6401C9EDA47005A7D58 /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 		98E6A6411C9EDA47005A7D58 /* NextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NextViewController.xib; sourceTree = "<group>"; };
+		98FD42781CA3909200282443 /* OLiQuestionBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiQuestionBoard.h; sourceTree = "<group>"; };
+		98FD42791CA3909200282443 /* OLiQuestionBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiQuestionBoard.m; sourceTree = "<group>"; };
+		98FD427A1CA3909200282443 /* OLiQuestionBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OLiQuestionBoard.xib; sourceTree = "<group>"; };
+		98FD427E1CA390AB00282443 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		98FD427F1CA390AB00282443 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		98FD42821CA39C6F00282443 /* OLiQuestionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiQuestionView.h; sourceTree = "<group>"; };
+		98FD42831CA39C6F00282443 /* OLiQuestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiQuestionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +237,7 @@
 		983D068C1C8A7F8800D7034B /* Boards */ = {
 			isa = PBXGroup;
 			children = (
+				98FD42771CA38FAA00282443 /* Question */,
 				9847B0E71CA28EC700D58955 /* Section */,
 				98871AF81C9E7E87003F652D /* Mine */,
 				98957A531C9AB74B005F0F16 /* Login&Register */,
@@ -241,6 +266,7 @@
 		983D068D1C8A7F8800D7034B /* OLiTools */ = {
 			isa = PBXGroup;
 			children = (
+				98B84EB01CA3C3D100FECA68 /* OLiToast */,
 				983D06AD1C8A915C00D7034B /* OLiNetEngine */,
 			);
 			path = OLiTools;
@@ -269,6 +295,7 @@
 		983D06941C8A7F8800D7034B /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				98FD427D1CA390AB00282443 /* iCarousel */,
 				98871AFE1C9EB6DA003F652D /* HySubmitTransition */,
 			);
 			path = Third;
@@ -497,6 +524,49 @@
 			path = "Login&Register";
 			sourceTree = "<group>";
 		};
+		98B84EB01CA3C3D100FECA68 /* OLiToast */ = {
+			isa = PBXGroup;
+			children = (
+				98B84EB11CA3C44300FECA68 /* OLiToast.h */,
+				98B84EB21CA3C44300FECA68 /* OLiToast.m */,
+			);
+			path = OLiToast;
+			sourceTree = "<group>";
+		};
+		98FD42771CA38FAA00282443 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				98FD42811CA39B9100282443 /* OLiQuestionView */,
+				98FD42781CA3909200282443 /* OLiQuestionBoard.h */,
+				98FD42791CA3909200282443 /* OLiQuestionBoard.m */,
+				98FD427A1CA3909200282443 /* OLiQuestionBoard.xib */,
+				98CC6EC11CA3A82D0003CFB5 /* page2@2x.png */,
+				98CC6EC21CA3A82D0003CFB5 /* page1@2x.png */,
+				98CC6EC31CA3A82D0003CFB5 /* page4@2x.png */,
+				98CC6EC41CA3A82D0003CFB5 /* page0@2x.png */,
+				98CC6EC51CA3A82D0003CFB5 /* page3@2x.png */,
+			);
+			path = Question;
+			sourceTree = "<group>";
+		};
+		98FD427D1CA390AB00282443 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				98FD427E1CA390AB00282443 /* iCarousel.h */,
+				98FD427F1CA390AB00282443 /* iCarousel.m */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		98FD42811CA39B9100282443 /* OLiQuestionView */ = {
+			isa = PBXGroup;
+			children = (
+				98FD42821CA39C6F00282443 /* OLiQuestionView.h */,
+				98FD42831CA39C6F00282443 /* OLiQuestionView.m */,
+			);
+			path = OLiQuestionView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -528,6 +598,7 @@
 				TargetAttributes = {
 					983D06521C8A7B0400D7034B = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = RQRT8YB6B5;
 					};
 				};
 			};
@@ -554,10 +625,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98CC6EC61CA3A82D0003CFB5 /* page2@2x.png in Resources */,
+				98CC6EC91CA3A82D0003CFB5 /* page0@2x.png in Resources */,
+				98CC6EC71CA3A82D0003CFB5 /* page1@2x.png in Resources */,
 				9847B1041CA293C500D58955 /* OLiSectionTableViewCell.xib in Resources */,
+				98FD427C1CA3909200282443 /* OLiQuestionBoard.xib in Resources */,
 				98871AFD1C9E7F0F003F652D /* OLiMeBoard.xib in Resources */,
 				9847B0F01CA28FFA00D58955 /* OLiBaseBoard.xib in Resources */,
+				98CC6EC81CA3A82D0003CFB5 /* page4@2x.png in Resources */,
 				983D06AB1C8A81FD00D7034B /* OLiHomeBoard.xib in Resources */,
+				98CC6ECA1CA3A82D0003CFB5 /* page3@2x.png in Resources */,
 				98E6A6431C9EDA47005A7D58 /* NextViewController.xib in Resources */,
 				9847B0FC1CA291AE00D58955 /* OLiSectionBoard.xib in Resources */,
 				983D06631C8A7B0400D7034B /* Assets.xcassets in Resources */,
@@ -580,21 +657,25 @@
 				983D07031C8A915C00D7034B /* AFHTTPRequestOperationManager.m in Sources */,
 				9847B0FB1CA291AE00D58955 /* OLiSectionBoard.m in Sources */,
 				9847B0FF1CA2922300D58955 /* OLiTableViewHeaderView.m in Sources */,
+				98FD427B1CA3909200282443 /* OLiQuestionBoard.m in Sources */,
 				9847B0EF1CA28FFA00D58955 /* OLiBaseBoard.m in Sources */,
 				98E6A6421C9EDA47005A7D58 /* NextViewController.m in Sources */,
 				983D07291C8ABF4100D7034B /* RequestDownload.m in Sources */,
 				983D07071C8A915C00D7034B /* AFURLConnectionOperation.m in Sources */,
 				983D07231C8AAD5900D7034B /* OLiHTTPRequestOperationManager+Download.m in Sources */,
 				983D07141C8A915C00D7034B /* NSData-AES.m in Sources */,
+				98FD42801CA390AB00282443 /* iCarousel.m in Sources */,
 				983D07011C8A915C00D7034B /* OLiRequestObject+InterfaceURLType.m in Sources */,
 				983D06FE1C8A915C00D7034B /* OLiRequestObject.m in Sources */,
 				9847B1031CA293C500D58955 /* OLiSectionTableViewCell.m in Sources */,
 				983D07081C8A915C00D7034B /* AFURLRequestSerialization.m in Sources */,
+				98FD42841CA39C6F00282443 /* OLiQuestionView.m in Sources */,
 				983D07201C8A960700D7034B /* ResponseDemoEnity.m in Sources */,
 				983D06FC1C8A915C00D7034B /* OLiNetEngine.m in Sources */,
 				983D07041C8A915C00D7034B /* AFHTTPSessionManager.m in Sources */,
 				983D07021C8A915C00D7034B /* AFHTTPRequestOperation.m in Sources */,
 				983D06F91C8A915C00D7034B /* NSObject+OLiNetEngine.m in Sources */,
+				98B84EB31CA3C44300FECA68 /* OLiToast.m in Sources */,
 				983D071E1C8A960700D7034B /* DemoBLL.m in Sources */,
 				983D071F1C8A960700D7034B /* RequestDemoEnity.m in Sources */,
 				983D072C1C8ABF8D00D7034B /* DownloadBLL.m in Sources */,
@@ -710,6 +791,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = OLi/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -722,6 +804,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = OLi/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

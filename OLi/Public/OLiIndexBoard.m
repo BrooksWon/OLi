@@ -29,7 +29,11 @@
                                  CreateNavigationController(CreateViewController(@"OLiHomeBoard"),
                                                             nil,
                                                             nil,
-                                                            @"NetEngine"),];
+                                                            @"小试牛刀"),
+                                 CreateNavigationController(CreateViewController(@"OLiMeBoard"),
+                                                            nil,
+                                                            nil,
+                                                            @"我的")];
     }
     
 }
@@ -55,6 +59,7 @@ static inline UINavigationController *CreateNavigationController(UIViewControlle
             nav.tabBarItem = [[UITabBarItem alloc] initWithTitle:title
                                                            image:[UIImage imageNamed:unSelectedImageName]
                                                    selectedImage:[UIImage imageNamed:selectedImageName]];
+            vc.title = title;
         }
     }
     return nav;

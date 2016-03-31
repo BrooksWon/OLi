@@ -8,8 +8,11 @@
 
 #import "OLiHomeBoard.h"
 #import "NextViewController.h"
+#import "CCWormView.h"
 
 @interface OLiHomeBoard ()
+
+@property (nonatomic,strong) CCWormView *ccView;
 
 @end
 
@@ -30,6 +33,17 @@
 }
 - (IBAction)gotoAction:(id)sender {
     [self.navigationController pushViewController:NextViewController.new animated:YES];
+}
+- (IBAction)HUDAction:(id)sender {
+    if (!self.ccView) {
+        self.ccView = [CCWormView wormHUDWithStyle:CCWormHUDStyleLarge toView:self.view];
+    }
+    
+    if (self.ccView.isShowing == NO) {
+        [self.ccView startLodingWormHUD];
+    }else{
+        [self.ccView endLodingWormHUD];
+    }
 }
 
 

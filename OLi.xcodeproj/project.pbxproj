@@ -42,6 +42,7 @@
 		983D07261C8ABEFD00D7034B /* ResponseDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D07251C8ABEFD00D7034B /* ResponseDownload.m */; };
 		983D07291C8ABF4100D7034B /* RequestDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D07281C8ABF4100D7034B /* RequestDownload.m */; };
 		983D072C1C8ABF8D00D7034B /* DownloadBLL.m in Sources */ = {isa = PBXBuildFile; fileRef = 983D072B1C8ABF8D00D7034B /* DownloadBLL.m */; };
+		9842913D1CAD0E22004EE44A /* CCWormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9842913C1CAD0E22004EE44A /* CCWormView.m */; };
 		9847B0EF1CA28FFA00D58955 /* OLiBaseBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 9847B0ED1CA28FFA00D58955 /* OLiBaseBoard.m */; };
 		9847B0F01CA28FFA00D58955 /* OLiBaseBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9847B0EE1CA28FFA00D58955 /* OLiBaseBoard.xib */; };
 		9847B0FB1CA291AE00D58955 /* OLiSectionBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 9847B0F81CA291AE00D58955 /* OLiSectionBoard.m */; };
@@ -146,6 +147,8 @@
 		983D07281C8ABF4100D7034B /* RequestDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestDownload.m; sourceTree = "<group>"; };
 		983D072A1C8ABF8D00D7034B /* DownloadBLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadBLL.h; sourceTree = "<group>"; };
 		983D072B1C8ABF8D00D7034B /* DownloadBLL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadBLL.m; sourceTree = "<group>"; };
+		9842913B1CAD0E22004EE44A /* CCWormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCWormView.h; sourceTree = "<group>"; };
+		9842913C1CAD0E22004EE44A /* CCWormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCWormView.m; sourceTree = "<group>"; };
 		9847B0EC1CA28FFA00D58955 /* OLiBaseBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiBaseBoard.h; sourceTree = "<group>"; };
 		9847B0ED1CA28FFA00D58955 /* OLiBaseBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiBaseBoard.m; sourceTree = "<group>"; };
 		9847B0EE1CA28FFA00D58955 /* OLiBaseBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OLiBaseBoard.xib; sourceTree = "<group>"; };
@@ -295,6 +298,7 @@
 		983D06941C8A7F8800D7034B /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				9842913A1CAD0E22004EE44A /* HUD */,
 				98FD427D1CA390AB00282443 /* iCarousel */,
 				98871AFE1C9EB6DA003F652D /* HySubmitTransition */,
 			);
@@ -421,6 +425,15 @@
 				983D06F81C8A915C00D7034B /* Reachability.m */,
 			);
 			path = Reachability;
+			sourceTree = "<group>";
+		};
+		9842913A1CAD0E22004EE44A /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				9842913B1CAD0E22004EE44A /* CCWormView.h */,
+				9842913C1CAD0E22004EE44A /* CCWormView.m */,
+			);
+			path = HUD;
 			sourceTree = "<group>";
 		};
 		9847B0E71CA28EC700D58955 /* Section */ = {
@@ -673,6 +686,7 @@
 				983D07201C8A960700D7034B /* ResponseDemoEnity.m in Sources */,
 				983D06FC1C8A915C00D7034B /* OLiNetEngine.m in Sources */,
 				983D07041C8A915C00D7034B /* AFHTTPSessionManager.m in Sources */,
+				9842913D1CAD0E22004EE44A /* CCWormView.m in Sources */,
 				983D07021C8A915C00D7034B /* AFHTTPRequestOperation.m in Sources */,
 				983D06F91C8A915C00D7034B /* NSObject+OLiNetEngine.m in Sources */,
 				98B84EB31CA3C44300FECA68 /* OLiToast.m in Sources */,

@@ -73,6 +73,7 @@ static NSInteger CCWormHUDLineWidth = 0;
 }
 
 -(void)startLodingWormHUD{
+    [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
     self.isShowing = YES;
     [self.presentingView addSubview:self];
     //动起来
@@ -92,6 +93,7 @@ static NSInteger CCWormHUDLineWidth = 0;
 }
 
 -(void)endLodingWormHUD{
+    [[UIApplication sharedApplication] endIgnoringInteractionEvents];
     //隐藏指示器,同时移除动画
     [UIView animateKeyframesWithDuration:0.6 delay:0 options:0 animations:^{
         [UIView addKeyframeWithRelativeStartTime:0 relativeDuration:0.5 animations:^{

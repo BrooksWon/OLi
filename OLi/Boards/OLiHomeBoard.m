@@ -44,6 +44,8 @@
     }else{
         [self.ccView endLodingWormHUD];
     }
+    
+//    [self performSelector:@selector(HUDAction:) withObject:nil afterDelay:3.0];
 }
 
 

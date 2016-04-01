@@ -23,16 +23,16 @@
 - (void)initViewControllers {
     if (self.viewControllers.count <= 0) {
         self.viewControllers = @[CreateNavigationController(CreateViewController(@"OLiSectionBoard"),
-                                                            nil,
-                                                            nil,
+                                                            @"ex_d",
+                                                            @"ex_s",
                                                             @"练习"),
                                  CreateNavigationController(CreateViewController(@"OLiHomeBoard"),
-                                                            nil,
-                                                            nil,
+                                                            @"discovery_d",
+                                                            @"discovery_s",
                                                             @"小试牛刀"),
                                  CreateNavigationController(CreateViewController(@"OLiMeBoard"),
-                                                            nil,
-                                                            nil,
+                                                            @"me_d",
+                                                            @"me_s",
                                                             @"我的")];
     }
     

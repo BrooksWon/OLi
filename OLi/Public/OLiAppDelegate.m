@@ -26,6 +26,8 @@
 //    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:OLiLoginBoard.new];
     self.window.rootViewController = [OLiIndexBoard new];
     
+    [self customizeAppearance];
+    
     return YES;
 }
 
@@ -53,6 +55,46 @@
 
 - (void)changeVC {
     self.window.rootViewController = OLiHomeBoard.new;
+}
+
+- (void)customizeAppearance
+{
+//    // 设置导航按钮样式
+//    UIImage *returnBg = [[UIImage imageNamed:@"return_button"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 13, 0, 6)];
+//    UIImage *returnBgOn = [[UIImage imageNamed:@"return_button_on"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 17, 0, 11)];
+//    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:returnBg forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+//    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:returnBgOn forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+//    [UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil];
+//    // 导航栏上的按钮
+//    UIImage *buttonBg = [[UIImage imageNamed:@"button_bg"] resizableImageWithCapInsets:UIEdgeInsetsMake(6, 6, 6, 6)];
+//    UIImage *buttonBgOn = [[UIImage imageNamed:@"button_bg_on"] resizableImageWithCapInsets:UIEdgeInsetsMake(9, 12, 9, 12)];
+//    [[UIButton appearanceWhenContainedIn:[UINavigationBar class],nil] setBackgroundImage:buttonBg forState:UIControlStateNormal];
+//    [[UIButton appearanceWhenContainedIn:[UINavigationBar class],nil] setBackgroundImage:buttonBgOn forState:UIControlStateHighlighted];
+//    [[UIButton appearanceWhenContainedIn:[UINavigationBar class],nil] setBackgroundImage:buttonBg forState:UIControlStateDisabled];
+    
+    // 设置导航条背景 和顶部文字样式
+    UIImage *navBg = [[UIImage imageNamed:@"navBar"] resizableImageWithCapInsets:UIEdgeInsetsZero resizingMode:UIImageResizingModeTile];
+    [[UINavigationBar appearance] setBackgroundImage:navBg forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setTitleTextAttributes:
+     [NSDictionary dictionaryWithObjectsAndKeys:
+      [UIColor whiteColor],NSForegroundColorAttributeName,
+      [UIFont systemFontOfSize:16],NSFontAttributeName, nil]
+     ];
+//    [[UINavigationBar appearance] setTitleVerticalPositionAdjustment:2 forBarMetrics:UIBarMetricsDefault];
+//    
+//    //设置工具栏背景
+//    [[UIToolbar appearance] setBackgroundImage:[UIImage imageNamed:@"tool_bar"] forToolbarPosition:UIToolbarPositionBottom barMetrics:UIBarMetricsDefault];
+    
+    //搜索栏相关设置
+    //    [[UISearchBar appearance] setBackgroundImage:[UIImage imageNamed:@"nav_bar"]];
+    
+    //    [[UIButton appearanceWhenContainedIn:[UITextField class],[UISearchBar class],nil] setBackgroundImage:nil forState:UIControlStateNormal];
+    //    [[UIButton appearanceWhenContainedIn:[UITextField class],[UISearchBar class],nil] setBackgroundImage:nil forState:UIControlStateHighlighted];
+    //    [[UIButton appearanceWhenContainedIn:[UITextField class],[UISearchBar class],nil] setBackgroundImage:nil forState:UIControlStateDisabled];
+    
+    //    [[UIButton appearanceWhenContainedIn:[UISearchBar class],nil] setBackgroundImage:buttonBg forState:UIControlStateNormal];
+    //    [[UIButton appearanceWhenContainedIn:[UISearchBar class],nil] setBackgroundImage:buttonBgOn forState:UIControlStateHighlighted];
+    //    [[UIButton appearanceWhenContainedIn:[UISearchBar class],nil] setBackgroundImage:buttonBg forState:UIControlStateDisabled];
 }
 
 @end

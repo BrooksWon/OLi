@@ -97,6 +97,7 @@ static inline  UIViewController * CreateViewController(NSString *className) {
             VC = (UIViewController*)[[NSClassFromString(className) alloc] init];
         }
     }
+    VC.hidesBottomBarWhenPushed = YES;
     return VC;
 }
 

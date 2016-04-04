@@ -61,6 +61,11 @@
 		98957A5C1C9AB7A8005F0F16 /* OLiLoginBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 98957A5B1C9AB7A8005F0F16 /* OLiLoginBoard.m */; };
 		98957A5E1C9AB7CB005F0F16 /* OLiLoginBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98957A5D1C9AB7CB005F0F16 /* OLiLoginBoard.xib */; };
 		98B84EB31CA3C44300FECA68 /* OLiToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B84EB21CA3C44300FECA68 /* OLiToast.m */; };
+		98CB81041CB1E3DF00420EF9 /* OLiSettingBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CB81021CB1E3DF00420EF9 /* OLiSettingBoard.m */; };
+		98CB81051CB1E3DF00420EF9 /* OLiSettingBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98CB81031CB1E3DF00420EF9 /* OLiSettingBoard.xib */; };
+		98CB81091CB1E3FA00420EF9 /* OLiWebBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CB81071CB1E3FA00420EF9 /* OLiWebBoard.m */; };
+		98CB810A1CB1E3FA00420EF9 /* OLiWebBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98CB81081CB1E3FA00420EF9 /* OLiWebBoard.xib */; };
+		98CB810E1CB1EBE800420EF9 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CB810D1CB1EBE800420EF9 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		98CC6EC61CA3A82D0003CFB5 /* page2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98CC6EC11CA3A82D0003CFB5 /* page2@2x.png */; };
 		98CC6EC71CA3A82D0003CFB5 /* page1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98CC6EC21CA3A82D0003CFB5 /* page1@2x.png */; };
 		98CC6EC81CA3A82D0003CFB5 /* page4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98CC6EC31CA3A82D0003CFB5 /* page4@2x.png */; };
@@ -179,6 +184,14 @@
 		98957A5D1C9AB7CB005F0F16 /* OLiLoginBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OLiLoginBoard.xib; sourceTree = "<group>"; };
 		98B84EB11CA3C44300FECA68 /* OLiToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiToast.h; sourceTree = "<group>"; };
 		98B84EB21CA3C44300FECA68 /* OLiToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiToast.m; sourceTree = "<group>"; };
+		98CB81011CB1E3DF00420EF9 /* OLiSettingBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiSettingBoard.h; sourceTree = "<group>"; };
+		98CB81021CB1E3DF00420EF9 /* OLiSettingBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiSettingBoard.m; sourceTree = "<group>"; };
+		98CB81031CB1E3DF00420EF9 /* OLiSettingBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OLiSettingBoard.xib; sourceTree = "<group>"; };
+		98CB81061CB1E3FA00420EF9 /* OLiWebBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiWebBoard.h; sourceTree = "<group>"; };
+		98CB81071CB1E3FA00420EF9 /* OLiWebBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiWebBoard.m; sourceTree = "<group>"; };
+		98CB81081CB1E3FA00420EF9 /* OLiWebBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OLiWebBoard.xib; sourceTree = "<group>"; };
+		98CB810C1CB1EBE800420EF9 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		98CB810D1CB1EBE800420EF9 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		98CC6EC11CA3A82D0003CFB5 /* page2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page2@2x.png"; sourceTree = "<group>"; };
 		98CC6EC21CA3A82D0003CFB5 /* page1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page1@2x.png"; sourceTree = "<group>"; };
 		98CC6EC31CA3A82D0003CFB5 /* page4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page4@2x.png"; sourceTree = "<group>"; };
@@ -298,6 +311,7 @@
 		983D06941C8A7F8800D7034B /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				98CB810B1CB1EBE800420EF9 /* FDFullscreenPopGesture */,
 				9842913A1CAD0E22004EE44A /* HUD */,
 				98FD427D1CA390AB00282443 /* iCarousel */,
 				98871AFE1C9EB6DA003F652D /* HySubmitTransition */,
@@ -510,6 +524,12 @@
 				98871AF91C9E7F0F003F652D /* OLiMeBoard.h */,
 				98871AFA1C9E7F0F003F652D /* OLiMeBoard.m */,
 				98871AFB1C9E7F0F003F652D /* OLiMeBoard.xib */,
+				98CB81011CB1E3DF00420EF9 /* OLiSettingBoard.h */,
+				98CB81021CB1E3DF00420EF9 /* OLiSettingBoard.m */,
+				98CB81031CB1E3DF00420EF9 /* OLiSettingBoard.xib */,
+				98CB81061CB1E3FA00420EF9 /* OLiWebBoard.h */,
+				98CB81071CB1E3FA00420EF9 /* OLiWebBoard.m */,
+				98CB81081CB1E3FA00420EF9 /* OLiWebBoard.xib */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -544,6 +564,15 @@
 				98B84EB21CA3C44300FECA68 /* OLiToast.m */,
 			);
 			path = OLiToast;
+			sourceTree = "<group>";
+		};
+		98CB810B1CB1EBE800420EF9 /* FDFullscreenPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				98CB810C1CB1EBE800420EF9 /* UINavigationController+FDFullscreenPopGesture.h */,
+				98CB810D1CB1EBE800420EF9 /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = FDFullscreenPopGesture;
 			sourceTree = "<group>";
 		};
 		98FD42771CA38FAA00282443 /* Question */ = {
@@ -639,6 +668,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98CC6EC61CA3A82D0003CFB5 /* page2@2x.png in Resources */,
+				98CB810A1CB1E3FA00420EF9 /* OLiWebBoard.xib in Resources */,
 				98CC6EC91CA3A82D0003CFB5 /* page0@2x.png in Resources */,
 				98CC6EC71CA3A82D0003CFB5 /* page1@2x.png in Resources */,
 				9847B1041CA293C500D58955 /* OLiSectionTableViewCell.xib in Resources */,
@@ -652,6 +682,7 @@
 				9847B0FC1CA291AE00D58955 /* OLiSectionBoard.xib in Resources */,
 				983D06631C8A7B0400D7034B /* Assets.xcassets in Resources */,
 				9847B1091CA2A08900D58955 /* list.plist in Resources */,
+				98CB81051CB1E3DF00420EF9 /* OLiSettingBoard.xib in Resources */,
 				98957A5E1C9AB7CB005F0F16 /* OLiLoginBoard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -686,6 +717,7 @@
 				983D07201C8A960700D7034B /* ResponseDemoEnity.m in Sources */,
 				983D06FC1C8A915C00D7034B /* OLiNetEngine.m in Sources */,
 				983D07041C8A915C00D7034B /* AFHTTPSessionManager.m in Sources */,
+				98CB81041CB1E3DF00420EF9 /* OLiSettingBoard.m in Sources */,
 				9842913D1CAD0E22004EE44A /* CCWormView.m in Sources */,
 				983D07021C8A915C00D7034B /* AFHTTPRequestOperation.m in Sources */,
 				983D06F91C8A915C00D7034B /* NSObject+OLiNetEngine.m in Sources */,
@@ -712,6 +744,8 @@
 				983D06951C8A7F8800D7034B /* OLiAppDelegate.m in Sources */,
 				9847B1071CA29A7800D58955 /* ModelGroups.m in Sources */,
 				983D07091C8A915C00D7034B /* AFURLResponseSerialization.m in Sources */,
+				98CB81091CB1E3FA00420EF9 /* OLiWebBoard.m in Sources */,
+				98CB810E1CB1EBE800420EF9 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				983D06FB1C8A915C00D7034B /* OLiHTTPRequestOperationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

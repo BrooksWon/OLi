@@ -20,6 +20,10 @@
     [self initViewControllers];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+}
+
 - (void)initViewControllers {
     if (self.viewControllers.count <= 0) {
         self.viewControllers = @[CreateNavigationController(CreateViewController(@"OLiSectionBoard"),

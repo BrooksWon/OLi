@@ -32,7 +32,9 @@
     [self.dbll downloadloadDataFromServer];
 }
 - (IBAction)gotoAction:(id)sender {
-    [self.navigationController pushViewController:NextViewController.new animated:YES];
+    UIViewController *vc = NextViewController.new ;
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 - (IBAction)HUDAction:(id)sender {
     if (!self.ccView) {

@@ -13,7 +13,7 @@
 #import "HyLoglnButton.h"
 
 #define AppDelegateEntity ((OLiAppDelegate *)[UIApplication sharedApplication].delegate)
-#import "OLiHomeBoard.h"
+#import "OLiIndexBoard.h"
 
 @interface OLiLoginBoard ()<UIViewControllerTransitioningDelegate>
 
@@ -92,14 +92,14 @@
  */
 - (void)didPresentControllerButtonTouch {
     
-    UIViewController *controller = [OLiHomeBoard new];
+    UIViewController *controller = [OLiIndexBoard new];
     
     controller.transitioningDelegate = self;
     
-    UINavigationController *nai = [[UINavigationController alloc] initWithRootViewController:controller];
-    nai.transitioningDelegate = self;
+//    UINavigationController *nai = [[UINavigationController alloc] initWithRootViewController:controller];
+//    nai.transitioningDelegate = self;
     
-    [self presentViewController:nai animated:YES completion:nil];
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented

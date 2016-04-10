@@ -23,8 +23,8 @@
     [self.window makeKeyAndVisible];
     
 //    self.window.rootViewController = OLiHomeBoard.new;
-//    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:OLiLoginBoard.new];
-    self.window.rootViewController = [OLiIndexBoard new];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:OLiLoginBoard.new];
+//    self.window.rootViewController = [OLiIndexBoard new];
     
     [self customizeAppearance];
     
@@ -78,8 +78,10 @@
     [[UINavigationBar appearance] setTitleTextAttributes:
      [NSDictionary dictionaryWithObjectsAndKeys:
       [UIColor whiteColor],NSForegroundColorAttributeName,
-      [UIFont systemFontOfSize:16],NSFontAttributeName, nil]
+      [UIFont systemFontOfSize:18],NSFontAttributeName, nil]
      ];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
 //    [[UINavigationBar appearance] setTitleVerticalPositionAdjustment:2 forBarMetrics:UIBarMetricsDefault];
 //    
 //    //设置工具栏背景

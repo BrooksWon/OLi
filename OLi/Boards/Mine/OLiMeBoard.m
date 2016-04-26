@@ -12,7 +12,11 @@
 
 #import "OLiSettingBoard.h"
 
-@interface OLiMeBoard ()
+#import "UMSocial.h"
+
+#import "OLiAppDelegate.h"
+
+@interface OLiMeBoard ()<UMSocialUIDelegate>
 @property (strong, nonatomic) IBOutlet UITableViewCell *meCell;
 
 @property (strong, nonatomic) IBOutlet UITableViewCell *questionsCell;
@@ -81,10 +85,76 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UIViewController *vc = [OLiSettingBoard new];
-    vc.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:vc animated:YES];
-    
+    switch (indexPath.section) {
+        case 0:
+        {
+            //
+        }
+        case 1:
+        {
+            //
+        }
+        case 2:
+        {
+            //
+        }
+        case 3:
+        {
+            [self showShareList:nil];
+            break;
+        }
+        case 4:
+        {
+            UIViewController *vc = [OLiSettingBoard new];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+            default:
+        {
+            
+            break;
+        }
+    }
+}
+
+
+-(void)didCloseUIViewController:(UMSViewControllerType)fromViewControllerType
+{
+    NSLog(@"didClose is %d",fromViewControllerType);
+}
+
+//下面得到分享完成的回调
+-(void)didFinishGetUMSocialDataInViewController:(UMSocialResponseEntity *)response
+{
+    NSLog(@"didFinishGetUMSocialDataInViewController with response is %@",response);
+    //根据`responseCode`得到发送结果,如果分享成功
+    if(response.responseCode == UMSResponseCodeSuccess)
+    {
+        //得到分享到的微博平台名
+        NSLog(@"share to sns name is %@",[[response.data allKeys] objectAtIndex:0]);
+    }
+}
+
+-(void)didFinishShareInShakeView:(UMSocialResponseEntity *)response
+{
+    NSLog(@"finish share with response is %@",response);
+}
+
+/*
+ 注意分享到新浪微博我们使用新浪微博SSO授权，你需要在xcode工程设置url scheme，并重写AppDelegate中的`- (BOOL)application openURL sourceApplication`方法，详细见文档。否则不能跳转回来原来的app。
+ */
+-(IBAction)showShareList:(id)sender
+{
+    NSString *shareText = @"欢迎使用－小试牛刀，考证无忧！ http://niudaoxiaoshi.com"; //分享内嵌文字
+    UIImage *shareImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"icon60x60@2x" ofType:@"png"]];
+    //调用快速分享接口
+    [UMSocialSnsService presentSnsIconSheetView:self
+                                         appKey:kUmengAppKey
+                                      shareText:shareText
+                                     shareImage:shareImage
+                                shareToSnsNames:@[UMShareToSina,UMShareToQQ,UMShareToQzone,UMShareToWechatSession,UMShareToWechatTimeline,UMShareToWechatFavorite,UMShareToEmail,UMShareToSms]
+                                       delegate:self];
 }
 
 @end

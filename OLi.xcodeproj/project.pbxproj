@@ -79,6 +79,11 @@
 		98EC10FE1CCF141E0011781B /* OLiWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EC10FD1CCF141E0011781B /* OLiWebViewController.m */; };
 		98EC11031CCF33090011781B /* RxWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EC11001CCF33090011781B /* RxWebViewController.m */; };
 		98EC11041CCF33090011781B /* RxWebViewNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EC11021CCF33090011781B /* RxWebViewNavigationViewController.m */; };
+		98EC11091CCF560A0011781B /* libTalkingData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98EC11061CCF560A0011781B /* libTalkingData.a */; };
+		98EC110B1CCF56330011781B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98EC110A1CCF56330011781B /* CoreMotion.framework */; };
+		98EC110D1CCF563E0011781B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98EC110C1CCF563E0011781B /* AdSupport.framework */; };
+		98EC110F1CCF56750011781B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 98EC110E1CCF56750011781B /* libz.tbd */; };
+		98EC11121CCF58530011781B /* UIViewController+Analytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EC11111CCF58530011781B /* UIViewController+Analytics.m */; };
 		98FD427B1CA3909200282443 /* OLiQuestionBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FD42791CA3909200282443 /* OLiQuestionBoard.m */; };
 		98FD427C1CA3909200282443 /* OLiQuestionBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98FD427A1CA3909200282443 /* OLiQuestionBoard.xib */; };
 		98FD42801CA390AB00282443 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FD427F1CA390AB00282443 /* iCarousel.m */; };
@@ -216,6 +221,14 @@
 		98EC11001CCF33090011781B /* RxWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RxWebViewController.m; sourceTree = "<group>"; };
 		98EC11011CCF33090011781B /* RxWebViewNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RxWebViewNavigationViewController.h; sourceTree = "<group>"; };
 		98EC11021CCF33090011781B /* RxWebViewNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RxWebViewNavigationViewController.m; sourceTree = "<group>"; };
+		98EC11061CCF560A0011781B /* libTalkingData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTalkingData.a; sourceTree = "<group>"; };
+		98EC11071CCF560A0011781B /* TalkingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkingData.h; sourceTree = "<group>"; };
+		98EC11081CCF560A0011781B /* TalkingDataSMS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkingDataSMS.h; sourceTree = "<group>"; };
+		98EC110A1CCF56330011781B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		98EC110C1CCF563E0011781B /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		98EC110E1CCF56750011781B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		98EC11101CCF58530011781B /* UIViewController+Analytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Analytics.h"; sourceTree = "<group>"; };
+		98EC11111CCF58530011781B /* UIViewController+Analytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Analytics.m"; sourceTree = "<group>"; };
 		98FD42781CA3909200282443 /* OLiQuestionBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiQuestionBoard.h; sourceTree = "<group>"; };
 		98FD42791CA3909200282443 /* OLiQuestionBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiQuestionBoard.m; sourceTree = "<group>"; };
 		98FD427A1CA3909200282443 /* OLiQuestionBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OLiQuestionBoard.xib; sourceTree = "<group>"; };
@@ -230,6 +243,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98EC110F1CCF56750011781B /* libz.tbd in Frameworks */,
+				98EC110D1CCF563E0011781B /* AdSupport.framework in Frameworks */,
+				98EC110B1CCF56330011781B /* CoreMotion.framework in Frameworks */,
+				98EC11091CCF560A0011781B /* libTalkingData.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +256,9 @@
 		983D064A1C8A7B0400D7034B = {
 			isa = PBXGroup;
 			children = (
+				98EC110E1CCF56750011781B /* libz.tbd */,
+				98EC110C1CCF563E0011781B /* AdSupport.framework */,
+				98EC110A1CCF56330011781B /* CoreMotion.framework */,
 				983D06551C8A7B0400D7034B /* OLi */,
 				983D06541C8A7B0400D7034B /* Products */,
 			);
@@ -327,6 +347,7 @@
 		983D06941C8A7F8800D7034B /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				98EC11051CCF56030011781B /* TalkingData_Analytics_iOS_SDK_V2.2.27 */,
 				98EC10E71CCF12680011781B /* RxWebViewController */,
 				98CB810B1CB1EBE800420EF9 /* FDFullscreenPopGesture */,
 				9842913A1CAD0E22004EE44A /* HUD */,
@@ -494,6 +515,8 @@
 				9847B0EE1CA28FFA00D58955 /* OLiBaseBoard.xib */,
 				98EC10FC1CCF141E0011781B /* OLiWebViewController.h */,
 				98EC10FD1CCF141E0011781B /* OLiWebViewController.m */,
+				98EC11101CCF58530011781B /* UIViewController+Analytics.h */,
+				98EC11111CCF58530011781B /* UIViewController+Analytics.m */,
 			);
 			path = OLiBaseBoard;
 			sourceTree = "<group>";
@@ -607,6 +630,16 @@
 				98EC10E91CCF12680011781B /* backItemImage_hl@2x.png */,
 			);
 			path = RxWebViewController;
+			sourceTree = "<group>";
+		};
+		98EC11051CCF56030011781B /* TalkingData_Analytics_iOS_SDK_V2.2.27 */ = {
+			isa = PBXGroup;
+			children = (
+				98EC11061CCF560A0011781B /* libTalkingData.a */,
+				98EC11071CCF560A0011781B /* TalkingData.h */,
+				98EC11081CCF560A0011781B /* TalkingDataSMS.h */,
+			);
+			path = TalkingData_Analytics_iOS_SDK_V2.2.27;
 			sourceTree = "<group>";
 		};
 		98FD42771CA38FAA00282443 /* Question */ = {
@@ -763,6 +796,7 @@
 				983D071E1C8A960700D7034B /* DemoBLL.m in Sources */,
 				983D071F1C8A960700D7034B /* RequestDemoEnity.m in Sources */,
 				98EC10FB1CCF12E60011781B /* OLiWebViewNavigationViewController.m in Sources */,
+				98EC11121CCF58530011781B /* UIViewController+Analytics.m in Sources */,
 				983D072C1C8ABF8D00D7034B /* DownloadBLL.m in Sources */,
 				983D07061C8A915C00D7034B /* AFSecurityPolicy.m in Sources */,
 				983D07261C8ABEFD00D7034B /* ResponseDownload.m in Sources */,
@@ -880,10 +914,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = Luanch;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: jianyu wang (4XUU6CEV36)";
 				INFOPLIST_FILE = OLi/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OLi/Third/TalkingData_Analytics_iOS_SDK_V2.2.27",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrooksWon.OLi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -894,10 +932,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = Luanch;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: jianyu wang (4XUU6CEV36)";
 				INFOPLIST_FILE = OLi/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OLi/Third/TalkingData_Analytics_iOS_SDK_V2.2.27",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrooksWon.OLi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

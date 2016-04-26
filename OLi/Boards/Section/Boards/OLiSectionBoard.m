@@ -88,7 +88,7 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    OLiWebViewController* webViewController = [[OLiWebViewController alloc] initWithUrl:[NSURL URLWithString:@"http://m.auto.life"]];
+    OLiWebViewController* webViewController = [[OLiWebViewController alloc] initWithUrl:[NSURL URLWithString:@"http://www.baidu.com"]];
     webViewController.hidesBottomBarWhenPushed = YES;
 //    UIViewController* webViewController = CreateViewController(@"OLiQuestionBoard");
     [self.navigationController pushViewController:webViewController animated:YES];

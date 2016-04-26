@@ -15,6 +15,8 @@
 #define AppDelegateEntity ((OLiAppDelegate *)[UIApplication sharedApplication].delegate)
 #import "OLiIndexBoard.h"
 
+#import "TalkingData.h"
+
 @interface OLiLoginBoard ()<UIViewControllerTransitioningDelegate>
 
 @property(nonatomic, strong) IBOutlet UIImageView *bgImgV1;
@@ -34,10 +36,12 @@
 - (IBAction)loginBtnActionWithCount:(id)sender {
 //    [AppDelegateEntity changeVC];
     [self gotoHomePageAction:sender];
+    [TalkingData trackEvent:@"loginBtn_count"];
 }
 
 - (IBAction)loginBtnActionWithLicense:(id)sender {
     [self gotoHomePageAction:sender];
+    [TalkingData trackEvent:@"loginBtn_License"];
 }
 
 - (IBAction)changeLicenseBtnAction:(id)sender {

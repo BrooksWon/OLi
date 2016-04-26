@@ -434,6 +434,8 @@
         _progressView.autoresizingMask = UIViewAutoresizingFlexibleWidth ;
         _progressView.tintColor = self.progressViewColor;
         _progressView.trackTintColor = [UIColor clearColor];
+        //更改进度条高度
+        _progressView.transform = CGAffineTransformMakeScale(1.0f,2.0f);
     }
     
     return _progressView;

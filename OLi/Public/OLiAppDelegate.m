@@ -10,6 +10,11 @@
 #import "OLiHomeBoard.h"
 #import "OLiLoginBoard.h"
 #import "OLiIndexBoard.h"
+#import "TalkingData.h"
+#import "TalkingDataSMS.h"
+
+#define kTalkingDataKey @"A41B884029285A99D0DFF86B7C9F9B87"
+#define kChannelIdKey   @"AppStore"
 
 @interface OLiAppDelegate ()
 
@@ -26,7 +31,12 @@
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:OLiLoginBoard.new];
 //    self.window.rootViewController = [OLiIndexBoard new];
     
-//    [self customizeAppearance];
+    [self customizeAppearance];
+    
+    
+    [TalkingData setExceptionReportEnabled:YES];
+    [TalkingData sessionStarted:kTalkingDataKey withChannelId:kChannelIdKey];
+//    [TalkingDataSMS init:@"E7538D90715219B3A2272A3E07E69C57" withSecretId:@""];
     
     return YES;
 }
@@ -73,7 +83,8 @@
 //    [[UIButton appearanceWhenContainedIn:[UINavigationBar class],nil] setBackgroundImage:buttonBg forState:UIControlStateDisabled];
     
     // 设置导航条背景 和顶部文字样式
-    UIImage *navBg = [[UIImage imageNamed:@"navigationbar_background"] resizableImageWithCapInsets:UIEdgeInsetsZero resizingMode:UIImageResizingModeTile];
+//    UIImage *navBg = [[UIImage imageNamed:@"navigationbar_background"] resizableImageWithCapInsets:UIEdgeInsetsZero resizingMode:UIImageResizingModeTile];
+    UIImage *navBg = [self imageFromColor:[UIColor whiteColor] height:64];
     [[UINavigationBar appearance] setBackgroundImage:navBg forBarMetrics:UIBarMetricsDefault];
 //    [[UINavigationBar appearance] setTitleTextAttributes:
 //     [NSDictionary dictionaryWithObjectsAndKeys:
@@ -81,7 +92,8 @@
 //      [UIFont systemFontOfSize:18],NSFontAttributeName, nil]
 //     ];
     
-    UIImage *tabbarBg = [[UIImage imageNamed:@"tabbar_background"] resizableImageWithCapInsets:UIEdgeInsetsZero resizingMode:UIImageResizingModeTile];
+//    UIImage *tabbarBg = [[UIImage imageNamed:@"tabbar_background"] resizableImageWithCapInsets:UIEdgeInsetsZero resizingMode:UIImageResizingModeTile];
+    UIImage *tabbarBg = [self imageFromColor:[UIColor whiteColor] height:49];
     [[UITabBar appearance] setBackgroundImage:tabbarBg];
     
 //    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
@@ -101,6 +113,19 @@
     //    [[UIButton appearanceWhenContainedIn:[UISearchBar class],nil] setBackgroundImage:buttonBg forState:UIControlStateNormal];
     //    [[UIButton appearanceWhenContainedIn:[UISearchBar class],nil] setBackgroundImage:buttonBgOn forState:UIControlStateHighlighted];
     //    [[UIButton appearanceWhenContainedIn:[UISearchBar class],nil] setBackgroundImage:buttonBg forState:UIControlStateDisabled];
+}
+
+//通过颜色来生成一个纯色图片
+- (UIImage *)imageFromColor:(UIColor *)color height:(CGFloat)height{
+    
+    CGRect rect = CGRectMake(0, 0, self.window.frame.size.width,height);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return img;
 }
 
 @end

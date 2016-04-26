@@ -25,8 +25,8 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <color key="backgroundColor" red="0.84366881847381592" green="0.82874226570129395" blue="0.74935907125473022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </imageView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kau-2y-myF">
-                    <rect key="frame" x="0.0" y="64" width="320" height="460"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kau-2y-myF">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <view key="tableHeaderView" contentMode="scaleToFill" id="13b-WT-cHE">
@@ -98,10 +98,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zO4-fz-p2l" customClass="HyLoglnButton">
-                                <rect key="frame" x="10" y="140" width="300" height="40"/>
+                                <rect key="frame" x="10" y="140" width="300" height="44"/>
                                 <color key="backgroundColor" red="0.0" green="0.59875619411468506" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="gUY-3h-sqi"/>
+                                    <constraint firstAttribute="height" constant="44" id="gUY-3h-sqi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="登录">
@@ -170,7 +170,7 @@
                 <constraint firstItem="XN2-eQ-rR7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8uJ-n8-bh5"/>
                 <constraint firstItem="jod-Xm-T3J" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="EQb-o5-whU"/>
                 <constraint firstItem="XN2-eQ-rR7" firstAttribute="top" secondItem="kau-2y-myF" secondAttribute="bottom" id="LMe-zw-buQ"/>
-                <constraint firstItem="kau-2y-myF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="LO7-xw-Frc"/>
+                <constraint firstItem="kau-2y-myF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LO7-xw-Frc"/>
                 <constraint firstItem="jod-Xm-T3J" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QhP-hL-SYK"/>
                 <constraint firstAttribute="bottom" secondItem="XN2-eQ-rR7" secondAttribute="bottom" id="TA9-1Q-cY9"/>
                 <constraint firstAttribute="trailing" secondItem="kau-2y-myF" secondAttribute="trailing" id="evV-Yh-PNI"/>
@@ -187,8 +187,8 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <color key="backgroundColor" red="0.84366881847381592" green="0.82874226570129395" blue="0.74935907125473022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </imageView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9VS-3g-QJW">
-                    <rect key="frame" x="0.0" y="64" width="320" height="460"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9VS-3g-QJW">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <view key="tableHeaderView" contentMode="scaleToFill" id="63Z-gX-0AW">
@@ -230,10 +230,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Icd-EB-MF1" customClass="HyLoglnButton">
-                                <rect key="frame" x="10" y="85" width="300" height="40"/>
+                                <rect key="frame" x="10" y="85" width="300" height="44"/>
                                 <color key="backgroundColor" red="0.0" green="0.59875619411468506" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="UEA-Nx-IGk"/>
+                                    <constraint firstAttribute="height" constant="44" id="UEA-Nx-IGk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="登录">
@@ -297,7 +297,7 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="9VS-3g-QJW" firstAttribute="top" secondItem="DiV-3A-hXJ" secondAttribute="top" constant="64" id="6iI-wc-Wws"/>
+                <constraint firstItem="9VS-3g-QJW" firstAttribute="top" secondItem="DiV-3A-hXJ" secondAttribute="top" id="6iI-wc-Wws"/>
                 <constraint firstItem="9VS-3g-QJW" firstAttribute="leading" secondItem="DiV-3A-hXJ" secondAttribute="leading" id="7B2-YL-1Eh"/>
                 <constraint firstItem="LHG-Nr-xtq" firstAttribute="leading" secondItem="DiV-3A-hXJ" secondAttribute="leading" id="AQ6-1w-aJq"/>
                 <constraint firstItem="LHG-Nr-xtq" firstAttribute="top" secondItem="9VS-3g-QJW" secondAttribute="bottom" id="D4L-gm-lBt"/>

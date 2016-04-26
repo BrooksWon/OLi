@@ -9,6 +9,8 @@
 #import "OLiSectionBoard.h"
 #import "OLiSectionTableViewCell.h"
 #import "OLiTableViewHeaderView.h"
+#import "OLiWebViewNavigationViewController.h"
+#import "OLiWebViewController.h"
 
 @interface OLiSectionBoard ()<OLiTableViewHeaderViewDelegate>
 
@@ -86,7 +88,10 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self.navigationController pushViewController:CreateViewController(@"OLiQuestionBoard") animated:YES];
+    OLiWebViewController* webViewController = [[OLiWebViewController alloc] initWithUrl:[NSURL URLWithString:@"http://m.auto.life"]];
+    webViewController.hidesBottomBarWhenPushed = YES;
+//    UIViewController* webViewController = CreateViewController(@"OLiQuestionBoard");
+    [self.navigationController pushViewController:webViewController animated:YES];
 }
 
 

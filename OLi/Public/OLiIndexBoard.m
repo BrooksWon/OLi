@@ -7,6 +7,7 @@
 //
 
 #import "OLiIndexBoard.h"
+#import "OLiWebViewNavigationViewController.h"
 
 @interface OLiIndexBoard ()
 
@@ -26,7 +27,8 @@
 
 - (void)initViewControllers {
     if (self.viewControllers.count <= 0) {
-        self.viewControllers = @[CreateNavigationController(CreateViewController(@"OLiSectionBoard"),
+        self.viewControllers = @[
+                                 CreateNavigationController(CreateViewController(@"OLiSectionBoard"),
                                                             @"ex_d",
                                                             @"ex_s",
                                                             @"练习"),
@@ -37,7 +39,8 @@
                                  CreateNavigationController(CreateViewController(@"OLiMeBoard"),
                                                             @"me_d",
                                                             @"me_s",
-                                                            @"我的")];
+                                                            @"我的")
+                                                                                                         ];
     }
     
 }
@@ -58,7 +61,7 @@ static inline UINavigationController *CreateNavigationController(UIViewControlle
                                                                  NSString *title) {
     UINavigationController *nav = nil;
     if (vc) {
-        nav = [[UINavigationController alloc] initWithRootViewController:vc];
+        nav = [[OLiWebViewNavigationViewController alloc] initWithRootViewController:vc];
         if (nav) {
             nav.tabBarItem = [[UITabBarItem alloc] initWithTitle:title
                                                            image:[UIImage imageNamed:unSelectedImageName]

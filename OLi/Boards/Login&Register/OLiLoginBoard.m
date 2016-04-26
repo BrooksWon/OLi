@@ -55,7 +55,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"小试牛刀";
-    [self.bgImgV1 setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"bg4" ofType:@"jpg"]]];
+//    [self.bgImgV1 setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"bg4" ofType:@"jpg"]]];
 }
 
 -(void)gotoHomePageAction:(HyLoglnButton *)button {
@@ -76,7 +76,7 @@
                 if (!weakSelf.isChangeLicense) {
                     weakSelf.pwField.text = @"密码错误";
                 }else {
-                    weakSelf.licenseField.text = @"序列号错误";
+                    weakSelf.licenseField.text = @"授权码错误";
                 }
                 
             }];

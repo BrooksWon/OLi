@@ -26,7 +26,7 @@
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:OLiLoginBoard.new];
 //    self.window.rootViewController = [OLiIndexBoard new];
     
-    [self customizeAppearance];
+//    [self customizeAppearance];
     
     return YES;
 }
@@ -73,15 +73,19 @@
 //    [[UIButton appearanceWhenContainedIn:[UINavigationBar class],nil] setBackgroundImage:buttonBg forState:UIControlStateDisabled];
     
     // 设置导航条背景 和顶部文字样式
-    UIImage *navBg = [[UIImage imageNamed:@"navBar"] resizableImageWithCapInsets:UIEdgeInsetsZero resizingMode:UIImageResizingModeTile];
+    UIImage *navBg = [[UIImage imageNamed:@"navigationbar_background"] resizableImageWithCapInsets:UIEdgeInsetsZero resizingMode:UIImageResizingModeTile];
     [[UINavigationBar appearance] setBackgroundImage:navBg forBarMetrics:UIBarMetricsDefault];
-    [[UINavigationBar appearance] setTitleTextAttributes:
-     [NSDictionary dictionaryWithObjectsAndKeys:
-      [UIColor whiteColor],NSForegroundColorAttributeName,
-      [UIFont systemFontOfSize:18],NSFontAttributeName, nil]
-     ];
-    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
-    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+//    [[UINavigationBar appearance] setTitleTextAttributes:
+//     [NSDictionary dictionaryWithObjectsAndKeys:
+//      [UIColor blackColor],NSForegroundColorAttributeName,
+//      [UIFont systemFontOfSize:18],NSFontAttributeName, nil]
+//     ];
+    
+    UIImage *tabbarBg = [[UIImage imageNamed:@"tabbar_background"] resizableImageWithCapInsets:UIEdgeInsetsZero resizingMode:UIImageResizingModeTile];
+    [[UITabBar appearance] setBackgroundImage:tabbarBg];
+    
+//    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+//    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
 //    [[UINavigationBar appearance] setTitleVerticalPositionAdjustment:2 forBarMetrics:UIBarMetricsDefault];
 //    
 //    //设置工具栏背景

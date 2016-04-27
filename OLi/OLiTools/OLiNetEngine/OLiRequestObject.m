@@ -83,7 +83,7 @@ NSString *const OLiRequestMethodName_DELETE_Key = @"DELETE";
 
 - (NSMutableDictionary *)propertyValueDictionary
 {
-    NSMutableDictionary *propertyValueDictionary = nil;
+    NSMutableDictionary *propertyValueDictionary = [[NSMutableDictionary alloc] initWithDictionary:@{@"servicename":self.serviceName}];
     if (!propertyValueDictionary && [self respondsToSelector:@selector(propertyDictionary)]) {
         propertyValueDictionary = [self performSelector:@selector(propertyDictionary)];
     }
@@ -92,12 +92,7 @@ NSString *const OLiRequestMethodName_DELETE_Key = @"DELETE";
 
 - (NSString *)requestJSONString
 {
-//    NSMutableDictionary *requestDictionary = [[NSMutableDictionary alloc] initWithDictionary:@{@"servicename":self.serviceName}];
-    NSMutableDictionary *requestDictionary = [@{} mutableCopy];
-    
-    NSMutableDictionary *propertyValueDictionary = [self propertyValueDictionary];
-    [requestDictionary addEntriesFromDictionary:propertyValueDictionary];
-
+    NSMutableDictionary *requestDictionary = [self propertyValueDictionary];    
     
     NSError *error = nil;
     NSString *requestJSONString = nil;

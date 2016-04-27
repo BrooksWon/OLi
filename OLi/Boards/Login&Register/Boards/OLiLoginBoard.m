@@ -17,6 +17,8 @@
 
 #import "TalkingData.h"
 
+#import "LoginBLL.h"
+
 @interface OLiLoginBoard ()<UIViewControllerTransitioningDelegate>
 
 @property(nonatomic, strong) IBOutlet UIImageView *bgImgV1;
@@ -29,13 +31,26 @@
 @property(nonatomic, assign) NSInteger time;
 @property(nonatomic, assign) BOOL isChangeLicense;
 
+@property(nonatomic, strong) LoginBLL *loginBLL;
+
 @end
 
 @implementation OLiLoginBoard
 
 - (IBAction)loginBtnActionWithCount:(id)sender {
 //    [AppDelegateEntity changeVC];
-    [self gotoHomePageAction:sender];
+//    [self gotoHomePageAction:sender];
+    
+    
+    
+    
+    [self.loginBLL loginWithCallback:^(id objc) {
+        NSLog(@"objc = %@", objc);
+    }];
+    
+    
+    
+    
     [TalkingData trackEvent:@"loginBtn_count"];
 }
 
@@ -117,5 +132,12 @@
     return [[HyTransitions alloc]initWithTransitionDuration:0.4f StartingAlpha:0.8f isBOOL:false];
 }
 
+
+- (LoginBLL*)loginBLL {
+    if (nil == _loginBLL) {
+        self.loginBLL = [LoginBLL new];
+    }
+    return _loginBLL;
+}
 
 @end

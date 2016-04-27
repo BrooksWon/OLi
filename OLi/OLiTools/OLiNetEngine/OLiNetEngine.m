@@ -102,7 +102,6 @@ NSString *const OLiCallBackRequest       = @"OLiCallBackRequest";
     __weak __typeof(self) weakSelf = self;
     if (!self.operationManager) {
         self.operationManager = [OLiHTTPRequestOperationManager manager];
-//        self.operationManager.responseSerializer = [AFHTTPResponseSerializer serializer];
         self.operationManager.operationQueue.maxConcurrentOperationCount = 16;
     }
     NSMutableDictionary *propertyValueDictionary = nil;
@@ -145,12 +144,9 @@ NSString *const OLiCallBackRequest       = @"OLiCallBackRequest";
     }if ([request isUploadRequest]) {
 #warning 未完待续
         //
-    }else{
-        //    NSSet *httpMethods = [NSSet setWithObjects:@"GET",@"HEAD",@"DELETE", nil];
-        
+    }else{        
         requestOperation = [self.operationManager OLi_Request_Method:request.requestMethodName
                                                            URLString:request.interfaceURL
-                            //                                                                              parameters:([httpMethods containsObject:request.requestMethodName.uppercaseString] ? requestJSONString:propertyValueDictionary)// 如果是httpMethods 中的一种请求的话，传字符串；否则传字典
                                                           parameters:propertyValueDictionary
                             //#warning 待优化
                                                              success:^(AFHTTPRequestOperation *operation, id responseObject)
@@ -258,7 +254,13 @@ NSString *const OLiCallBackRequest       = @"OLiCallBackRequest";
     if (JSONDictionary)
     {
         if (JSONDictionary && [JSONDictionary isKindOfClass:[NSDictionary class]]) {
-            returnObject = [self objectWithDictionary:JSONDictionary className:className];
+            if ([JSONDictionary objectForKey:@"rspData"]) {//为了兼容rspData外面包了一层格式，无任何业务意义
+                NSMutableDictionary *editDic = [[NSMutableDictionary alloc] initWithDictionary:JSONDictionary];
+                [editDic addEntriesFromDictionary:(NSDictionary*)[JSONDictionary objectForKey:@"rspData"]];
+                returnObject = [self objectWithDictionary:editDic className:className];
+            }else {
+                returnObject = [self objectWithDictionary:JSONDictionary className:className];
+            }
         }
         else
         {

@@ -60,6 +60,7 @@
     [request setCachePolicy:NSURLRequestUseProtocolCachePolicy];
     [request setTimeoutInterval:OLiRequestTimeoutInterval];
     [request setValue:@"de2a2f134a4702a5fd272a9ec8152c93" forHTTPHeaderField:@"apikey"];
+//    [request setValue:@"text/html; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
     
     if (cacheResponse) {
         AFHTTPRequestOperation *operation = [self requestOperationWithKey:cacheKey];

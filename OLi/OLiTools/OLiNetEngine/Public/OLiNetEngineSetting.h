@@ -52,9 +52,9 @@ typedef struct _APIDomainDic {
 //这里的第几行对应下面的type 的int数值
 static const APIDomainDic DomainDic[] = {
     //type 数值为0:
-    {@"http://bkcar.cn"}, //正式地址
+    {@"http://api.niudaoxiaoshi.com"}, //正式地址
     //type 数值为1:
-//    {@"http://123.56.193.250:8088//"} //测试地址
+    {@"http://api.niudaoxiaoshi.com"} //测试地址
 //    {@"https://github.com/"}
     //https://github.com/thoughtbot/Markoff/archive/master.zip
 };

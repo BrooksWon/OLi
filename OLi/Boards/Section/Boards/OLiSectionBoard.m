@@ -15,7 +15,9 @@
 #import "SubjectBLL.h"
 #import "ChapterBLL.h"
 
-@interface OLiSectionBoard ()<OLiTableViewHeaderViewDelegate>
+#import "OLiQuestionViewController.h"
+
+@interface OLiSectionBoard ()<OLiTableViewHeaderViewDelegate, UIViewControllerPreviewingDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *listArray;
@@ -87,6 +89,8 @@
     self.tableView.sectionHeaderHeight = 44;
     
     [self loadDataFromServer:YES];
+    
+    [self check3DTouch];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -127,6 +131,10 @@
         }
         
     }
+    
+    // 注册peek、pop
+    [self registerForPreviewingWithDelegate:self sourceView:cell];
+    
     return cell;
 }
 
@@ -181,6 +189,35 @@
         self.chapterBLL = [ChapterBLL new];
     }
     return _chapterBLL;
+}
+
+-(void)check3DTouch
+{
+    if(self.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable) {
+        //ok
+    }
+    else{
+        //notok
+    }
+}
+
+#pragma mark - UIViewControllerPreviewingDelegate
+- (UIViewController *)previewingContext:(id)context viewControllerForLocation:(CGPoint) point
+{
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:(UITableViewCell* )[context sourceView]];
+    
+    NSArray *arr = @[@"1",@"2",@"3"];
+    NSArray *colorArr = @[[UIColor redColor],[UIColor greenColor],[UIColor blackColor]];
+    
+    OLiQuestionViewController *childVC = [[OLiQuestionViewController alloc] initWithTitle:arr[indexPath.row] bgColor:colorArr[indexPath.row]];
+    
+    childVC.preferredContentSize = CGSizeMake(0.0f,600.f);
+    return childVC;
+}
+
+- (void)previewingContext:(id <UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit
+{
+    [self showViewController:viewControllerToCommit sender:self];
 }
 
 @end

@@ -28,6 +28,7 @@
 		981014C01CD0E5AF00E094A7 /* ResponseChapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 981014BE1CD0E5AF00E094A7 /* ResponseChapter.m */; };
 		981014C31CD0E5D800E094A7 /* RequestSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 981014C21CD0E5D800E094A7 /* RequestSubject.m */; };
 		981014C61CD0E5E800E094A7 /* RequestChapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 981014C51CD0E5E800E094A7 /* RequestChapter.m */; };
+		981014C91CD22A6100E094A7 /* OLiQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 981014C81CD22A6000E094A7 /* OLiQuestionViewController.m */; };
 		98212E7A1CCF7F9700337A35 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 98212E791CCF7F9700337A35 /* libsqlite3.tbd */; };
 		98212E7C1CCF7FC100337A35 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 98212E7B1CCF7FC100337A35 /* libiconv.tbd */; };
 		98212E7E1CCF7FD100337A35 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 98212E7D1CCF7FD100337A35 /* libstdc++.tbd */; };
@@ -172,6 +173,8 @@
 		981014C21CD0E5D800E094A7 /* RequestSubject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestSubject.m; sourceTree = "<group>"; };
 		981014C41CD0E5E800E094A7 /* RequestChapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestChapter.h; sourceTree = "<group>"; };
 		981014C51CD0E5E800E094A7 /* RequestChapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestChapter.m; sourceTree = "<group>"; };
+		981014C71CD22A6000E094A7 /* OLiQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiQuestionViewController.h; sourceTree = "<group>"; };
+		981014C81CD22A6000E094A7 /* OLiQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiQuestionViewController.m; sourceTree = "<group>"; };
 		98212E791CCF7F9700337A35 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		98212E7B1CCF7FC100337A35 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		98212E7D1CCF7FD100337A35 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
@@ -1039,6 +1042,8 @@
 				98CC6EC31CA3A82D0003CFB5 /* page4@2x.png */,
 				98CC6EC41CA3A82D0003CFB5 /* page0@2x.png */,
 				98CC6EC51CA3A82D0003CFB5 /* page3@2x.png */,
+				981014C71CD22A6000E094A7 /* OLiQuestionViewController.h */,
+				981014C81CD22A6000E094A7 /* OLiQuestionViewController.m */,
 			);
 			path = Question;
 			sourceTree = "<group>";
@@ -1169,6 +1174,7 @@
 				983D07161C8A915C00D7034B /* rijndael.c in Sources */,
 				983D06FA1C8A915C00D7034B /* NSString+PublicEncrypt.m in Sources */,
 				983D06FD1C8A915C00D7034B /* OLiNetError.m in Sources */,
+				981014C91CD22A6100E094A7 /* OLiQuestionViewController.m in Sources */,
 				9847B0FB1CA291AE00D58955 /* OLiSectionBoard.m in Sources */,
 				9847B0FF1CA2922300D58955 /* OLiTableViewHeaderView.m in Sources */,
 				981014B21CD0E55100E094A7 /* ChapterBLL.m in Sources */,

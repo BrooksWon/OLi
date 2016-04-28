@@ -16,5 +16,7 @@
 
 - (void)changeVC;
 
++ (OLiAppDelegate *)appDelegate;
+
 @end
 

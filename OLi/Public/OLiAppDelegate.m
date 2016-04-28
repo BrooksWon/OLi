@@ -28,6 +28,10 @@
 
 @implementation OLiAppDelegate
 
++ (OLiAppDelegate *)appDelegate {
+    return (OLiAppDelegate *)[[UIApplication sharedApplication] delegate];
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -41,6 +45,16 @@
     
     [self setupTalkingData];
     [self setupUMShare];
+    
+    UIApplicationShortcutItem *shortItem0 = [[UIApplicationShortcutItem alloc] initWithType:@"签到" localizedTitle:@"签到"];
+    UIApplicationShortcutItem *shortItem1 = [[UIApplicationShortcutItem alloc] initWithType:@"错题本" localizedTitle:@"错题本"];
+    UIApplicationShortcutItem *shortItem2 = [[UIApplicationShortcutItem alloc] initWithType:@"我的收藏" localizedTitle:@"我的收藏"];
+    
+    UIApplicationShortcutItem *shortItem3 = [[UIApplicationShortcutItem alloc] initWithType:@"签到" localizedTitle:@"签到" localizedSubtitle:@"我的签到" icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"me_s"] userInfo:nil];
+    
+    NSArray *shortItems = [[NSArray alloc] initWithObjects:shortItem0, shortItem1, shortItem2, shortItem3, nil];
+    NSLog(@"%@", shortItems);
+    [[UIApplication sharedApplication] setShortcutItems:shortItems];
     
     
     return YES;
@@ -152,6 +166,14 @@
     [TalkingData setExceptionReportEnabled:YES];
     [TalkingData sessionStarted:kTalkingDataKey withChannelId:kChannelIdKey];
 //    [TalkingDataSMS init:@"E7538D90715219B3A2272A3E07E69C57" withSecretId:@""];
+}
+
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler{
+    if ([shortcutItem.localizedTitle  isEqual: @"弹框"]) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"OPPS!" message:@"我的CTO叫佛山强" delegate:self cancelButtonTitle:@"哦" otherButtonTitles:nil, nil];
+        [alert show];
+        return;
+    }
 }
 
 @end

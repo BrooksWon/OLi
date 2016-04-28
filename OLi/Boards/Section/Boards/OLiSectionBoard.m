@@ -12,10 +12,17 @@
 #import "OLiWebViewNavigationViewController.h"
 #import "OLiWebViewController.h"
 
+#import "SubjectBLL.h"
+#import "ChapterBLL.h"
+
 @interface OLiSectionBoard ()<OLiTableViewHeaderViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
-@property (nonatomic, strong) NSArray *listArray;
+@property (nonatomic, strong) NSMutableArray *listArray;
+
+@property (nonatomic, strong)SubjectBLL *subjectBLL;
+@property (nonatomic, strong)ChapterBLL *chapterBLL;
+
 
 @end
 
@@ -23,23 +30,63 @@
 
 - (NSArray *)listArray{
     if (!_listArray) {
-        NSString * path = [[NSBundle mainBundle] pathForResource:@"list.plist" ofType:nil];
-        NSArray * dicArr = [NSArray arrayWithContentsOfFile:path];
-        
-        NSMutableArray * arr = [NSMutableArray array];
-        for (NSDictionary *dict in dicArr) {
-            ModelGroups *group = [ModelGroups parsingJsonWithDictionary:dict];
-            [arr addObject:group];
-        }
-        _listArray = arr;
+        self.listArray = [NSMutableArray array];
     }
+
     return _listArray;
+}
+
+- (void)loadDataFromServer:(BOOL)isRefresh {
+    
+    [self HUDAction:nil];
+    
+    if (isRefresh) {
+        self.listArray = nil;
+    }
+    
+    __typeof (self) weakSelf = self;
+    [self.subjectBLL loadSubjectWithCallback:^(id objc) {
+        NSMutableArray * arr = [NSMutableArray array];
+        @try {
+            for (id item in [objc valueForKeyPath:@"subjectList"]) {
+                ModelGroups *group = [ModelGroups parsingDataWithObject:item];
+                [arr addObject:group];
+                
+            }
+        } @catch (NSException *exception) {
+            NSLog(@"没有返回subjectList列表");
+        } @finally {
+            //
+        }
+        
+        [weakSelf.listArray addObjectsFromArray:arr];
+        if (0 < weakSelf.listArray.count) {
+            [self.tableView reloadData];
+        }
+        
+        [self HUDAction:nil];
+    }];
+    
+}
+
+- (IBAction)HUDAction:(id)sender {
+    if (!self.ccView) {
+        self.ccView = [CCWormView wormHUDWithStyle:CCWormHUDStyleLarge toView:[UIApplication sharedApplication].keyWindow];
+    }
+    
+    if (self.ccView.isShowing == NO) {
+        [self.ccView startLodingWormHUD];
+    }else{
+        [self.ccView endLodingWormHUD];
+    }
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.tableFooterView = [[UIView alloc]init];
     self.tableView.sectionHeaderHeight = 44;
+    
+    [self loadDataFromServer:YES];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -57,7 +104,12 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     ModelGroups *group = self.listArray[section];
-    return group.isOpen? group.groups.count:0;
+    if (group) {
+        return group.isOpen? group.groups.count:0;
+    }else{
+        return 0;
+    }
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -66,7 +118,14 @@
     if (self.listArray) {
         ModelGroups *group = self.listArray[indexPath.section];
         
-        cell.sectionName = [group.groups[indexPath.row] valueForKeyPath:@"intro"];
+        @try {
+            cell.sectionName = [group.groups[indexPath.row] valueForKeyPath:@"name"];
+        } @catch (NSException *exception) {
+            NSLog(@"没有该章节，或者该章节的name为空");
+        } @finally {
+            //
+        }
+        
     }
     return cell;
 }
@@ -83,27 +142,45 @@
 
 - (void)OLiTableViewHeaderView:(OLiTableViewHeaderView *)view didButton:(UIButton *)sender
 {
-    [self.tableView reloadData];
+    if (view.group.isOpen) {
+        [self HUDAction:nil];
+        [self.chapterBLL loadChapterWithID:view.group.subjectID callback:^(id objc) {
+            @try {
+                view.group.groups = [objc valueForKeyPath:@"chapterList"];
+                if (0 < view.group.groups.count) {
+                    [self.tableView reloadData];
+                }
+            } @catch (NSException *exception) {
+                NSLog(@"没有chapterList列表");
+            } @finally {
+                //
+            }
+            [self HUDAction:nil];
+        }];
+    }else {
+        [self.tableView reloadData];
+    }
 }
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     OLiWebViewController* webViewController = [[OLiWebViewController alloc] initWithUrl:[NSURL URLWithString:@"http://www.baidu.com"]];
     webViewController.hidesBottomBarWhenPushed = YES;
-//    UIViewController* webViewController = CreateViewController(@"OLiQuestionBoard");
     [self.navigationController pushViewController:webViewController animated:YES];
 }
 
-
-static inline  UIViewController * CreateViewController(NSString *className) {
-    UIViewController *VC = nil;
-    if (className) {
-        if (NSClassFromString(className)) {
-            VC = (UIViewController*)[[NSClassFromString(className) alloc] init];
-        }
+- (SubjectBLL*)subjectBLL {
+    if (nil == _subjectBLL) {
+        self.subjectBLL = [SubjectBLL new];
     }
-    VC.hidesBottomBarWhenPushed = YES;
-    return VC;
+    return _subjectBLL;
+}
+
+- (ChapterBLL*)chapterBLL {
+    if (nil == _chapterBLL) {
+        self.chapterBLL = [ChapterBLL new];
+    }
+    return _chapterBLL;
 }
 
 @end

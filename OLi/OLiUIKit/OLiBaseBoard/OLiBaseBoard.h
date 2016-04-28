@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CCWormView.h"
 
 @interface OLiBaseBoard : UIViewController
+
+@property (nonatomic,strong) CCWormView *ccView;
 
 @end

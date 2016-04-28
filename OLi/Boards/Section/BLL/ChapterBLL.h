@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface ChapterBLL : NSObject
-- (void)loadChapterWithCallback:(void (^) (id objc))callback;
+- (void)loadChapterWithID:(NSString*)_id callback:(void (^) (id objc))callback;
 @end

@@ -11,11 +11,12 @@
 @interface ModelGroups : NSObject
 @property (nonatomic, strong) NSArray *groups;
 @property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *subjectID;
 /**
  *  记录这行是否被打开
  */
 @property (nonatomic, getter=isOpen) BOOL isOpen;
 
-+ (instancetype)parsingJsonWithDictionary:(NSDictionary *)dict;
-- (instancetype)parsingJsonWithDictionary:(NSDictionary *)dict;
++ (instancetype)parsingDataWithObject:(id)obj;
+- (instancetype)parsingDataWithObject:(id)obj;
 @end

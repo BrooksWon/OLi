@@ -6,9 +6,9 @@
 //  Copyright © 2016年 王建雨. All rights reserved.
 //
 
-#import "RestponseChapter.h"
+#import "ResponseChapter.h"
 
-@implementation RestponseChapter
+@implementation ResponseChapter
 
 @end
 

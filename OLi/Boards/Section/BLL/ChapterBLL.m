@@ -10,8 +10,9 @@
 #import "RequestChapter.h"
 
 @implementation ChapterBLL
-- (void)loadChapterWithCallback:(void (^) (id objc))callback {
+- (void)loadChapterWithID:(NSString*)_id callback:(void (^) (id objc))callback {
     RequestChapter *req = [[RequestChapter alloc] init];
+//    req.id = _id;
     [req startWithSuccessBlock:^(id responseObject, NSDictionary *options) {
         !callback ?:callback(responseObject);
     } failBlock:^(OLiNetError *error, NSDictionary *options) {

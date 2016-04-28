@@ -1,5 +1,5 @@
 //
-//  RestponseChapter.h
+//  ResponseChapter.h
 //  OLi
 //
 //  Created by Brooks on 16/4/27.
@@ -10,7 +10,7 @@
 @class RspInfo;
 @class ChapterList;
 
-@interface RestponseChapter : NSObject
+@interface ResponseChapter : NSObject
 
 @property (nonatomic, strong)RspInfo *rspInfo;
 

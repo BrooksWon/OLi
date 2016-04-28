@@ -17,7 +17,7 @@
 #else
         [self setInterfaceURL:@"" Type:outer_Domain];
 #endif
-        self.serviceName = @"Subject.Getlist";
+        self.serviceName = @"Subject.GetList";
         self.requestMethodName = OLiRequestMethodName_POST_Key;
     }
     return self;

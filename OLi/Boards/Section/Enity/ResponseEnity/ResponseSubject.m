@@ -11,3 +11,7 @@
 @implementation ResponseSubject
 
 @end
+
+@implementation SubjectList
+
+@end

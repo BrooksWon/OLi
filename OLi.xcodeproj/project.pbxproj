@@ -25,7 +25,7 @@
 		981014AF1CD0E53B00E094A7 /* SubjectBLL.m in Sources */ = {isa = PBXBuildFile; fileRef = 981014AE1CD0E53B00E094A7 /* SubjectBLL.m */; };
 		981014B21CD0E55100E094A7 /* ChapterBLL.m in Sources */ = {isa = PBXBuildFile; fileRef = 981014B11CD0E55100E094A7 /* ChapterBLL.m */; };
 		981014BF1CD0E5AF00E094A7 /* ResponseSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 981014BC1CD0E5AF00E094A7 /* ResponseSubject.m */; };
-		981014C01CD0E5AF00E094A7 /* RestponseChapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 981014BE1CD0E5AF00E094A7 /* RestponseChapter.m */; };
+		981014C01CD0E5AF00E094A7 /* ResponseChapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 981014BE1CD0E5AF00E094A7 /* ResponseChapter.m */; };
 		981014C31CD0E5D800E094A7 /* RequestSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 981014C21CD0E5D800E094A7 /* RequestSubject.m */; };
 		981014C61CD0E5E800E094A7 /* RequestChapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 981014C51CD0E5E800E094A7 /* RequestChapter.m */; };
 		98212E7A1CCF7F9700337A35 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 98212E791CCF7F9700337A35 /* libsqlite3.tbd */; };
@@ -166,8 +166,8 @@
 		981014B11CD0E55100E094A7 /* ChapterBLL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterBLL.m; sourceTree = "<group>"; };
 		981014BB1CD0E5AF00E094A7 /* ResponseSubject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseSubject.h; sourceTree = "<group>"; };
 		981014BC1CD0E5AF00E094A7 /* ResponseSubject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseSubject.m; sourceTree = "<group>"; };
-		981014BD1CD0E5AF00E094A7 /* RestponseChapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestponseChapter.h; sourceTree = "<group>"; };
-		981014BE1CD0E5AF00E094A7 /* RestponseChapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestponseChapter.m; sourceTree = "<group>"; };
+		981014BD1CD0E5AF00E094A7 /* ResponseChapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseChapter.h; sourceTree = "<group>"; };
+		981014BE1CD0E5AF00E094A7 /* ResponseChapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseChapter.m; sourceTree = "<group>"; };
 		981014C11CD0E5D800E094A7 /* RequestSubject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestSubject.h; sourceTree = "<group>"; };
 		981014C21CD0E5D800E094A7 /* RequestSubject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestSubject.m; sourceTree = "<group>"; };
 		981014C41CD0E5E800E094A7 /* RequestChapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestChapter.h; sourceTree = "<group>"; };
@@ -506,8 +506,8 @@
 			children = (
 				981014BB1CD0E5AF00E094A7 /* ResponseSubject.h */,
 				981014BC1CD0E5AF00E094A7 /* ResponseSubject.m */,
-				981014BD1CD0E5AF00E094A7 /* RestponseChapter.h */,
-				981014BE1CD0E5AF00E094A7 /* RestponseChapter.m */,
+				981014BD1CD0E5AF00E094A7 /* ResponseChapter.h */,
+				981014BE1CD0E5AF00E094A7 /* ResponseChapter.m */,
 			);
 			path = ResponseEnity;
 			sourceTree = "<group>";
@@ -1214,7 +1214,7 @@
 				98871AFC1C9E7F0F003F652D /* OLiMeBoard.m in Sources */,
 				983D07171C8A915C00D7034B /* Reachability.m in Sources */,
 				9847B10C1CA2A39A00D58955 /* OLiIndexBoard.m in Sources */,
-				981014C01CD0E5AF00E094A7 /* RestponseChapter.m in Sources */,
+				981014C01CD0E5AF00E094A7 /* ResponseChapter.m in Sources */,
 				981014A51CD0A59500E094A7 /* AFNetworkReachabilityManager.m in Sources */,
 				98EC10FE1CCF141E0011781B /* OLiWebViewController.m in Sources */,
 				983D07001C8A915C00D7034B /* OLiNetEngineSetting.m in Sources */,

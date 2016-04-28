@@ -257,6 +257,7 @@ NSString *const OLiCallBackRequest       = @"OLiCallBackRequest";
             if ([JSONDictionary objectForKey:@"rspData"]) {//为了兼容rspData外面包了一层格式，无任何业务意义
                 NSMutableDictionary *editDic = [[NSMutableDictionary alloc] initWithDictionary:JSONDictionary];
                 [editDic addEntriesFromDictionary:(NSDictionary*)[JSONDictionary objectForKey:@"rspData"]];
+                [editDic removeObjectForKey:@"rspData"];
                 returnObject = [self objectWithDictionary:editDic className:className];
             }else {
                 returnObject = [self objectWithDictionary:JSONDictionary className:className];

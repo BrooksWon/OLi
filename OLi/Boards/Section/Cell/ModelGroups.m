@@ -10,24 +10,24 @@
 
 @implementation ModelGroups
 
-+ (instancetype)parsingJsonWithDictionary:(NSDictionary *)dict
-{
-    return [[self alloc] parsingJsonWithDictionary:dict];
++ (instancetype) parsingDataWithObject:(id)obj {
+   return [[self alloc] parsingDataWithObject:obj];
 }
 
-- (instancetype)parsingJsonWithDictionary:(NSDictionary *)dict
-{
+- (instancetype) parsingDataWithObject:(id)obj {
     if (self == [super init]) {
-        [self setValuesForKeysWithDictionary:dict];
-        
-        NSMutableArray *Arr = [NSMutableArray array];
-        for (NSDictionary * __dic in self.groups) {
-            [Arr addObject:__dic];
+        @try {
+            self.subjectID = [obj valueForKeyPath:@"id"];
+            self.name = [obj valueForKeyPath:@"name"];
+        } @catch (NSException *exception) {
+            //
+        } @finally {
+            //
         }
-        self.groups = Arr;
     }
     return self;
 }
+
 
 
 @end

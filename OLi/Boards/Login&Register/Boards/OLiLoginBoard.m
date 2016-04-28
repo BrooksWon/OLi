@@ -39,14 +39,14 @@
 
 - (IBAction)loginBtnActionWithCount:(id)sender {
 //    [AppDelegateEntity changeVC];
-//    [self gotoHomePageAction:sender];
+    [self gotoHomePageAction:sender];
     
     
     
     
-    [self.loginBLL loginWithCallback:^(id objc) {
-        NSLog(@"objc = %@", objc);
-    }];
+//    [self.loginBLL loginWithCallback:^(id objc) {
+//        NSLog(@"objc = %@", objc);
+//    }];
     
     
     

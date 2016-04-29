@@ -10,6 +10,6 @@
 
 @interface OLiQuestionViewController : OLiWebViewController
 
-- (instancetype)initWithTitle:(NSString *)title bgColor:(UIColor *)bgc;
+- (instancetype)initWithTitle:(NSString *)title bgColor:(UIColor *)bgc url:(NSURL *)_url;
 
 @end

@@ -141,11 +141,6 @@
     }
 }
 
--(void)didFinishShareInShakeView:(UMSocialResponseEntity *)response
-{
-    NSLog(@"finish share with response is %@",response);
-}
-
 /*
  注意分享到新浪微博我们使用新浪微博SSO授权，你需要在xcode工程设置url scheme，并重写AppDelegate中的`- (BOOL)application openURL sourceApplication`方法，详细见文档。否则不能跳转回来原来的app。
  */

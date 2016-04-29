@@ -7,43 +7,39 @@
 //
 
 #import "OLiQuestionViewController.h"
-#import "NextViewController.h"
 #import "OLiAppDelegate.h"
+#import "UMSocial.h"
 
-@interface OLiQuestionViewController ()
+
+@interface OLiQuestionViewController ()<UMSocialUIDelegate>
 
 @end
 
 @implementation OLiQuestionViewController
 
-- (instancetype)initWithTitle:(NSString *)title bgColor:(UIColor *)bgc
-{
+- (instancetype)initWithTitle:(NSString *)title bgColor:(UIColor *)bgc url:(NSURL *)_url {
     if (self = [super init]) {
         self.title = title;
         self.view.backgroundColor = bgc;
-        self.url = [NSURL URLWithString:@"http://www.baidu.com"];
+        self.url = _url;
     }
     return self;
 }
 
 -(NSArray<id<UIPreviewActionItem>> *)previewActionItems
 {
-    UIPreviewAction * action1 = [UIPreviewAction actionWithTitle:@"大" style:1 handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
+    UIPreviewAction * action1 = [UIPreviewAction actionWithTitle:@"分享" style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
         
-        NextViewController *aaaa = [[NextViewController alloc] init];
-        [[self topViewController] presentViewController:aaaa animated:YES completion:nil];
+        [self showShareList:[self topViewController]];
     }];
     
-    UIPreviewAction * action2 = [UIPreviewAction actionWithTitle:@"家" style:0 handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
-        UIViewController *aaaa = [[UIViewController alloc] init];
-        aaaa.view.backgroundColor = [UIColor brownColor];
-        [[self topViewController].navigationController pushViewController:aaaa animated:YES];
-        
-    }];
-    UIPreviewAction * action3 = [UIPreviewAction actionWithTitle:@"好" style:2 handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
+    UIPreviewAction * action2 = [UIPreviewAction actionWithTitle:@"答题" style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
+        OLiQuestionViewController* webViewController = [[OLiQuestionViewController alloc] initWithUrl:[NSURL URLWithString:@"http://www.baidu.com"]];
+        webViewController.hidesBottomBarWhenPushed = YES;
+        [[self topViewController].navigationController pushViewController:webViewController animated:YES];
     }];
     
-    NSArray * actions = @[action1,action2,action3];
+    NSArray * actions = @[action1,action2];
     
     return actions;
 }
@@ -67,6 +63,22 @@
     } else {
         return rootViewController;
     }
+}
+
+/*
+ 注意分享到新浪微博我们使用新浪微博SSO授权，你需要在xcode工程设置url scheme，并重写AppDelegate中的`- (BOOL)application openURL sourceApplication`方法，详细见文档。否则不能跳转回来原来的app。
+ */
+-(IBAction)showShareList:(id)sender
+{
+    NSString *shareText = @"欢迎使用－小试牛刀，考证无忧！ http://niudaoxiaoshi.com"; //分享内嵌文字
+    UIImage *shareImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"icon60x60@2x" ofType:@"png"]];
+    //调用快速分享接口
+    [UMSocialSnsService presentSnsIconSheetView:sender
+                                         appKey:kUmengAppKey
+                                      shareText:shareText
+                                     shareImage:shareImage
+                                shareToSnsNames:@[UMShareToSina,UMShareToQQ,UMShareToQzone,UMShareToWechatSession,UMShareToWechatTimeline,UMShareToWechatFavorite,UMShareToEmail,UMShareToSms]
+                                       delegate:sender];
 }
 
 @end

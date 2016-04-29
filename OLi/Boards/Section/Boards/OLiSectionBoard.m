@@ -16,8 +16,9 @@
 #import "ChapterBLL.h"
 
 #import "OLiQuestionViewController.h"
+#import "UMSocial.h"
 
-@interface OLiSectionBoard ()<OLiTableViewHeaderViewDelegate, UIViewControllerPreviewingDelegate>
+@interface OLiSectionBoard ()<OLiTableViewHeaderViewDelegate, UIViewControllerPreviewingDelegate,UMSocialUIDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *listArray;
@@ -172,7 +173,7 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    OLiWebViewController* webViewController = [[OLiWebViewController alloc] initWithUrl:[NSURL URLWithString:@"http://www.baidu.com"]];
+    OLiQuestionViewController* webViewController = [[OLiQuestionViewController alloc] initWithUrl:[NSURL URLWithString:@"http://www.baidu.com"]];
     webViewController.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:webViewController animated:YES];
 }
@@ -206,18 +207,32 @@
 {
     NSIndexPath *indexPath = [self.tableView indexPathForCell:(UITableViewCell* )[context sourceView]];
     
-    NSArray *arr = @[@"1",@"2",@"3"];
-    NSArray *colorArr = @[[UIColor redColor],[UIColor greenColor],[UIColor blackColor]];
+    OLiQuestionViewController *childVC = [[OLiQuestionViewController alloc] initWithUrl:[NSURL URLWithString:@"http://www.baidu.com"]];
     
-    OLiQuestionViewController *childVC = [[OLiQuestionViewController alloc] initWithTitle:arr[indexPath.row] bgColor:colorArr[indexPath.row]];
-    
-    childVC.preferredContentSize = CGSizeMake(0.0f,600.f);
+    childVC.preferredContentSize = CGSizeMake(0.0f,500.f);
     return childVC;
 }
 
 - (void)previewingContext:(id <UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit
 {
     [self showViewController:viewControllerToCommit sender:self];
+}
+
+-(void)didCloseUIViewController:(UMSViewControllerType)fromViewControllerType
+{
+    NSLog(@"didClose is %d",fromViewControllerType);
+}
+
+//下面得到分享完成的回调
+-(void)didFinishGetUMSocialDataInViewController:(UMSocialResponseEntity *)response
+{
+    NSLog(@"didFinishGetUMSocialDataInViewController with response is %@",response);
+    //根据`responseCode`得到发送结果,如果分享成功
+    if(response.responseCode == UMSResponseCodeSuccess)
+    {
+        //得到分享到的微博平台名
+        NSLog(@"share to sns name is %@",[[response.data allKeys] objectAtIndex:0]);
+    }
 }
 
 @end

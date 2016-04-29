@@ -13,7 +13,7 @@
 #import "TalkingData.h"
 #import "TalkingDataSMS.h"
 #import "UMSocial.h"
-
+#import "OLiMeBoard.h"
 #import "UMSocialWechatHandler.h"
 #import "UMSocialQQHandler.h"
 #import "UMSocialSinaSSOHandler.h"
@@ -44,8 +44,8 @@
     [self.window makeKeyAndVisible];
     
 //    self.window.rootViewController = OLiHomeBoard.new;
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:OLiLoginBoard.new];
-//    self.window.rootViewController = [OLiIndexBoard new];
+//    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:OLiLoginBoard.new];
+    self.window.rootViewController = [OLiIndexBoard new];
     
     [self customizeAppearance];
     
@@ -168,10 +168,46 @@
 }
 
 - (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler{
-    if ([shortcutItem.localizedTitle  isEqual: @"弹框"]) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"OPPS!" message:@"我的CTO叫佛山强" delegate:self cancelButtonTitle:@"哦" otherButtonTitles:nil, nil];
+    
+    [[self topViewController].tabBarController setSelectedIndex:1];
+    
+    UINavigationController *navVC = (UINavigationController*)[[self topViewController].tabBarController selectedViewController];
+    OLiMeBoard *meVC = (OLiMeBoard*)[navVC topViewController];
+
+    
+    if ([shortcutItem.localizedTitle  isEqual: @"签到"]) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"恭喜，签到成功！" delegate:self cancelButtonTitle:@"好" otherButtonTitles:nil, nil];
         [alert show];
-        return;
+    }else if ([shortcutItem.localizedTitle  isEqual: @"我的收藏"]) {
+//        if ([[NSUserDefaults standardUserDefaults] objectForKey:@"USERID"]) {
+            //
+            [meVC.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:2] animated:YES scrollPosition:UITableViewScrollPositionNone];
+//        }
+    }else if ([shortcutItem.localizedTitle  isEqual: @"错题本"]) {
+        
+    }else if ([shortcutItem.localizedTitle  isEqual: @"分享"]) {
+        [meVC showShareList:nil];
+    }
+}
+
+- (UIViewController*)topViewController
+{
+    return [self topViewControllerWithRootViewController:[OLiAppDelegate appDelegate].window.rootViewController];
+}
+
+- (UIViewController*)topViewControllerWithRootViewController:(UIViewController*)rootViewController
+{
+    if ([rootViewController isKindOfClass:[UITabBarController class]]) {
+        UITabBarController *tabBarController = (UITabBarController *)rootViewController;
+        return [self topViewControllerWithRootViewController:tabBarController.selectedViewController];
+    } else if ([rootViewController isKindOfClass:[UINavigationController class]]) {
+        UINavigationController* navigationController = (UINavigationController*)rootViewController;
+        return [self topViewControllerWithRootViewController:navigationController.visibleViewController];
+    } else if (rootViewController.presentedViewController) {
+        UIViewController* presentedViewController = rootViewController.presentedViewController;
+        return [self topViewControllerWithRootViewController:presentedViewController];
+    } else {
+        return rootViewController;
     }
 }
 

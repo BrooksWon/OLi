@@ -14,6 +14,7 @@
                 <outlet property="questionsCell" destination="qwA-mW-sQc" id="Iho-Ig-Hev"/>
                 <outlet property="settingCell" destination="uIh-CX-SK2" id="ray-vw-JYR"/>
                 <outlet property="shareCell" destination="2D1-Yh-SG9" id="NF9-6N-lRC"/>
+                <outlet property="tableView" destination="QJt-cZ-uvj" id="qvZ-1r-ybC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

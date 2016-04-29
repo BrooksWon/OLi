@@ -10,4 +10,8 @@
 
 @interface OLiMeBoard : OLiBaseBoard <UITableViewDelegate, UITableViewDataSource>
 
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+
+-(IBAction)showShareList:(id)sender;
+
 @end

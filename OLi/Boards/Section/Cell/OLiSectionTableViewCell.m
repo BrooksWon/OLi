@@ -17,6 +17,7 @@
     if (!cell) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"OLiSectionTableViewCell" owner:self
                                            options:nil] lastObject];
+        cell.imageView.image = [UIImage imageNamed:@"zhangjie"];
     }
     return cell;
 }

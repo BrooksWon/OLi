@@ -35,7 +35,7 @@
     if (self) {
         
         UIView * _line = [[UIView alloc] initWithFrame:CGRectMake(0, 44-0.5, [UIScreen mainScreen].bounds.size.width, 0.5)];
-        _line.backgroundColor = [UIColor colorWithRed:1/255.0 green:220/255.0 blue:220/255.0 alpha:1];
+        _line.backgroundColor = [UIColor colorWithRed:0/255.0 green:153/255.0 blue:255/255.0 alpha:1];
         [self.contentView addSubview:_line];
         
     }

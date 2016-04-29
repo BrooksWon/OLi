@@ -198,7 +198,7 @@
                             <view alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6lZ-Wc-B84">
                                 <rect key="frame" x="10" y="20" width="300" height="45"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_landing_nickname" translatesAutoresizingMaskIntoConstraints="NO" id="8HJ-Lg-XsC">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shouquan" translatesAutoresizingMaskIntoConstraints="NO" id="8HJ-Lg-XsC">
                                         <rect key="frame" x="20" y="10" width="25" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="25" id="mpF-CN-Efg"/>
@@ -313,7 +313,8 @@
         </view>
     </objects>
     <resources>
-        <image name="ic_landing_nickname" width="22" height="22"/>
+        <image name="ic_landing_nickname" width="32" height="32"/>
         <image name="mm_normal" width="32" height="32"/>
+        <image name="shouquan" width="32" height="32"/>
     </resources>
 </document>

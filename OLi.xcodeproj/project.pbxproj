@@ -80,11 +80,6 @@
 		98CB81091CB1E3FA00420EF9 /* OLiWebBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CB81071CB1E3FA00420EF9 /* OLiWebBoard.m */; };
 		98CB810A1CB1E3FA00420EF9 /* OLiWebBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98CB81081CB1E3FA00420EF9 /* OLiWebBoard.xib */; };
 		98CB810E1CB1EBE800420EF9 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CB810D1CB1EBE800420EF9 /* UINavigationController+FDFullscreenPopGesture.m */; };
-		98CC6EC61CA3A82D0003CFB5 /* page2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98CC6EC11CA3A82D0003CFB5 /* page2@2x.png */; };
-		98CC6EC71CA3A82D0003CFB5 /* page1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98CC6EC21CA3A82D0003CFB5 /* page1@2x.png */; };
-		98CC6EC81CA3A82D0003CFB5 /* page4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98CC6EC31CA3A82D0003CFB5 /* page4@2x.png */; };
-		98CC6EC91CA3A82D0003CFB5 /* page0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98CC6EC41CA3A82D0003CFB5 /* page0@2x.png */; };
-		98CC6ECA1CA3A82D0003CFB5 /* page3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98CC6EC51CA3A82D0003CFB5 /* page3@2x.png */; };
 		98E6A6421C9EDA47005A7D58 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E6A6401C9EDA47005A7D58 /* NextViewController.m */; };
 		98E6A6431C9EDA47005A7D58 /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98E6A6411C9EDA47005A7D58 /* NextViewController.xib */; };
 		98EC10F31CCF12680011781B /* backItemImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98EC10E81CCF12680011781B /* backItemImage@2x.png */; };
@@ -124,10 +119,7 @@
 		98EC11701CCF5CEA0011781B /* UMSShareListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98EC11561CCF5CEA0011781B /* UMSShareListController.xib */; };
 		98EC11711CCF5CEA0011781B /* UMSocialSDKResourcesNew.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 98EC11571CCF5CEA0011781B /* UMSocialSDKResourcesNew.bundle */; };
 		98EC11791CCF61EB0011781B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98EC11781CCF61EB0011781B /* SystemConfiguration.framework */; };
-		98FD427B1CA3909200282443 /* OLiQuestionBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FD42791CA3909200282443 /* OLiQuestionBoard.m */; };
-		98FD427C1CA3909200282443 /* OLiQuestionBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98FD427A1CA3909200282443 /* OLiQuestionBoard.xib */; };
 		98FD42801CA390AB00282443 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FD427F1CA390AB00282443 /* iCarousel.m */; };
-		98FD42841CA39C6F00282443 /* OLiQuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FD42831CA39C6F00282443 /* OLiQuestionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -268,11 +260,6 @@
 		98CB81081CB1E3FA00420EF9 /* OLiWebBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OLiWebBoard.xib; sourceTree = "<group>"; };
 		98CB810C1CB1EBE800420EF9 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		98CB810D1CB1EBE800420EF9 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
-		98CC6EC11CA3A82D0003CFB5 /* page2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page2@2x.png"; sourceTree = "<group>"; };
-		98CC6EC21CA3A82D0003CFB5 /* page1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page1@2x.png"; sourceTree = "<group>"; };
-		98CC6EC31CA3A82D0003CFB5 /* page4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page4@2x.png"; sourceTree = "<group>"; };
-		98CC6EC41CA3A82D0003CFB5 /* page0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page0@2x.png"; sourceTree = "<group>"; };
-		98CC6EC51CA3A82D0003CFB5 /* page3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page3@2x.png"; sourceTree = "<group>"; };
 		98E6A63F1C9EDA47005A7D58 /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		98E6A6401C9EDA47005A7D58 /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 		98E6A6411C9EDA47005A7D58 /* NextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NextViewController.xib; sourceTree = "<group>"; };
@@ -353,13 +340,8 @@
 		98EC11571CCF5CEA0011781B /* UMSocialSDKResourcesNew.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKResourcesNew.bundle; sourceTree = "<group>"; };
 		98EC11581CCF5CEA0011781B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/UMSocialLocalizable.strings"; sourceTree = "<group>"; };
 		98EC11781CCF61EB0011781B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		98FD42781CA3909200282443 /* OLiQuestionBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiQuestionBoard.h; sourceTree = "<group>"; };
-		98FD42791CA3909200282443 /* OLiQuestionBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiQuestionBoard.m; sourceTree = "<group>"; };
-		98FD427A1CA3909200282443 /* OLiQuestionBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OLiQuestionBoard.xib; sourceTree = "<group>"; };
 		98FD427E1CA390AB00282443 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		98FD427F1CA390AB00282443 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
-		98FD42821CA39C6F00282443 /* OLiQuestionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiQuestionView.h; sourceTree = "<group>"; };
-		98FD42831CA39C6F00282443 /* OLiQuestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiQuestionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1033,15 +1015,6 @@
 		98FD42771CA38FAA00282443 /* Question */ = {
 			isa = PBXGroup;
 			children = (
-				98FD42811CA39B9100282443 /* OLiQuestionView */,
-				98FD42781CA3909200282443 /* OLiQuestionBoard.h */,
-				98FD42791CA3909200282443 /* OLiQuestionBoard.m */,
-				98FD427A1CA3909200282443 /* OLiQuestionBoard.xib */,
-				98CC6EC11CA3A82D0003CFB5 /* page2@2x.png */,
-				98CC6EC21CA3A82D0003CFB5 /* page1@2x.png */,
-				98CC6EC31CA3A82D0003CFB5 /* page4@2x.png */,
-				98CC6EC41CA3A82D0003CFB5 /* page0@2x.png */,
-				98CC6EC51CA3A82D0003CFB5 /* page3@2x.png */,
 				981014C71CD22A6000E094A7 /* OLiQuestionViewController.h */,
 				981014C81CD22A6000E094A7 /* OLiQuestionViewController.m */,
 			);
@@ -1055,15 +1028,6 @@
 				98FD427F1CA390AB00282443 /* iCarousel.m */,
 			);
 			path = iCarousel;
-			sourceTree = "<group>";
-		};
-		98FD42811CA39B9100282443 /* OLiQuestionView */ = {
-			isa = PBXGroup;
-			children = (
-				98FD42821CA39C6F00282443 /* OLiQuestionView.h */,
-				98FD42831CA39C6F00282443 /* OLiQuestionView.m */,
-			);
-			path = OLiQuestionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1126,16 +1090,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				98EC116C1CCF5CEA0011781B /* UMShareEditViewController.xib in Resources */,
-				98CC6EC61CA3A82D0003CFB5 /* page2@2x.png in Resources */,
 				98EC11691CCF5CEA0011781B /* UMSCommentDetailController.xib in Resources */,
 				98EC10F41CCF12680011781B /* backItemImage_hl@2x.png in Resources */,
 				98EC11671CCF5CEA0011781B /* UMSocialLocalizable.strings in Resources */,
 				98CB810A1CB1E3FA00420EF9 /* OLiWebBoard.xib in Resources */,
-				98CC6EC91CA3A82D0003CFB5 /* page0@2x.png in Resources */,
-				98CC6EC71CA3A82D0003CFB5 /* page1@2x.png in Resources */,
 				9847B1041CA293C500D58955 /* OLiSectionTableViewCell.xib in Resources */,
 				98EC116A1CCF5CEA0011781B /* UMSCommentInputController.xib in Resources */,
-				98FD427C1CA3909200282443 /* OLiQuestionBoard.xib in Resources */,
 				98EC116F1CCF5CEA0011781B /* UMSnsAccountViewController.xib in Resources */,
 				98EC11611CCF5CEA0011781B /* ios-social-sdk-shake.html in Resources */,
 				98EC115D1CCF5CEA0011781B /* WeiboSDK.bundle in Resources */,
@@ -1145,10 +1105,8 @@
 				98EC10F31CCF12680011781B /* backItemImage@2x.png in Resources */,
 				98EC11711CCF5CEA0011781B /* UMSocialSDKResourcesNew.bundle in Resources */,
 				981014801CD097A100E094A7 /* OLiLoginBoard.xib in Resources */,
-				98CC6EC81CA3A82D0003CFB5 /* page4@2x.png in Resources */,
 				98EC11701CCF5CEA0011781B /* UMSShareListController.xib in Resources */,
 				983D06AB1C8A81FD00D7034B /* OLiHomeBoard.xib in Resources */,
-				98CC6ECA1CA3A82D0003CFB5 /* page3@2x.png in Resources */,
 				98E6A6431C9EDA47005A7D58 /* NextViewController.xib in Resources */,
 				9847B0FC1CA291AE00D58955 /* OLiSectionBoard.xib in Resources */,
 				983D06631C8A7B0400D7034B /* Assets.xcassets in Resources */,
@@ -1179,7 +1137,6 @@
 				9847B0FF1CA2922300D58955 /* OLiTableViewHeaderView.m in Sources */,
 				981014B21CD0E55100E094A7 /* ChapterBLL.m in Sources */,
 				981014A91CD0A59500E094A7 /* AFURLResponseSerialization.m in Sources */,
-				98FD427B1CA3909200282443 /* OLiQuestionBoard.m in Sources */,
 				9847B0EF1CA28FFA00D58955 /* OLiBaseBoard.m in Sources */,
 				98E6A6421C9EDA47005A7D58 /* NextViewController.m in Sources */,
 				983D07291C8ABF4100D7034B /* RequestDownload.m in Sources */,
@@ -1197,7 +1154,6 @@
 				983D06FE1C8A915C00D7034B /* OLiRequestObject.m in Sources */,
 				9847B1031CA293C500D58955 /* OLiSectionTableViewCell.m in Sources */,
 				98EC11041CCF33090011781B /* RxWebViewNavigationViewController.m in Sources */,
-				98FD42841CA39C6F00282443 /* OLiQuestionView.m in Sources */,
 				983D07201C8A960700D7034B /* ResponseDemoEnity.m in Sources */,
 				981014831CD097E000E094A7 /* RequestLogin.m in Sources */,
 				9810147F1CD097A100E094A7 /* OLiLoginBoard.m in Sources */,

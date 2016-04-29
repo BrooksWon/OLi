@@ -45,17 +45,7 @@
     
     [self setupTalkingData];
     [self setupUMShare];
-    
-    UIApplicationShortcutItem *shortItem0 = [[UIApplicationShortcutItem alloc] initWithType:@"签到" localizedTitle:@"签到"];
-    UIApplicationShortcutItem *shortItem1 = [[UIApplicationShortcutItem alloc] initWithType:@"错题本" localizedTitle:@"错题本"];
-    UIApplicationShortcutItem *shortItem2 = [[UIApplicationShortcutItem alloc] initWithType:@"我的收藏" localizedTitle:@"我的收藏"];
-    
-    UIApplicationShortcutItem *shortItem3 = [[UIApplicationShortcutItem alloc] initWithType:@"签到" localizedTitle:@"签到" localizedSubtitle:@"我的签到" icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"me_s"] userInfo:nil];
-    
-    NSArray *shortItems = [[NSArray alloc] initWithObjects:shortItem0, shortItem1, shortItem2, shortItem3, nil];
-    NSLog(@"%@", shortItems);
-    [[UIApplication sharedApplication] setShortcutItems:shortItems];
-    
+    [self setup3DTouch];
     
     return YES;
 }
@@ -166,6 +156,20 @@
     [TalkingData setExceptionReportEnabled:YES];
     [TalkingData sessionStarted:kTalkingDataKey withChannelId:kChannelIdKey];
 //    [TalkingDataSMS init:@"E7538D90715219B3A2272A3E07E69C57" withSecretId:@""];
+}
+
+- (void)setup3DTouch {
+    UIApplicationShortcutItem *shortItem1 = [[UIApplicationShortcutItem alloc] initWithType:@"签到" localizedTitle:@"签到" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"qiandao"] userInfo:nil];
+    
+    UIApplicationShortcutItem *shortItem2 = [[UIApplicationShortcutItem alloc] initWithType:@"我的收藏" localizedTitle:@"我的收藏" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"shoucang"] userInfo:nil];
+    
+    UIApplicationShortcutItem *shortItem3 = [[UIApplicationShortcutItem alloc] initWithType:@"错题本" localizedTitle:@"错题本" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"cuoti"] userInfo:nil];
+    
+    UIApplicationShortcutItem *shortItem4 = [[UIApplicationShortcutItem alloc] initWithType:@"分享" localizedTitle:@"分享" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"fenxiang"] userInfo:nil];
+    
+    
+    NSArray *shortItems = @[shortItem1, shortItem2, shortItem3, shortItem4];
+    [[UIApplication sharedApplication] setShortcutItems:shortItems];
 }
 
 - (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler{

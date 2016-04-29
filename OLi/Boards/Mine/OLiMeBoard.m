@@ -8,7 +8,7 @@
 
 #import "OLiMeBoard.h"
 
-#define kTableViewSectionNumbers 5
+#define kTableViewSectionNumbers 6
 
 #import "OLiSettingBoard.h"
 
@@ -23,6 +23,7 @@
 @property (strong, nonatomic) IBOutlet UITableViewCell *msgCell;
 @property (strong, nonatomic) IBOutlet UITableViewCell *shareCell;
 @property (strong, nonatomic) IBOutlet UITableViewCell *settingCell;
+@property (strong, nonatomic) IBOutlet UITableViewCell *favorateCell;
 
 @end
 
@@ -59,13 +60,17 @@
         }
         case 2:
         {
-            return self.msgCell;
+            return self.favorateCell;
         }
         case 3:
         {
-            return self.shareCell;
+            return self.msgCell;
         }
         case 4:
+        {
+            return self.shareCell;
+        }
+        case 5:
         {
             return self.settingCell;
         }

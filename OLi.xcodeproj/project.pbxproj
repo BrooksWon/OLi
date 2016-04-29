@@ -74,6 +74,7 @@
 		98871B051C9EB6DA003F652D /* HyLoglnButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 98871B001C9EB6DA003F652D /* HyLoglnButton.m */; };
 		98871B061C9EB6DA003F652D /* HyTransitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 98871B021C9EB6DA003F652D /* HyTransitions.m */; };
 		98871B071C9EB6DA003F652D /* SpinerLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 98871B041C9EB6DA003F652D /* SpinerLayer.m */; };
+		989ADA0C1CD319C6000038CF /* libUMessage_Sdk_1.2.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 989ADA0A1CD319C6000038CF /* libUMessage_Sdk_1.2.6.a */; };
 		98B84EB31CA3C44300FECA68 /* OLiToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B84EB21CA3C44300FECA68 /* OLiToast.m */; };
 		98CB81041CB1E3DF00420EF9 /* OLiSettingBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CB81021CB1E3DF00420EF9 /* OLiSettingBoard.m */; };
 		98CB81051CB1E3DF00420EF9 /* OLiSettingBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98CB81031CB1E3DF00420EF9 /* OLiSettingBoard.xib */; };
@@ -250,6 +251,8 @@
 		98871B021C9EB6DA003F652D /* HyTransitions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyTransitions.m; sourceTree = "<group>"; };
 		98871B031C9EB6DA003F652D /* SpinerLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinerLayer.h; sourceTree = "<group>"; };
 		98871B041C9EB6DA003F652D /* SpinerLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinerLayer.m; sourceTree = "<group>"; };
+		989ADA0A1CD319C6000038CF /* libUMessage_Sdk_1.2.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMessage_Sdk_1.2.6.a; sourceTree = "<group>"; };
+		989ADA0B1CD319C6000038CF /* UMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMessage.h; sourceTree = "<group>"; };
 		98B84EB11CA3C44300FECA68 /* OLiToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiToast.h; sourceTree = "<group>"; };
 		98B84EB21CA3C44300FECA68 /* OLiToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiToast.m; sourceTree = "<group>"; };
 		98CB81011CB1E3DF00420EF9 /* OLiSettingBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiSettingBoard.h; sourceTree = "<group>"; };
@@ -365,6 +368,7 @@
 				98EC115F1CCF5CEA0011781B /* TencentOpenAPI.framework in Frameworks */,
 				98EC110B1CCF56330011781B /* CoreMotion.framework in Frameworks */,
 				98EC115A1CCF5CEA0011781B /* libSocialAlipayShare.a in Frameworks */,
+				989ADA0C1CD319C6000038CF /* libUMessage_Sdk_1.2.6.a in Frameworks */,
 				98EC115B1CCF5CEA0011781B /* libSocialSinaSSO.a in Frameworks */,
 				98EC11681CCF5CEA0011781B /* libUMSocial_Sdk_5.0.1.a in Frameworks */,
 				98EC11091CCF560A0011781B /* libTalkingData.a in Frameworks */,
@@ -596,6 +600,7 @@
 		983D06941C8A7F8800D7034B /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				989ADA091CD319C6000038CF /* UMessage_Sdk_1.2.6 */,
 				98EC11131CCF5CE30011781B /* umeng_ios_social_sdk_5.0.1_arm64_custom */,
 				98EC11051CCF56030011781B /* TalkingData_Analytics_iOS_SDK_V2.2.27 */,
 				98EC10E71CCF12680011781B /* RxWebViewController */,
@@ -825,6 +830,15 @@
 				9810147C1CD097A100E094A7 /* Enity */,
 			);
 			path = "Login&Register";
+			sourceTree = "<group>";
+		};
+		989ADA091CD319C6000038CF /* UMessage_Sdk_1.2.6 */ = {
+			isa = PBXGroup;
+			children = (
+				989ADA0A1CD319C6000038CF /* libUMessage_Sdk_1.2.6.a */,
+				989ADA0B1CD319C6000038CF /* UMessage.h */,
+			);
+			path = UMessage_Sdk_1.2.6;
 			sourceTree = "<group>";
 		};
 		98B84EB01CA3C3D100FECA68 /* OLiToast */ = {
@@ -1317,6 +1331,7 @@
 					"$(PROJECT_DIR)/OLi/Third/umeng_ios_social_sdk_5.0.1_arm64_custom/UMSocial_Sdk_Extra_Frameworks/UMSocial_Shake_Sdk",
 					"$(PROJECT_DIR)/OLi/Third/umeng_ios_social_sdk_5.0.1_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Wechat",
 					"$(PROJECT_DIR)/OLi/Third/umeng_ios_social_sdk_5.0.1_arm64_custom/UMSocial_Sdk_5.0.1",
+					"$(PROJECT_DIR)/OLi/Third/UMessage_Sdk_1.2.6",
 				);
 				OTHER_LDFLAGS = "-Objc";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrooksWon.OLi;
@@ -1348,6 +1363,7 @@
 					"$(PROJECT_DIR)/OLi/Third/umeng_ios_social_sdk_5.0.1_arm64_custom/UMSocial_Sdk_Extra_Frameworks/UMSocial_Shake_Sdk",
 					"$(PROJECT_DIR)/OLi/Third/umeng_ios_social_sdk_5.0.1_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Wechat",
 					"$(PROJECT_DIR)/OLi/Third/umeng_ios_social_sdk_5.0.1_arm64_custom/UMSocial_Sdk_5.0.1",
+					"$(PROJECT_DIR)/OLi/Third/UMessage_Sdk_1.2.6",
 				);
 				OTHER_LDFLAGS = "-Objc";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrooksWon.OLi;

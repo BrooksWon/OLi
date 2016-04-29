@@ -75,6 +75,7 @@
 		98871B061C9EB6DA003F652D /* HyTransitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 98871B021C9EB6DA003F652D /* HyTransitions.m */; };
 		98871B071C9EB6DA003F652D /* SpinerLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 98871B041C9EB6DA003F652D /* SpinerLayer.m */; };
 		989ADA0C1CD319C6000038CF /* libUMessage_Sdk_1.2.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 989ADA0A1CD319C6000038CF /* libUMessage_Sdk_1.2.6.a */; };
+		989ADA101CD330E6000038CF /* ATAppUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 989ADA0F1CD330E6000038CF /* ATAppUpdater.m */; };
 		98B84EB31CA3C44300FECA68 /* OLiToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B84EB21CA3C44300FECA68 /* OLiToast.m */; };
 		98CB81041CB1E3DF00420EF9 /* OLiSettingBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CB81021CB1E3DF00420EF9 /* OLiSettingBoard.m */; };
 		98CB81051CB1E3DF00420EF9 /* OLiSettingBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98CB81031CB1E3DF00420EF9 /* OLiSettingBoard.xib */; };
@@ -253,6 +254,8 @@
 		98871B041C9EB6DA003F652D /* SpinerLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinerLayer.m; sourceTree = "<group>"; };
 		989ADA0A1CD319C6000038CF /* libUMessage_Sdk_1.2.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMessage_Sdk_1.2.6.a; sourceTree = "<group>"; };
 		989ADA0B1CD319C6000038CF /* UMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMessage.h; sourceTree = "<group>"; };
+		989ADA0E1CD330E6000038CF /* ATAppUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATAppUpdater.h; sourceTree = "<group>"; };
+		989ADA0F1CD330E6000038CF /* ATAppUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATAppUpdater.m; sourceTree = "<group>"; };
 		98B84EB11CA3C44300FECA68 /* OLiToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiToast.h; sourceTree = "<group>"; };
 		98B84EB21CA3C44300FECA68 /* OLiToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiToast.m; sourceTree = "<group>"; };
 		98CB81011CB1E3DF00420EF9 /* OLiSettingBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiSettingBoard.h; sourceTree = "<group>"; };
@@ -600,6 +603,7 @@
 		983D06941C8A7F8800D7034B /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				989ADA0D1CD330E6000038CF /* ATAppUpdater */,
 				989ADA091CD319C6000038CF /* UMessage_Sdk_1.2.6 */,
 				98EC11131CCF5CE30011781B /* umeng_ios_social_sdk_5.0.1_arm64_custom */,
 				98EC11051CCF56030011781B /* TalkingData_Analytics_iOS_SDK_V2.2.27 */,
@@ -839,6 +843,15 @@
 				989ADA0B1CD319C6000038CF /* UMessage.h */,
 			);
 			path = UMessage_Sdk_1.2.6;
+			sourceTree = "<group>";
+		};
+		989ADA0D1CD330E6000038CF /* ATAppUpdater */ = {
+			isa = PBXGroup;
+			children = (
+				989ADA0E1CD330E6000038CF /* ATAppUpdater.h */,
+				989ADA0F1CD330E6000038CF /* ATAppUpdater.m */,
+			);
+			path = ATAppUpdater;
 			sourceTree = "<group>";
 		};
 		98B84EB01CA3C3D100FECA68 /* OLiToast */ = {
@@ -1180,6 +1193,7 @@
 				983D06F91C8A915C00D7034B /* NSObject+OLiNetEngine.m in Sources */,
 				98B84EB31CA3C44300FECA68 /* OLiToast.m in Sources */,
 				983D071E1C8A960700D7034B /* DemoBLL.m in Sources */,
+				989ADA101CD330E6000038CF /* ATAppUpdater.m in Sources */,
 				983D071F1C8A960700D7034B /* RequestDemoEnity.m in Sources */,
 				98EC10FB1CCF12E60011781B /* OLiWebViewNavigationViewController.m in Sources */,
 				98EC11121CCF58530011781B /* UIViewController+Analytics.m in Sources */,
@@ -1312,7 +1326,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = Luanch;
-				CODE_SIGN_IDENTITY = "iPhone Developer: jianyu wang (4XUU6CEV36)";
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.BrooksWon.OLi";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1336,6 +1350,7 @@
 				OTHER_LDFLAGS = "-Objc";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrooksWon.OLi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fa80ec0e-4482-4b80-ae60-df8149d49a3a";
 			};
 			name = Debug;
 		};
@@ -1344,7 +1359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = Luanch;
-				CODE_SIGN_IDENTITY = "iPhone Developer: jianyu wang (4XUU6CEV36)";
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.BrooksWon.OLi";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1368,6 +1383,7 @@
 				OTHER_LDFLAGS = "-Objc";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrooksWon.OLi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fa80ec0e-4482-4b80-ae60-df8149d49a3a";
 			};
 			name = Release;
 		};

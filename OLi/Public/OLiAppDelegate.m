@@ -26,6 +26,7 @@
 #define _IPHONE80_ 80000
 
 #import "UMessage.h"
+#import "ATAppUpdater.h"
 
 @interface OLiAppDelegate ()
 
@@ -54,6 +55,10 @@
     
     
     [self setupUMPush:launchOptions];
+    [self showPushMessage:launchOptions];
+    
+    
+    [[ATAppUpdater sharedUpdater] forceOpenNewAppVersion:YES];
     
     return YES;
 }
@@ -238,19 +243,46 @@
     
     [UMessage didReceiveRemoteNotification:userInfo];
     
-    //    self.userInfo = userInfo;
-    //    //定制自定的的弹出框
-    //    if([UIApplication sharedApplication].applicationState == UIApplicationStateActive)
-    //    {
-    //        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"标题"
-    //                                                            message:@"Test On ApplicationStateActive"
-    //                                                           delegate:self
-    //                                                  cancelButtonTitle:@"确定"
-    //                                                  otherButtonTitles:nil];
-    //
-    //        [alertView show];
-    //        
-    //    }
+//    NSString *message = [userInfo valueForKeyPath:@"aps.alert"];
+    //定制自定的的弹出框
+//    if([UIApplication sharedApplication].applicationState == UIApplicationStateActive)
+//    {
+//        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"推送消息"
+//                                                            message:message
+//                                                           delegate:self
+//                                                  cancelButtonTitle:@"确定"
+//                                                  otherButtonTitles:nil];
+//
+//        [alertView show];
+//    }
+    
+    [self showPushMessage:userInfo];
+        
+
+}
+
+- (void)showPushMessage:(NSDictionary*)dic {
+    NSString *message = nil;
+    @try {
+        message = [dic valueForKeyPath:@"aps.alert"];
+    } @catch (NSException *exception) {
+        //
+    } @finally {
+        //
+    }
+    //定制自定的的弹出框
+//    if([UIApplication sharedApplication].applicationState == UIApplicationStateActive)
+//    {
+        if (message) {
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"推送消息"
+                                                                message:message
+                                                               delegate:self
+                                                      cancelButtonTitle:@"确定"
+                                                      otherButtonTitles:nil];
+            
+            [alertView show];
+        }
+//    }
 }
 
 @end

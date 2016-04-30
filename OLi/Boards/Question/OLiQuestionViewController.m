@@ -26,6 +26,11 @@
     return self;
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+//    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:nil action:nil];
+}
+
 -(NSArray<id<UIPreviewActionItem>> *)previewActionItems
 {
     UIPreviewAction * action1 = [UIPreviewAction actionWithTitle:@"分享" style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {

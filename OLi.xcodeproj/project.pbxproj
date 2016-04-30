@@ -69,18 +69,29 @@
 		9847B1071CA29A7800D58955 /* ModelGroups.m in Sources */ = {isa = PBXBuildFile; fileRef = 9847B1061CA29A7800D58955 /* ModelGroups.m */; };
 		9847B1091CA2A08900D58955 /* list.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9847B1081CA2A08900D58955 /* list.plist */; };
 		9847B10C1CA2A39A00D58955 /* OLiIndexBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 9847B10B1CA2A39A00D58955 /* OLiIndexBoard.m */; };
-		98871AFC1C9E7F0F003F652D /* OLiMeBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 98871AFA1C9E7F0F003F652D /* OLiMeBoard.m */; };
-		98871AFD1C9E7F0F003F652D /* OLiMeBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98871AFB1C9E7F0F003F652D /* OLiMeBoard.xib */; };
 		98871B051C9EB6DA003F652D /* HyLoglnButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 98871B001C9EB6DA003F652D /* HyLoglnButton.m */; };
 		98871B061C9EB6DA003F652D /* HyTransitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 98871B021C9EB6DA003F652D /* HyTransitions.m */; };
 		98871B071C9EB6DA003F652D /* SpinerLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 98871B041C9EB6DA003F652D /* SpinerLayer.m */; };
+		9889F8C31CD4589800A6B31B /* OLiMeBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 9889F8B81CD4589800A6B31B /* OLiMeBoard.m */; };
+		9889F8C41CD4589800A6B31B /* OLiMeBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9889F8B91CD4589800A6B31B /* OLiMeBoard.xib */; };
+		9889F8C51CD4589800A6B31B /* OLiSettingBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 9889F8BB1CD4589800A6B31B /* OLiSettingBoard.m */; };
+		9889F8C61CD4589800A6B31B /* OLiSettingBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9889F8BC1CD4589800A6B31B /* OLiSettingBoard.xib */; };
+		9889F8C71CD4589800A6B31B /* OLiWebBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 9889F8BE1CD4589800A6B31B /* OLiWebBoard.m */; };
+		9889F8C81CD4589800A6B31B /* OLiWebBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9889F8BF1CD4589800A6B31B /* OLiWebBoard.xib */; };
+		9889F8CB1CD458D600A6B31B /* GetFavoritesBLL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9889F8CA1CD458D600A6B31B /* GetFavoritesBLL.m */; };
+		9889F8CE1CD458F900A6B31B /* GetErrorsBLL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9889F8CD1CD458F900A6B31B /* GetErrorsBLL.m */; };
+		9889F8D11CD4590600A6B31B /* CheckinBLL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9889F8D01CD4590600A6B31B /* CheckinBLL.m */; };
+		9889F8D41CD45A1900A6B31B /* RequestCheckin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9889F8D31CD45A1900A6B31B /* RequestCheckin.m */; };
+		9889F8D71CD45A2C00A6B31B /* ResponseCheckin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9889F8D61CD45A2C00A6B31B /* ResponseCheckin.m */; };
+		9889F8DA1CD45A5200A6B31B /* RequestGetFavorites.m in Sources */ = {isa = PBXBuildFile; fileRef = 9889F8D91CD45A5200A6B31B /* RequestGetFavorites.m */; };
+		9889F8DD1CD45A6900A6B31B /* RequestGetErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 9889F8DC1CD45A6900A6B31B /* RequestGetErrors.m */; };
+		9889F8E01CD45ACB00A6B31B /* ResponseGetErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 9889F8DF1CD45ACB00A6B31B /* ResponseGetErrors.m */; };
+		9889F8E31CD45AE000A6B31B /* ResponseGetFavorites.m in Sources */ = {isa = PBXBuildFile; fileRef = 9889F8E21CD45AE000A6B31B /* ResponseGetFavorites.m */; };
+		9889F8E71CD4609E00A6B31B /* OLiGetErrorsBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 9889F8E51CD4609E00A6B31B /* OLiGetErrorsBoard.m */; };
+		9889F8E81CD4609E00A6B31B /* OLiGetErrorsBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9889F8E61CD4609E00A6B31B /* OLiGetErrorsBoard.xib */; };
 		989ADA0C1CD319C6000038CF /* libUMessage_Sdk_1.2.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 989ADA0A1CD319C6000038CF /* libUMessage_Sdk_1.2.6.a */; };
 		989ADA101CD330E6000038CF /* ATAppUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 989ADA0F1CD330E6000038CF /* ATAppUpdater.m */; };
 		98B84EB31CA3C44300FECA68 /* OLiToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B84EB21CA3C44300FECA68 /* OLiToast.m */; };
-		98CB81041CB1E3DF00420EF9 /* OLiSettingBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CB81021CB1E3DF00420EF9 /* OLiSettingBoard.m */; };
-		98CB81051CB1E3DF00420EF9 /* OLiSettingBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98CB81031CB1E3DF00420EF9 /* OLiSettingBoard.xib */; };
-		98CB81091CB1E3FA00420EF9 /* OLiWebBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CB81071CB1E3FA00420EF9 /* OLiWebBoard.m */; };
-		98CB810A1CB1E3FA00420EF9 /* OLiWebBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98CB81081CB1E3FA00420EF9 /* OLiWebBoard.xib */; };
 		98CB810E1CB1EBE800420EF9 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CB810D1CB1EBE800420EF9 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		98E6A6421C9EDA47005A7D58 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E6A6401C9EDA47005A7D58 /* NextViewController.m */; };
 		98E6A6431C9EDA47005A7D58 /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98E6A6411C9EDA47005A7D58 /* NextViewController.xib */; };
@@ -243,27 +254,48 @@
 		9847B1081CA2A08900D58955 /* list.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = list.plist; sourceTree = "<group>"; };
 		9847B10A1CA2A39A00D58955 /* OLiIndexBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiIndexBoard.h; sourceTree = "<group>"; };
 		9847B10B1CA2A39A00D58955 /* OLiIndexBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiIndexBoard.m; sourceTree = "<group>"; };
-		98871AF91C9E7F0F003F652D /* OLiMeBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiMeBoard.h; sourceTree = "<group>"; };
-		98871AFA1C9E7F0F003F652D /* OLiMeBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiMeBoard.m; sourceTree = "<group>"; };
-		98871AFB1C9E7F0F003F652D /* OLiMeBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OLiMeBoard.xib; sourceTree = "<group>"; };
 		98871AFF1C9EB6DA003F652D /* HyLoglnButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyLoglnButton.h; sourceTree = "<group>"; };
 		98871B001C9EB6DA003F652D /* HyLoglnButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyLoglnButton.m; sourceTree = "<group>"; };
 		98871B011C9EB6DA003F652D /* HyTransitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyTransitions.h; sourceTree = "<group>"; };
 		98871B021C9EB6DA003F652D /* HyTransitions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyTransitions.m; sourceTree = "<group>"; };
 		98871B031C9EB6DA003F652D /* SpinerLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinerLayer.h; sourceTree = "<group>"; };
 		98871B041C9EB6DA003F652D /* SpinerLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinerLayer.m; sourceTree = "<group>"; };
+		9889F8B71CD4589800A6B31B /* OLiMeBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiMeBoard.h; sourceTree = "<group>"; };
+		9889F8B81CD4589800A6B31B /* OLiMeBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiMeBoard.m; sourceTree = "<group>"; };
+		9889F8B91CD4589800A6B31B /* OLiMeBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OLiMeBoard.xib; sourceTree = "<group>"; };
+		9889F8BA1CD4589800A6B31B /* OLiSettingBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiSettingBoard.h; sourceTree = "<group>"; };
+		9889F8BB1CD4589800A6B31B /* OLiSettingBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiSettingBoard.m; sourceTree = "<group>"; };
+		9889F8BC1CD4589800A6B31B /* OLiSettingBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OLiSettingBoard.xib; sourceTree = "<group>"; };
+		9889F8BD1CD4589800A6B31B /* OLiWebBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiWebBoard.h; sourceTree = "<group>"; };
+		9889F8BE1CD4589800A6B31B /* OLiWebBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiWebBoard.m; sourceTree = "<group>"; };
+		9889F8BF1CD4589800A6B31B /* OLiWebBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OLiWebBoard.xib; sourceTree = "<group>"; };
+		9889F8C91CD458D600A6B31B /* GetFavoritesBLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetFavoritesBLL.h; sourceTree = "<group>"; };
+		9889F8CA1CD458D600A6B31B /* GetFavoritesBLL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetFavoritesBLL.m; sourceTree = "<group>"; };
+		9889F8CC1CD458F900A6B31B /* GetErrorsBLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetErrorsBLL.h; sourceTree = "<group>"; };
+		9889F8CD1CD458F900A6B31B /* GetErrorsBLL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetErrorsBLL.m; sourceTree = "<group>"; };
+		9889F8CF1CD4590600A6B31B /* CheckinBLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckinBLL.h; sourceTree = "<group>"; };
+		9889F8D01CD4590600A6B31B /* CheckinBLL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckinBLL.m; sourceTree = "<group>"; };
+		9889F8D21CD45A1900A6B31B /* RequestCheckin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestCheckin.h; sourceTree = "<group>"; };
+		9889F8D31CD45A1900A6B31B /* RequestCheckin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestCheckin.m; sourceTree = "<group>"; };
+		9889F8D51CD45A2C00A6B31B /* ResponseCheckin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseCheckin.h; sourceTree = "<group>"; };
+		9889F8D61CD45A2C00A6B31B /* ResponseCheckin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseCheckin.m; sourceTree = "<group>"; };
+		9889F8D81CD45A5200A6B31B /* RequestGetFavorites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestGetFavorites.h; sourceTree = "<group>"; };
+		9889F8D91CD45A5200A6B31B /* RequestGetFavorites.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestGetFavorites.m; sourceTree = "<group>"; };
+		9889F8DB1CD45A6900A6B31B /* RequestGetErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestGetErrors.h; sourceTree = "<group>"; };
+		9889F8DC1CD45A6900A6B31B /* RequestGetErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestGetErrors.m; sourceTree = "<group>"; };
+		9889F8DE1CD45ACB00A6B31B /* ResponseGetErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseGetErrors.h; sourceTree = "<group>"; };
+		9889F8DF1CD45ACB00A6B31B /* ResponseGetErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseGetErrors.m; sourceTree = "<group>"; };
+		9889F8E11CD45AE000A6B31B /* ResponseGetFavorites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseGetFavorites.h; sourceTree = "<group>"; };
+		9889F8E21CD45AE000A6B31B /* ResponseGetFavorites.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseGetFavorites.m; sourceTree = "<group>"; };
+		9889F8E41CD4609E00A6B31B /* OLiGetErrorsBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiGetErrorsBoard.h; sourceTree = "<group>"; };
+		9889F8E51CD4609E00A6B31B /* OLiGetErrorsBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiGetErrorsBoard.m; sourceTree = "<group>"; };
+		9889F8E61CD4609E00A6B31B /* OLiGetErrorsBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OLiGetErrorsBoard.xib; sourceTree = "<group>"; };
 		989ADA0A1CD319C6000038CF /* libUMessage_Sdk_1.2.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMessage_Sdk_1.2.6.a; sourceTree = "<group>"; };
 		989ADA0B1CD319C6000038CF /* UMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMessage.h; sourceTree = "<group>"; };
 		989ADA0E1CD330E6000038CF /* ATAppUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATAppUpdater.h; sourceTree = "<group>"; };
 		989ADA0F1CD330E6000038CF /* ATAppUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATAppUpdater.m; sourceTree = "<group>"; };
 		98B84EB11CA3C44300FECA68 /* OLiToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiToast.h; sourceTree = "<group>"; };
 		98B84EB21CA3C44300FECA68 /* OLiToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiToast.m; sourceTree = "<group>"; };
-		98CB81011CB1E3DF00420EF9 /* OLiSettingBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiSettingBoard.h; sourceTree = "<group>"; };
-		98CB81021CB1E3DF00420EF9 /* OLiSettingBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiSettingBoard.m; sourceTree = "<group>"; };
-		98CB81031CB1E3DF00420EF9 /* OLiSettingBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OLiSettingBoard.xib; sourceTree = "<group>"; };
-		98CB81061CB1E3FA00420EF9 /* OLiWebBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLiWebBoard.h; sourceTree = "<group>"; };
-		98CB81071CB1E3FA00420EF9 /* OLiWebBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLiWebBoard.m; sourceTree = "<group>"; };
-		98CB81081CB1E3FA00420EF9 /* OLiWebBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OLiWebBoard.xib; sourceTree = "<group>"; };
 		98CB810C1CB1EBE800420EF9 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		98CB810D1CB1EBE800420EF9 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		98E6A63F1C9EDA47005A7D58 /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
@@ -800,15 +832,10 @@
 		98871AF81C9E7E87003F652D /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				98871AF91C9E7F0F003F652D /* OLiMeBoard.h */,
-				98871AFA1C9E7F0F003F652D /* OLiMeBoard.m */,
-				98871AFB1C9E7F0F003F652D /* OLiMeBoard.xib */,
-				98CB81011CB1E3DF00420EF9 /* OLiSettingBoard.h */,
-				98CB81021CB1E3DF00420EF9 /* OLiSettingBoard.m */,
-				98CB81031CB1E3DF00420EF9 /* OLiSettingBoard.xib */,
-				98CB81061CB1E3FA00420EF9 /* OLiWebBoard.h */,
-				98CB81071CB1E3FA00420EF9 /* OLiWebBoard.m */,
-				98CB81081CB1E3FA00420EF9 /* OLiWebBoard.xib */,
+				9889F8E91CD4610100A6B31B /* Cell */,
+				9889F8B51CD4589800A6B31B /* BLL */,
+				9889F8B61CD4589800A6B31B /* Boards */,
+				9889F8C01CD4589800A6B31B /* Enity */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -824,6 +851,80 @@
 				98871B041C9EB6DA003F652D /* SpinerLayer.m */,
 			);
 			path = HySubmitTransition;
+			sourceTree = "<group>";
+		};
+		9889F8B51CD4589800A6B31B /* BLL */ = {
+			isa = PBXGroup;
+			children = (
+				9889F8C91CD458D600A6B31B /* GetFavoritesBLL.h */,
+				9889F8CA1CD458D600A6B31B /* GetFavoritesBLL.m */,
+				9889F8CC1CD458F900A6B31B /* GetErrorsBLL.h */,
+				9889F8CD1CD458F900A6B31B /* GetErrorsBLL.m */,
+				9889F8CF1CD4590600A6B31B /* CheckinBLL.h */,
+				9889F8D01CD4590600A6B31B /* CheckinBLL.m */,
+			);
+			path = BLL;
+			sourceTree = "<group>";
+		};
+		9889F8B61CD4589800A6B31B /* Boards */ = {
+			isa = PBXGroup;
+			children = (
+				9889F8B71CD4589800A6B31B /* OLiMeBoard.h */,
+				9889F8B81CD4589800A6B31B /* OLiMeBoard.m */,
+				9889F8B91CD4589800A6B31B /* OLiMeBoard.xib */,
+				9889F8BA1CD4589800A6B31B /* OLiSettingBoard.h */,
+				9889F8BB1CD4589800A6B31B /* OLiSettingBoard.m */,
+				9889F8BC1CD4589800A6B31B /* OLiSettingBoard.xib */,
+				9889F8BD1CD4589800A6B31B /* OLiWebBoard.h */,
+				9889F8BE1CD4589800A6B31B /* OLiWebBoard.m */,
+				9889F8BF1CD4589800A6B31B /* OLiWebBoard.xib */,
+				9889F8E41CD4609E00A6B31B /* OLiGetErrorsBoard.h */,
+				9889F8E51CD4609E00A6B31B /* OLiGetErrorsBoard.m */,
+				9889F8E61CD4609E00A6B31B /* OLiGetErrorsBoard.xib */,
+			);
+			path = Boards;
+			sourceTree = "<group>";
+		};
+		9889F8C01CD4589800A6B31B /* Enity */ = {
+			isa = PBXGroup;
+			children = (
+				9889F8C11CD4589800A6B31B /* RequestEnity */,
+				9889F8C21CD4589800A6B31B /* ResponseEnity */,
+			);
+			path = Enity;
+			sourceTree = "<group>";
+		};
+		9889F8C11CD4589800A6B31B /* RequestEnity */ = {
+			isa = PBXGroup;
+			children = (
+				9889F8D21CD45A1900A6B31B /* RequestCheckin.h */,
+				9889F8D31CD45A1900A6B31B /* RequestCheckin.m */,
+				9889F8D81CD45A5200A6B31B /* RequestGetFavorites.h */,
+				9889F8D91CD45A5200A6B31B /* RequestGetFavorites.m */,
+				9889F8DB1CD45A6900A6B31B /* RequestGetErrors.h */,
+				9889F8DC1CD45A6900A6B31B /* RequestGetErrors.m */,
+			);
+			path = RequestEnity;
+			sourceTree = "<group>";
+		};
+		9889F8C21CD4589800A6B31B /* ResponseEnity */ = {
+			isa = PBXGroup;
+			children = (
+				9889F8D51CD45A2C00A6B31B /* ResponseCheckin.h */,
+				9889F8D61CD45A2C00A6B31B /* ResponseCheckin.m */,
+				9889F8DE1CD45ACB00A6B31B /* ResponseGetErrors.h */,
+				9889F8DF1CD45ACB00A6B31B /* ResponseGetErrors.m */,
+				9889F8E11CD45AE000A6B31B /* ResponseGetFavorites.h */,
+				9889F8E21CD45AE000A6B31B /* ResponseGetFavorites.m */,
+			);
+			path = ResponseEnity;
+			sourceTree = "<group>";
+		};
+		9889F8E91CD4610100A6B31B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		98957A531C9AB74B005F0F16 /* Login&Register */ = {
@@ -1117,20 +1218,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				98EC116C1CCF5CEA0011781B /* UMShareEditViewController.xib in Resources */,
+				9889F8C41CD4589800A6B31B /* OLiMeBoard.xib in Resources */,
 				98EC11691CCF5CEA0011781B /* UMSCommentDetailController.xib in Resources */,
 				98EC10F41CCF12680011781B /* backItemImage_hl@2x.png in Resources */,
 				98EC11671CCF5CEA0011781B /* UMSocialLocalizable.strings in Resources */,
-				98CB810A1CB1E3FA00420EF9 /* OLiWebBoard.xib in Resources */,
 				9847B1041CA293C500D58955 /* OLiSectionTableViewCell.xib in Resources */,
 				98EC116A1CCF5CEA0011781B /* UMSCommentInputController.xib in Resources */,
+				9889F8E81CD4609E00A6B31B /* OLiGetErrorsBoard.xib in Resources */,
 				98EC116F1CCF5CEA0011781B /* UMSnsAccountViewController.xib in Resources */,
 				98EC11611CCF5CEA0011781B /* ios-social-sdk-shake.html in Resources */,
 				98EC115D1CCF5CEA0011781B /* WeiboSDK.bundle in Resources */,
-				98871AFD1C9E7F0F003F652D /* OLiMeBoard.xib in Resources */,
 				98EC116E1CCF5CEA0011781B /* UMSLoginViewController.xib in Resources */,
 				9847B0F01CA28FFA00D58955 /* OLiBaseBoard.xib in Resources */,
 				98EC10F31CCF12680011781B /* backItemImage@2x.png in Resources */,
 				98EC11711CCF5CEA0011781B /* UMSocialSDKResourcesNew.bundle in Resources */,
+				9889F8C61CD4589800A6B31B /* OLiSettingBoard.xib in Resources */,
 				981014801CD097A100E094A7 /* OLiLoginBoard.xib in Resources */,
 				98EC11701CCF5CEA0011781B /* UMSShareListController.xib in Resources */,
 				983D06AB1C8A81FD00D7034B /* OLiHomeBoard.xib in Resources */,
@@ -1140,9 +1242,9 @@
 				9847B1091CA2A08900D58955 /* list.plist in Resources */,
 				98EC11631CCF5CEA0011781B /* ios-social-sdk-shake.html in Resources */,
 				98EC116D1CCF5CEA0011781B /* UMShareEditViewControlleriPad.xib in Resources */,
+				9889F8C81CD4589800A6B31B /* OLiWebBoard.xib in Resources */,
 				98EC11601CCF5CEA0011781B /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				98EC116B1CCF5CEA0011781B /* UMSCommentInputControlleriPad.xib in Resources */,
-				98CB81051CB1E3DF00420EF9 /* OLiSettingBoard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1154,11 +1256,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				981014A21CD0A59500E094A7 /* AFHTTPRequestOperation.m in Sources */,
+				9889F8D41CD45A1900A6B31B /* RequestCheckin.m in Sources */,
 				981014AF1CD0E53B00E094A7 /* SubjectBLL.m in Sources */,
 				983D07151C8A915C00D7034B /* RC4.c in Sources */,
 				983D07161C8A915C00D7034B /* rijndael.c in Sources */,
 				983D06FA1C8A915C00D7034B /* NSString+PublicEncrypt.m in Sources */,
 				983D06FD1C8A915C00D7034B /* OLiNetError.m in Sources */,
+				9889F8CB1CD458D600A6B31B /* GetFavoritesBLL.m in Sources */,
 				981014C91CD22A6100E094A7 /* OLiQuestionViewController.m in Sources */,
 				9847B0FB1CA291AE00D58955 /* OLiSectionBoard.m in Sources */,
 				9847B0FF1CA2922300D58955 /* OLiTableViewHeaderView.m in Sources */,
@@ -1172,6 +1276,8 @@
 				981014C31CD0E5D800E094A7 /* RequestSubject.m in Sources */,
 				981014AA1CD0A59500E094A7 /* AFURLSessionManager.m in Sources */,
 				9810148A1CD0987A00E094A7 /* RspInfo.m in Sources */,
+				9889F8D11CD4590600A6B31B /* CheckinBLL.m in Sources */,
+				9889F8DD1CD45A6900A6B31B /* RequestGetErrors.m in Sources */,
 				983D07231C8AAD5900D7034B /* OLiHTTPRequestOperationManager+Download.m in Sources */,
 				983D07141C8A915C00D7034B /* NSData-AES.m in Sources */,
 				981014861CD097FA00E094A7 /* ResponseLogin.m in Sources */,
@@ -1188,37 +1294,43 @@
 				981014A81CD0A59500E094A7 /* AFURLRequestSerialization.m in Sources */,
 				9810148D1CD09A5700E094A7 /* LoginBLL.m in Sources */,
 				981014A31CD0A59500E094A7 /* AFHTTPRequestOperationManager.m in Sources */,
-				98CB81041CB1E3DF00420EF9 /* OLiSettingBoard.m in Sources */,
 				9842913D1CAD0E22004EE44A /* CCWormView.m in Sources */,
 				983D06F91C8A915C00D7034B /* NSObject+OLiNetEngine.m in Sources */,
+				9889F8C51CD4589800A6B31B /* OLiSettingBoard.m in Sources */,
 				98B84EB31CA3C44300FECA68 /* OLiToast.m in Sources */,
 				983D071E1C8A960700D7034B /* DemoBLL.m in Sources */,
 				989ADA101CD330E6000038CF /* ATAppUpdater.m in Sources */,
 				983D071F1C8A960700D7034B /* RequestDemoEnity.m in Sources */,
+				9889F8E01CD45ACB00A6B31B /* ResponseGetErrors.m in Sources */,
 				98EC10FB1CCF12E60011781B /* OLiWebViewNavigationViewController.m in Sources */,
 				98EC11121CCF58530011781B /* UIViewController+Analytics.m in Sources */,
 				983D072C1C8ABF8D00D7034B /* DownloadBLL.m in Sources */,
 				983D07261C8ABEFD00D7034B /* ResponseDownload.m in Sources */,
 				983D07131C8A915C00D7034B /* GTMBase64.m in Sources */,
 				983D06971C8A7F8800D7034B /* main.m in Sources */,
-				98871AFC1C9E7F0F003F652D /* OLiMeBoard.m in Sources */,
 				983D07171C8A915C00D7034B /* Reachability.m in Sources */,
 				9847B10C1CA2A39A00D58955 /* OLiIndexBoard.m in Sources */,
 				981014C01CD0E5AF00E094A7 /* ResponseChapter.m in Sources */,
 				981014A51CD0A59500E094A7 /* AFNetworkReachabilityManager.m in Sources */,
+				9889F8E31CD45AE000A6B31B /* ResponseGetFavorites.m in Sources */,
 				98EC10FE1CCF141E0011781B /* OLiWebViewController.m in Sources */,
+				9889F8CE1CD458F900A6B31B /* GetErrorsBLL.m in Sources */,
 				983D07001C8A915C00D7034B /* OLiNetEngineSetting.m in Sources */,
 				98871B061C9EB6DA003F652D /* HyTransitions.m in Sources */,
 				98871B071C9EB6DA003F652D /* SpinerLayer.m in Sources */,
+				9889F8E71CD4609E00A6B31B /* OLiGetErrorsBoard.m in Sources */,
 				981014A41CD0A59500E094A7 /* AFHTTPSessionManager.m in Sources */,
 				983D06AA1C8A81FD00D7034B /* OLiHomeBoard.m in Sources */,
 				981014BF1CD0E5AF00E094A7 /* ResponseSubject.m in Sources */,
 				981014A61CD0A59500E094A7 /* AFSecurityPolicy.m in Sources */,
 				983D06FF1C8A915C00D7034B /* OLiNetEngineSetting+OLiNetEngine.m in Sources */,
+				9889F8C71CD4589800A6B31B /* OLiWebBoard.m in Sources */,
 				98871B051C9EB6DA003F652D /* HyLoglnButton.m in Sources */,
 				983D06951C8A7F8800D7034B /* OLiAppDelegate.m in Sources */,
+				9889F8DA1CD45A5200A6B31B /* RequestGetFavorites.m in Sources */,
+				9889F8C31CD4589800A6B31B /* OLiMeBoard.m in Sources */,
 				9847B1071CA29A7800D58955 /* ModelGroups.m in Sources */,
-				98CB81091CB1E3FA00420EF9 /* OLiWebBoard.m in Sources */,
+				9889F8D71CD45A2C00A6B31B /* ResponseCheckin.m in Sources */,
 				98CB810E1CB1EBE800420EF9 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				983D06FB1C8A915C00D7034B /* OLiHTTPRequestOperationManager.m in Sources */,
 			);
@@ -1332,6 +1444,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/OLi/Third/umeng_ios_social_sdk_5.0.1_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 				);
+				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = OLi/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1365,6 +1478,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/OLi/Third/umeng_ios_social_sdk_5.0.1_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 				);
+				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = OLi/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

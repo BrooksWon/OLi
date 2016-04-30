@@ -43,9 +43,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
     
-//    self.window.rootViewController = OLiHomeBoard.new;
-//    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:OLiLoginBoard.new];
-    self.window.rootViewController = [OLiIndexBoard new];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:OLiLoginBoard.new];
+//    self.window.rootViewController = [OLiIndexBoard new];
     
     [self customizeAppearance];
     
@@ -79,8 +78,8 @@
     [UMSocialSnsService  applicationDidBecomeActive];
 }
 
-- (void)changeVC {
-    self.window.rootViewController = OLiHomeBoard.new;
+- (void)changeVC2Login {
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:OLiLoginBoard.new];
 }
 
 - (void)customizeAppearance {

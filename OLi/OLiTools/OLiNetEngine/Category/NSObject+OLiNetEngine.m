@@ -171,9 +171,9 @@ static inline NSString* CapitalizedFirstCharacter (NSString *string) {
 //将复数转换成单数，如：orders ——> order
 static inline NSString* ChangedSingularInfo (NSString *string) {
     NSMutableString *singularInfo = string.mutableCopy;
-    if ([singularInfo hasSuffix:@"s"]) {
-        [singularInfo replaceCharactersInRange:NSMakeRange(singularInfo.length-1,1) withString:@""];
-    }
+//    if ([singularInfo hasSuffix:@"s"]) {
+//        [singularInfo replaceCharactersInRange:NSMakeRange(singularInfo.length-1,1) withString:@""];
+//    }
     
     return singularInfo;
 }

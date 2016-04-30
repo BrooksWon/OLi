@@ -14,7 +14,7 @@
 
 @property (nonatomic, strong)RspInfo *rspInfo;
 
-@property (nonatomic, copy)SubjectList *subjectList;
+@property (nonatomic, strong)SubjectList *subjectList;
 
 @end
 

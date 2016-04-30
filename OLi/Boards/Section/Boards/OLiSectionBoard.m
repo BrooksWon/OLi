@@ -18,6 +18,8 @@
 #import "OLiQuestionViewController.h"
 #import "UMSocial.h"
 
+#import "OLiAppDelegate.h"
+
 @interface OLiSectionBoard ()<OLiTableViewHeaderViewDelegate, UIViewControllerPreviewingDelegate,UMSocialUIDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
@@ -92,6 +94,8 @@
     [self loadDataFromServer:YES];
     
     [self check3DTouch];
+    
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:nil action:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -173,7 +177,11 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    OLiQuestionViewController* webViewController = [[OLiQuestionViewController alloc] initWithUrl:[NSURL URLWithString:@"http://www.baidu.com"]];
+    
+    NSArray *_ids = [self.listArray[indexPath.section] valueForKeyPath:@"groups"];
+    NSString *_id = [_ids[indexPath.row] valueForKeyPath:@"id"];
+    NSString *idLink = kDaTi(_id);
+    OLiQuestionViewController* webViewController = [[OLiQuestionViewController alloc] initWithUrl:[NSURL URLWithString:idLink]];
     webViewController.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:webViewController animated:YES];
 }
@@ -207,7 +215,11 @@
 {
     NSIndexPath *indexPath = [self.tableView indexPathForCell:(UITableViewCell* )[context sourceView]];
     
-    OLiQuestionViewController *childVC = [[OLiQuestionViewController alloc] initWithUrl:[NSURL URLWithString:@"http://www.baidu.com"]];
+    NSArray *_ids = [self.listArray[indexPath.section] valueForKeyPath:@"groups"];
+    NSString *_id = [_ids[indexPath.row] valueForKeyPath:@"id"];
+    NSString *idLink = kDaTi(_id);
+    OLiQuestionViewController *childVC = [[OLiQuestionViewController alloc] initWithUrl:[NSURL URLWithString:idLink]];
+    
     
     childVC.preferredContentSize = CGSizeMake(0.0f,500.f);
     return childVC;

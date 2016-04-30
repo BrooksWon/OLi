@@ -15,6 +15,7 @@
 #import "UMSocial.h"
 
 #import "OLiAppDelegate.h"
+#import "OLiGetErrorsBoard.h"
 
 @interface OLiMeBoard ()<UMSocialUIDelegate>
 @property (strong, nonatomic) IBOutlet UITableViewCell *meCell;
@@ -31,7 +32,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -93,31 +93,43 @@
     switch (indexPath.section) {
         case 0:
         {
-            //
+            break;
         }
         case 1:
         {
-            //
-        }
-        case 2:
-        {
-            //
-        }
-        case 3:
-        {
-            [self showShareList:nil];
-            break;
-        }
-        case 4:
-        {
-            UIViewController *vc = [OLiSettingBoard new];
+            OLiGetErrorsBoard *vc = [[OLiGetErrorsBoard alloc] init];
+            vc.isError = 1;
+            vc.ID = @"1";
+            vc.title = @"错题本";
             vc.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
-            default:
+        case 2:
         {
-            
+            OLiGetErrorsBoard *vc = [[OLiGetErrorsBoard alloc] init];
+            vc.isError = 0;
+            vc.ID = @"1";
+            vc.title = @"我的收藏 ";
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 3:
+        {
+            //message
+            break;
+        }
+        case 4:
+        {
+            [self showShareList:nil];
+            break;
+        }
+        case 5:
+        {
+            UIViewController *vc = [OLiSettingBoard new];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
             break;
         }
     }

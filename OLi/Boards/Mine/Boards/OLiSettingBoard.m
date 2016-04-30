@@ -11,6 +11,7 @@
 #define kTableViewSectionNumbers 3
 
 #import "OLiWebBoard.h"
+#import "OLiAppDelegate.h"
 
 @interface OLiSettingBoard ()
 
@@ -25,6 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.title = @"设置";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -60,11 +62,33 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    OLiWebBoard *webVC = [OLiWebBoard new];
-    webVC.webURL = @"http://www.baidu.com";
-    webVC.title = @"免责声明";
-    webVC.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:webVC animated:YES];
+    switch (indexPath.section) {
+        case 0:
+        {
+            OLiWebBoard *webVC = [OLiWebBoard new];
+            webVC.webURL = @"http://www.baidu.com";
+            webVC.title = @"免责声明";
+            webVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:webVC animated:YES];
+            break;
+        }
+        case 1:
+        {
+            OLiWebBoard *webVC = [OLiWebBoard new];
+            webVC.webURL = @"http://www.baidu.com";
+            webVC.title = @"免责声明";
+            webVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:webVC animated:YES];
+            break;
+        }
+        case 2:
+        {
+            [[NSUserDefaults standardUserDefaults] removeObjectForKey:kUID];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+            [((OLiAppDelegate*)[UIApplication sharedApplication].delegate) changeVC2Login];
+            break;
+        }
+    }
 }
 
 

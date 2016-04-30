@@ -84,7 +84,23 @@
     [self.webView insertSubview:self.hostInfoLabel belowSubview:self.webView.scrollView];
     [self.view addSubview:self.progressView];
     
+    [self setCookie];
+    
     [self.webView loadRequest:[NSURLRequest requestWithURL:self.url]];
+}
+
+- (void)setCookie{
+    NSMutableDictionary *cookieProperties = [NSMutableDictionary dictionary];
+    [cookieProperties setObject:@"cookie_user" forKey:NSHTTPCookieName];
+//    [cookieProperties setObject:uid forKey:NSHTTPCookieValue];
+    [cookieProperties setObject:@"www.niudaoxiaoshi.com" forKey:NSHTTPCookieDomain];
+    [cookieProperties setObject:@"/" forKey:NSHTTPCookiePath];
+    [cookieProperties setObject:@"0" forKey:NSHTTPCookieVersion];
+//    [cookieProperties setObject:[[NSDate date] dateByAddingTimeInterval:2629743] forKey:NSHTTPCookieExpires];
+    [cookieProperties setObject:@"2027-04-30T02:03:53.000Z" forKey:NSHTTPCookieExpires];
+    
+    NSHTTPCookie *cookieuser = [NSHTTPCookie cookieWithProperties:cookieProperties];
+    [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookie:cookieuser];
 }
 
 -(void)viewDidDisappear:(BOOL)animated{

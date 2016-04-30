@@ -38,25 +38,48 @@
 @implementation OLiLoginBoard
 
 - (IBAction)loginBtnActionWithCount:(id)sender {
+        [TalkingData trackEvent:@"loginBtn_count"];
 //    [AppDelegateEntity changeVC];
-    [self gotoHomePageAction:sender];
     
-    
-    
-    
-//    [self.loginBLL loginWithCallback:^(id objc) {
-//        NSLog(@"objc = %@", objc);
-//    }];
-    
-    
-    
-    
-    [TalkingData trackEvent:@"loginBtn_count"];
+    __typeof(self) __weak weakSelf = self;
+    [self.loginBLL loginWithCallback:^(id objc) {
+        NSLog(@"objc = %@", objc);
+        if ([@"1000" isEqualToString:[objc valueForKeyPath:@"rspInfo.rspCode"]]) {
+            //网络正常 或者是密码账号正确跳转动画
+            [sender ExitAnimationCompletion:^{
+                [weakSelf didPresentControllerButtonTouch];
+                [[NSUserDefaults standardUserDefaults] setObject:[objc valueForKeyPath:@"userInfo.id"] forKey:kUID];
+                [[NSUserDefaults standardUserDefaults] synchronize];
+            }];
+        }else {
+            //网络错误 或者是密码不正确还原动画
+            [sender ErrorRevertAnimationCompletion:^{
+                weakSelf.pwField.text = @"密码错误";
+            }];
+        }
+    }];
 }
 
 - (IBAction)loginBtnActionWithLicense:(id)sender {
-    [self gotoHomePageAction:sender];
     [TalkingData trackEvent:@"loginBtn_License"];
+    
+    __typeof(self) __weak weakSelf = self;
+    [self.loginBLL loginWithCallback:^(id objc) {
+        NSLog(@"objc = %@", objc);
+        if ([@"1000" isEqualToString:[objc valueForKeyPath:@"rspInfo.rspCode"]]) {
+            //网络正常 或者是密码账号正确跳转动画
+            [sender ExitAnimationCompletion:^{
+                [weakSelf didPresentControllerButtonTouch];
+                [[NSUserDefaults standardUserDefaults] setObject:[objc valueForKeyPath:@"userInfo.id"] forKey:kUID];
+                [[NSUserDefaults standardUserDefaults] synchronize];
+            }];
+        }else {
+            //网络错误 或者是密码不正确还原动画
+            [sender ErrorRevertAnimationCompletion:^{
+                weakSelf.licenseField.text = @"授权码错误";
+            }];
+        }
+    }];
 }
 
 - (IBAction)changeLicenseBtnAction:(id)sender {
@@ -74,37 +97,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"小试牛刀";
-//    [self.bgImgV1 setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"bg4" ofType:@"jpg"]]];
 }
-
--(void)gotoHomePageAction:(HyLoglnButton *)button {
-    
-    __typeof(self) __weak weakSelf = self;
-    __block __typeof(self.time) times = self.time;
-    //模拟网络访问
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        
-        if (times%2) {
-            //网络正常 或者是密码账号正确跳转动画
-            [button ExitAnimationCompletion:^{
-                [weakSelf didPresentControllerButtonTouch];
-            }];
-        }else{
-            //网络错误 或者是密码不正确还原动画
-            [button ErrorRevertAnimationCompletion:^{
-                if (!weakSelf.isChangeLicense) {
-                    weakSelf.pwField.text = @"密码错误";
-                }else {
-                    weakSelf.licenseField.text = @"授权码错误";
-                }
-                
-            }];
-        }
-    });
-    
-    self.time += 1;
-}
-            
 
 /*!
  *  @brief 切换到业务首页

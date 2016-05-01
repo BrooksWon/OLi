@@ -18,6 +18,7 @@
 @property (strong, nonatomic) IBOutlet UITableViewCell *legalCell;
 @property (strong, nonatomic) IBOutlet UITableViewCell *aboutCell;
 @property (strong, nonatomic) IBOutlet UITableViewCell *logoutCell;
+@property (nonatomic, strong) IBOutlet UILabel *versionLabel;
 
 @end
 
@@ -27,6 +28,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"设置";
+    self.versionLabel.text = [NSString stringWithFormat:@"当前版本号:%@", [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]];
 }
 
 - (void)didReceiveMemoryWarning {

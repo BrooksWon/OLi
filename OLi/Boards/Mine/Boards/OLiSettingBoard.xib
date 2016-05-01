@@ -10,6 +10,7 @@
                 <outlet property="aboutCell" destination="dOz-vx-dmJ" id="eQb-hv-DoR"/>
                 <outlet property="legalCell" destination="Pow-jd-xGk" id="jxZ-iA-XfY"/>
                 <outlet property="logoutCell" destination="ee8-Vg-arw" id="PxU-wk-Lu1"/>
+                <outlet property="versionLabel" destination="bus-al-LEK" id="sU9-c3-rTo"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,6 +22,13 @@
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="JJ3-dy-dA6">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bus-al-LEK">
+                        <rect key="frame" x="0.0" y="522.5" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="XZL-fy-d8K"/>
                         <outlet property="delegate" destination="-1" id="cSI-9L-Jvd"/>

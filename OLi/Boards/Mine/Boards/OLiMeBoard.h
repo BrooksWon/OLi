@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
--(IBAction)showShareList:(id)sender;
+- (IBAction)showShareList:(id)sender;
+- (IBAction)checkinAction:(id)sender;
 
 @end

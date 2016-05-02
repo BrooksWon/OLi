@@ -175,8 +175,9 @@
 
     
     if ([shortcutItem.localizedTitle  isEqual: @"签到"]) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"恭喜，签到成功！" delegate:self cancelButtonTitle:@"好" otherButtonTitles:nil, nil];
-        [alert show];
+//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"恭喜，签到成功！" delegate:self cancelButtonTitle:@"好" otherButtonTitles:nil, nil];
+//        [alert show];
+        [meVC checkinAction:nil];
     }else if ([shortcutItem.localizedTitle  isEqual: @"我的收藏"]) {
 //        if ([[NSUserDefaults standardUserDefaults] objectForKey:@"USERID"]) {
             //

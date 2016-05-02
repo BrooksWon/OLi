@@ -11,11 +11,12 @@
 #define kTableViewSectionNumbers 6
 
 #import "OLiSettingBoard.h"
-
+#import "MsgBoard.h"
 #import "UMSocial.h"
 
 #import "OLiAppDelegate.h"
 #import "OLiGetErrorsBoard.h"
+#import "CheckinBLL.h"
 
 @interface OLiMeBoard ()<UMSocialUIDelegate>
 @property (strong, nonatomic) IBOutlet UITableViewCell *meCell;
@@ -25,6 +26,8 @@
 @property (strong, nonatomic) IBOutlet UITableViewCell *shareCell;
 @property (strong, nonatomic) IBOutlet UITableViewCell *settingCell;
 @property (strong, nonatomic) IBOutlet UITableViewCell *favorateCell;
+
+@property (nonatomic, strong)CheckinBLL *checkinBLL;
 
 @end
 
@@ -93,6 +96,7 @@
     switch (indexPath.section) {
         case 0:
         {
+            [self checkinAction:nil];
             break;
         }
         case 1:
@@ -117,7 +121,9 @@
         }
         case 3:
         {
-            //message
+            UIViewController *vc = [MsgBoard new];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         case 4:
@@ -167,6 +173,24 @@
                                      shareImage:shareImage
                                 shareToSnsNames:@[UMShareToSina,UMShareToQQ,UMShareToQzone,UMShareToWechatSession,UMShareToWechatTimeline,UMShareToWechatFavorite,UMShareToEmail,UMShareToSms]
                                        delegate:self];
+}
+
+- (CheckinBLL *)checkinBLL {
+    if (nil == _checkinBLL) {
+        self.checkinBLL = [CheckinBLL new];
+    }
+    return _checkinBLL;
+}
+
+- (IBAction)checkinAction:(id)sender {
+    [self.checkinBLL checkinWithUserId:[[NSUserDefaults standardUserDefaults] stringForKey:kUID] callback:^(id objc) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                        message:@"恭喜，签到成功！"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"好"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }];
 }
 
 @end

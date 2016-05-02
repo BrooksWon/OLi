@@ -106,11 +106,4 @@
     return _getErrorsBLL;
 }
 
-- (CheckinBLL *)checkinBLL {
-    if (nil == _checkinBLL) {
-        self.checkinBLL = [CheckinBLL new];
-    }
-    return _checkinBLL;
-}
-
 @end

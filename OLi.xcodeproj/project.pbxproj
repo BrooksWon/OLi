@@ -1448,7 +1448,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = Luanch;
-				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.BrooksWon.OLi";
+				CODE_SIGN_IDENTITY = "iPhone Developer: jianyu wang (4XUU6CEV36)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jianyu wang (4XUU6CEV36)";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1474,6 +1475,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrooksWon.OLi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "fa80ec0e-4482-4b80-ae60-df8149d49a3a";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1482,7 +1484,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = Luanch;
-				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.BrooksWon.OLi";
+				CODE_SIGN_IDENTITY = "iPhone Developer: jianyu wang (4XUU6CEV36)";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1508,6 +1510,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrooksWon.OLi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "fa80ec0e-4482-4b80-ae60-df8149d49a3a";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

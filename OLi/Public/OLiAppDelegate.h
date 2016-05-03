@@ -12,7 +12,7 @@
 
 #define kUID @"UID"
 
-#define kDaTi(x) (NSString*)[NSString stringWithFormat:@"http://www.niudaoxiaoshi.com/question/index?chapterId=%@&userId=%@", (x), [[NSUserDefaults standardUserDefaults] stringForKey:kUID]]
+#define kDaTi(x) (NSString*)[NSString stringWithFormat:@"http://www.niudaoxiaoshi.com/question/mindex?chapterId=%@&userId=%@", (x), [[NSUserDefaults standardUserDefaults] stringForKey:kUID]]
 
 
 @interface OLiAppDelegate : UIResponder <UIApplicationDelegate>

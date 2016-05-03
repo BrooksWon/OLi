@@ -43,8 +43,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
     
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:OLiLoginBoard.new];
-//    self.window.rootViewController = [OLiIndexBoard new];
+    if ([[NSUserDefaults standardUserDefaults] stringForKey:kUID]) {
+        self.window.rootViewController = [OLiIndexBoard new];
+    }else {
+        self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:OLiLoginBoard.new];
+    }
     
     [self customizeAppearance];
     

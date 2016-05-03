@@ -8,7 +8,7 @@
 
 #import "OLiSettingBoard.h"
 
-#define kTableViewSectionNumbers 3
+#define kTableViewSectionNumbers 1
 
 #import "OLiWebBoard.h"
 #import "OLiAppDelegate.h"
@@ -45,52 +45,52 @@
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    switch (indexPath.section) {
-        case 0:
-        {
-            return self.legalCell;
-        }
-        case 1:
-        {
-            return self.aboutCell;
-        }
-        case 2:
-        {
+//    switch (indexPath.section) {
+//        case 0:
+//        {
+//            return self.legalCell;
+//        }
+//        case 1:
+//        {
+//            return self.aboutCell;
+//        }
+//        case 2:
+//        {
             return self.logoutCell;
-        }
-    }
-    
-    return nil;
+//        }
+//    }
+//    
+//    return nil;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    switch (indexPath.section) {
-        case 0:
-        {
-            OLiWebBoard *webVC = [OLiWebBoard new];
-            webVC.webURL = @"http://www.baidu.com";
-            webVC.title = @"免责声明";
-            webVC.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:webVC animated:YES];
-            break;
-        }
-        case 1:
-        {
-            OLiWebBoard *webVC = [OLiWebBoard new];
-            webVC.webURL = @"http://www.baidu.com";
-            webVC.title = @"免责声明";
-            webVC.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:webVC animated:YES];
-            break;
-        }
-        case 2:
-        {
+//    switch (indexPath.section) {
+//        case 0:
+//        {
+//            OLiWebBoard *webVC = [OLiWebBoard new];
+//            webVC.webURL = @"http://www.baidu.com";
+//            webVC.title = @"免责声明";
+//            webVC.hidesBottomBarWhenPushed = YES;
+//            [self.navigationController pushViewController:webVC animated:YES];
+//            break;
+//        }
+//        case 1:
+//        {
+//            OLiWebBoard *webVC = [OLiWebBoard new];
+//            webVC.webURL = @"http://www.baidu.com";
+//            webVC.title = @"免责声明";
+//            webVC.hidesBottomBarWhenPushed = YES;
+//            [self.navigationController pushViewController:webVC animated:YES];
+//            break;
+//        }
+//        case 2:
+//        {
             [[NSUserDefaults standardUserDefaults] removeObjectForKey:kUID];
             [[NSUserDefaults standardUserDefaults] synchronize];
             [((OLiAppDelegate*)[UIApplication sharedApplication].delegate) changeVC2Login];
-            break;
-        }
-    }
+//            break;
+//        }
+//    }
 }
 
 

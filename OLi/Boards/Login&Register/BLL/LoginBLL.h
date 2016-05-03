@@ -10,6 +10,6 @@
 
 @interface LoginBLL : NSObject
 
-- (void)loginWithCallback:(void (^) (id objc))callback;
+- (void)loginWithSN:(NSString*)sn account:(NSString*)account password:(NSString*)pw callback:(void (^) (id objc))callback;
 
 @end

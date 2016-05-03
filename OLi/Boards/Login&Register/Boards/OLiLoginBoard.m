@@ -42,7 +42,7 @@
 //    [AppDelegateEntity changeVC];
     
     __typeof(self) __weak weakSelf = self;
-    [self.loginBLL loginWithCallback:^(id objc) {
+    [self.loginBLL loginWithSN:nil account:self.countField.text password:self.pwField.text callback:^(id objc) {
         NSLog(@"objc = %@", objc);
         if ([@"1000" isEqualToString:[objc valueForKeyPath:@"rspInfo.rspCode"]]) {
             //网络正常 或者是密码账号正确跳转动画
@@ -64,7 +64,7 @@
     [TalkingData trackEvent:@"loginBtn_License"];
     
     __typeof(self) __weak weakSelf = self;
-    [self.loginBLL loginWithCallback:^(id objc) {
+    [self.loginBLL loginWithSN:self.licenseField.text account:nil password:nil callback:^(id objc) {
         NSLog(@"objc = %@", objc);
         if ([@"1000" isEqualToString:[objc valueForKeyPath:@"rspInfo.rspCode"]]) {
             //网络正常 或者是密码账号正确跳转动画

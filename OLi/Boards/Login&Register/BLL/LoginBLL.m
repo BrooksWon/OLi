@@ -11,8 +11,11 @@
 
 @implementation LoginBLL
 
-- (void)loginWithCallback:(void (^) (id objc))callback {
+- (void)loginWithSN:(NSString*)sn account:(NSString*)account password:(NSString*)pw callback:(void (^) (id objc))callback {
     RequestLogin *req = [[RequestLogin alloc] init];
+    req.sn = sn;
+    req.account = account;
+    req.password = pw;
     [req startWithSuccessBlock:^(id responseObject, NSDictionary *options) {
         !callback ?:callback(responseObject);
     } failBlock:^(OLiNetError *error, NSDictionary *options) {

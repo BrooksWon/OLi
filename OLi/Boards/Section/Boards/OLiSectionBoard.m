@@ -20,6 +20,8 @@
 
 #import "OLiAppDelegate.h"
 
+#define UMSYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+
 @interface OLiSectionBoard ()<OLiTableViewHeaderViewDelegate, UIViewControllerPreviewingDelegate,UMSocialUIDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
@@ -37,7 +39,7 @@
     if (!_listArray) {
         self.listArray = [NSMutableArray array];
     }
-
+    
     return _listArray;
 }
 
@@ -137,8 +139,10 @@
         
     }
     
-    // 注册peek、pop
-    [self registerForPreviewingWithDelegate:self sourceView:cell];
+    if(UMSYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"9.0")){
+        // 注册peek、pop
+        [self registerForPreviewingWithDelegate:self sourceView:cell];
+    }
     
     return cell;
 }
@@ -202,11 +206,14 @@
 
 -(void)check3DTouch
 {
-    if(self.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable) {
-        //ok
-    }
-    else{
-        //notok
+    if(UMSYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"9.0")){
+        
+        if(self.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable) {
+            //ok
+        }
+        else{
+            //notok
+        }
     }
 }
 

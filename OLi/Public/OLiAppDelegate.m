@@ -24,6 +24,7 @@
 
 #define UMSYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 #define _IPHONE80_ 80000
+#define _IPHONE90_ 90000
 
 #import "UMessage.h"
 #import "ATAppUpdater.h"
@@ -156,17 +157,19 @@
 }
 
 - (void)setup3DTouch {
-    UIApplicationShortcutItem *shortItem1 = [[UIApplicationShortcutItem alloc] initWithType:@"签到" localizedTitle:@"签到" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"qiandao"] userInfo:nil];
-    
-    UIApplicationShortcutItem *shortItem2 = [[UIApplicationShortcutItem alloc] initWithType:@"我的收藏" localizedTitle:@"我的收藏" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"shoucang"] userInfo:nil];
-    
-    UIApplicationShortcutItem *shortItem3 = [[UIApplicationShortcutItem alloc] initWithType:@"错题本" localizedTitle:@"错题本" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"cuoti"] userInfo:nil];
-    
-    UIApplicationShortcutItem *shortItem4 = [[UIApplicationShortcutItem alloc] initWithType:@"分享" localizedTitle:@"分享" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"fenxiang"] userInfo:nil];
-    
-    
-    NSArray *shortItems = @[shortItem1, shortItem2, shortItem3, shortItem4];
-    [[UIApplication sharedApplication] setShortcutItems:shortItems];
+    if(UMSYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"9.0")) {
+        UIApplicationShortcutItem *shortItem1 = [[UIApplicationShortcutItem alloc] initWithType:@"签到" localizedTitle:@"签到" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"qiandao"] userInfo:nil];
+        
+        UIApplicationShortcutItem *shortItem2 = [[UIApplicationShortcutItem alloc] initWithType:@"我的收藏" localizedTitle:@"我的收藏" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"shoucang"] userInfo:nil];
+        
+        UIApplicationShortcutItem *shortItem3 = [[UIApplicationShortcutItem alloc] initWithType:@"错题本" localizedTitle:@"错题本" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"cuoti"] userInfo:nil];
+        
+        UIApplicationShortcutItem *shortItem4 = [[UIApplicationShortcutItem alloc] initWithType:@"分享" localizedTitle:@"分享" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithTemplateImageName:@"fenxiang"] userInfo:nil];
+        
+        
+        NSArray *shortItems = @[shortItem1, shortItem2, shortItem3, shortItem4];
+        [[UIApplication sharedApplication] setShortcutItems:shortItems];
+    }
 }
 
 - (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler{
